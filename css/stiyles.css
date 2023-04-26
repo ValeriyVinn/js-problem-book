@@ -1,0 +1,237 @@
+body {
+    position: relative;
+}
+
+body.open-modal {
+    overflow: hidden;
+}
+
+body.open-modal > .modal-window,
+body.open-modal > .overlay {
+    display: block;
+}
+
+.modal-window {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+    border: 2px solid rgb(109, 196, 109);
+    border-radius: 15px;
+    position: absolute;
+   top: 350%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+}
+
+.close-btn {
+   background-color: transparent;
+   font-size: 20px;
+   color: red;
+   border: none;
+   cursor: pointer;
+   
+}
+
+.open-btn {
+     background-color: rgb(216, 180, 249);
+   font-size: 50px;
+   color: rgb(109, 196, 109);
+   border: 2px solid rgb(109, 196, 109);
+   border-radius: 8px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(49, 212, 27, 0.338);
+    display: none;
+    height: 1000px;
+}
+
+
+
+
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+  /* list-style: none; */
+}
+
+.list {
+  list-style: none;
+  /* text-align: center; */
+}
+
+img {
+    display: block;
+}
+
+
+/* ? АЛЕКСАНДР РЕПЕТА JS #5 */
+
+.js-decrement,
+.js-increment {
+    padding: 5px;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    border-radius: 10px;
+
+}
+.js-value {
+    color: darkblue;
+    font-size: 30px;
+    margin: 10px;
+    display: inline
+}
+/* ?============== */
+
+.face__img {
+    margin-bottom: 30px;
+}
+
+.magicBtn {
+    background-color:cornflowerblue
+}
+
+.js-target-button {
+    background-color: aqua;
+}
+
+.js-add-listener {
+    background-color: burlywood;
+}
+
+.js-remove-listener {
+    background-color:chartreuse;
+}
+
+.js-input {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.button {
+    background-color: aquamarine;
+    color:darkgreen;
+    margin-bottom: 30px;
+}
+
+.btn {
+    
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: red;
+    background-color: aqua;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+    
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: blueviolet;
+    color: burlywood;
+}
+
+.btn::before {
+    
+    display: inline-block;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color:beige;
+    border-radius: 50%;
+    background-image: url(../images/Ellipse.png);
+    background-size: contain;
+    vertical-align:middle;
+    margin-right: 10px;
+
+}
+
+.cont {
+    height: 50px;
+    outline: 2px solid blue;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+    /* text-align: center; */
+
+    
+}
+
+.item:last-child {
+    text-align: center;
+}
+
+.box {
+    /* height: 100px; */
+    width: 700px;
+    background-color: teal;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.boxlets {
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.boxlets__item {
+    height: 190px;
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+ .boxlets__item:nth-child(1) {
+     background-color:fuchsia;
+     background-image: url(../images/Ellipse.png);
+ }
+
+.boxlets__item:nth-child(2) {
+     background-color:darkseagreen;
+     background-image: url(../images/Ellipse\ \(1\).png);
+     background-repeat: no-repeat;
+     background-position: center;
+     /*   */
+ }
+
+.boxlets__item:nth-child(3) {
+     background-color:chocolate;
+     background-image: url(../images/Ellipse\ \(2\).png);
+     background-repeat: repeat-x;
+     background-position: center;
+ }
+
+ .boxlets__item:nth-child(4) {
+     background-color: aqua;
+     background-image: url(../images/Ellipse\ \(3\).png);
+     background-repeat: repeat-y;
+ }
+
+
+.ordered {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
