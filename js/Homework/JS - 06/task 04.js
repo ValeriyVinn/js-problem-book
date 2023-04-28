@@ -34,17 +34,17 @@ const targetValue = document.querySelector("#value");
 
 // !  Variant 2 =============
 
-let counterValue = 0;
+// let counterValue = 0;
 
-const counter = document.querySelector("#value");
-const clickButton = document.querySelectorAll("#counter button");
+// const counter = document.querySelector("#value");
+// const clickButton = document.querySelectorAll("#counter button");
 
-clickButton[0].addEventListener("click", () => {
-  counterValue -= 1;
-  counter.textContent = counterValue;
-});
+// clickButton[0].addEventListener("click", () => {
+//   counterValue -= 1;
+//   counter.textContent = counterValue;
+// });
 
-clickButton[1].addEventListener("click", () => {
-  counterValue += 1;
-  counter.textContent = counterValue;
-});
+// clickButton[1].addEventListener("click", () => {
+//   counterValue += 1;
+//   counter.textContent = counterValue;
+// });
