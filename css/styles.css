@@ -1,0 +1,169 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: lightblue;
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.nav-link {
+  text-decoration: underline 2px royalblue dotted;
+  font-size: 24px;
+  color: royalblue;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.nav {
+  padding: 15px 0px;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline 2px darkblue;
+}
+
+.section {
+  min-width: 700px;
+  min-height: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+}
+
+.header {
+  font-size: 38px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin-bottom: 30px;
+}
+
+.header::first-letter {
+  font-size: 58px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* ============ Hoverable Dropdown =============== */
+
+.dropbtn {
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color:  cornflowerblue;
+  color: gold;
+  font-weight: 500;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-left: 10px;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 16px;
+
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: cornflowerblue;
+  font-weight: 500;
+  color: gold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: royalblue;
+}
+
+
+
+/* ========================================= */
+
+.accordion {
+  display: block;
+  background-color:rgb(209, 219, 228);
+  color: royalblue;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: text;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  user-select: text;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color:aliceblue;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+/* !----------------without animation----------- */
+/* .panel {
+  padding: 0 18px;
+  background-color:rgb(179, 201, 224);
+  display: none;
+  overflow: hidden;
+} */
+/* !----------------without animation----------- */
+
+.accordion:after {
+  content: '\02794'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* *----------------with animation----------- */
+.panel {
+  padding: 0 18px;
+  background-color:aliceblue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 10px;
+}

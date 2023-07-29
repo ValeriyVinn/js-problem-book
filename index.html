@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Study-repeat</title>
+    <title>Homeworks & Codewars</title>
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -13,185 +20,206 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="./css/stiyles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+<!-- 
+    <link rel="stylesheet" href="./prism-default.css" />
+    <link rel="stylesheet" href="./prism-solarized-light.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
+    <link rel="stylesheet" href="./prism-tomorrow-night.css" /> -->
+    <link rel="stylesheet" href="./css/prism/prism-coy.css" />
   </head>
-  <body class="open-modal">
-    <h2>Автоперевірки</h2>
-    <div><a href="./html/Autocheck 1.html">Модуль 01</a></div>
-    <div><a href="./html/Autocheck 2.html">Модуль 02</a></div>
-    <div><a href="./html/Autocheck 3.html">Модуль 03</a></div>
-    <div><a href="./html/Autocheck 4.html">Модуль 04</a></div>
-    <div><a href="./html/Autocheck 5.html">Модуль 05</a></div>
-    
 
-    <h2>Олександр Репета</h2>
-    <div>
-      <div>
-        <a href="/task 01.html">Модуль 01</a>
-      </div>
-      <div>
-        <a href="/task 02.html">Модуль 02</a>
-      </div>
-      <div>
-        <a href="/task 03.html">Модуль 03</a>
-      </div>
-      <div>
-        <a href="/task 04.html">Модуль 04</a>
-      </div>
-      <div>
-        <a href="/task 05.html">Модуль 05</a>
-      </div>
-      <div>
-        <a href="/task 06.html">Модуль 06</a>
-      </div>
-      <div>
-        <a href="/task 07.html">Модуль 07</a>
-      </div>
-      <div>
-        <a href="/task 08.html">Модуль 08</a>
-      </div>
-      <div>
-        <a href="/task 09.html">Модуль 09</a>
-      </div>
-      <div>
-        <a href="/task 10.html">Модуль 10</a>
-      </div>
-      <div>
-        <a href="/task 11.html">Модуль 11</a>
-      </div>
-    </div>
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a href="./index.html" class="nav-link">Home</a>
+      </nav>
+    </header>
 
+    <main>
+      <section class="section container">
+        <h1 class="header">Good luck!</h1>
 
-    <h2>Уроки</h2>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">
+          Given a number. Check if it is positive or not. Print this information to the console. 
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const checkIfPositive = (number) => {
+              const message = number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0';
+              console.log(message);
+            }
+          </code></pre>
 
-    <h2>Практика</h2>
+          <pre><code class="language-js">
+            const checkIfPositive = (number) => {
+              switch (Math.sign(number)) {
+                case 1:
+                  console.log('number is positive');
+                  break;
+                case -1:
+                  console.log('number is negative');
+                  break;
+                default:
+                  console.log('number = 0');
+                  break;
+              }
+            }
+            
+          </code></pre>
 
+        </div>
 
+        <!-- ============= Unit ================= -->
 
+        <button class="accordion">
+          In this simple assignment you are given a number and have to make it
+          negative. But maybe the number is already negative?
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            function makeNegative(num) {
+              return -Math.abs(num);
+            }
+        </code></pre>
+        </div>
 
-    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
-    <!-- modal-window -->
-    <!-- <div class="overlay" id="overlay"></div>
-    <div class="modal-window" id="modalWindow">
-      <h2>This is modal</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad
-        sunt recusandae esse iure. Ipsum.
-      </p>
-      <button class="close-btn" id="closeBtn">Close</button>
-    </div>
+        <!-- ============= Unit ================= -->
 
-  <button class="open-btn" id="openBtn">Open modal</button>
- -->
-    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!-- <ul>
-      <li>
-        <img
-          class="face__img"
-          src="./images/img4.jpg"
-          alt="It's face of command"
-          width="320"
-        />
-      </li>
-      <li>
-        <img
-          class="face__img"
-          src="./images/img5.jpg"
-          alt="It's face of command"
-          width="320"
-        />
-      </li>
-      <li>
-        <img
-          class="face__img"
-          src="./images/img6.jpg"
-          alt="It's face of command"
-          width="320"
-        />
-      </li>
-      <li>
-        <img
-          class="face__img"
-          src="./images/img7.jpg"
-          alt="It's face of command"
-          width="320"
-        />
-      </li>
-    </ul>
-    <input type="text" class="js-input" />
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-    <div class="actions js-actions">
-      <button type="button" class="js-target-button">Цільова кнопка</button>
-      <button type="button" class="js-add-listener">Додати слухача</button>
-      <button type="button" class="js-remove-listener">Зняти слухача</button>
-    </div>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
 
-    <div class="parrent">
-      <a href="" class="btn"> натисни </a>
-    </div>
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-    <div class="cont">sfgsfgsfg</div>
+        <!-- ============= Unit ================= -->
 
-    <div class="container">
-      <ul class="list">
-        <li class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sint.
-        </li>
-        <li class="item">
-          Iste, quaerat magnam deleniti earum nulla ea reprehenderit officia
-          asperiores?
-        </li>
-        <li class="item">
-          Quaerat natus veniam labore aliquam eligendi aut libero odit cum!
-        </li>
-        <li class="item">
-          Veritatis, nihil amet! Adipisci quibusdam nobis placeat, soluta
-          delectus labore!
-        </li>
-        <li class="item">
-          Consequuntur nisi laboriosam ut illum soluta, dolor facilis magnam
-          commodi.
-        </li>
-      </ul>
-    </div>
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Dignissimos hic aut quos ea?</p>
-      <p>Vel aperiam inventore rerum velit.</p>
-      <p>Quaerat debitis labore eaque dolores.</p>
-      <p>Quo quidem quos voluptates reprehenderit!</p>
-    </div>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
 
-    <div class="boxlets">
-      <div class="boxlets__item"></div>
-      <div class="boxlets__item"></div>
-      <div class="boxlets__item"></div>
-      <div class="boxlets__item"></div>
-    </div>
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
 
-    <ul>
-      <li>Омлет</li>
-      <ol class="ordered">
-        <li>Молоко</li>
-        <li>Яйца</li>
-      </ol>
-      <li>Блинчики</li>
-      <ol class="ordered">
-        <li>Молоко</li>
-        <li>Яйца</li>
-        <li>Мука</li>
-        <li>Сахар</li>
-        <li>Соль</li>
-        <li>Разрыхлитель</li>
-      </ol>
-      <li>Торт</li>
-      <li>Пирог</li>
-    </ul> -->
+        <!-- ============= Unit ================= -->
 
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Blue</button>
+        <div class="panel">
+          <p>
+            The colour of the clear sky or the deep sea, between green and
+            violet in the visible spectrum, and one of the primary additive
+            colours for transmitted light; the colour obtained by subtracting
+            red and green from white light using magenta and cyan filters; or
+            any colour resembling this.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Green</button>
+        <div class="panel">
+          <p>
+            Green is the color between cyan and yellow on the visible spectrum.
+            It is evoked by light which has a dominant wavelength of roughly
+            495–570 nm.
+          </p>
+        </div>
+        <!-- ============= Unit ================= -->
+      </section>
+    </main>
     <script src="./js/script.js" type="module"></script>
-
-    <!-- <script src="./js/script2.js" type="module"></script> -->
+    <script src="./js/prism/prism-coy.js" type="module"></script>
   </body>
 </html>
