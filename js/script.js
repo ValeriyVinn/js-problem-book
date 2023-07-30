@@ -58,3 +58,9 @@ const checkOrEven = (number) => {
 
 checkOrEven(541)
 
+const checkIfPositive = (number) => {
+  console.log(number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0');
+}
+
+checkIfPositive(-10)
+
