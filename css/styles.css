@@ -19,7 +19,7 @@ a {
 }
 
 .nav-link {
-  text-decoration: underline 2px royalblue dotted;
+  /* text-decoration: underline 2px royalblue dotted; */
   font-size: 24px;
   color: royalblue;
 }
@@ -34,7 +34,7 @@ a {
 
 a:hover {
   color: darkblue;
-  text-decoration: underline 2px darkblue;
+  /* text-decoration: underline 2px darkblue; */
 }
 
 .section {

@@ -13,37 +13,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// const checkIfPositive = (number) => {
-//   if(number > 0) {
-//     console.log('number is positive')
-//   } 
-//   else if (number < 0) {
-//     console.log('number is negative')
-//   }
-//   else {
-//     console.log('number = 0')
-//   }
-// }
 
-// const checkIfPositive = (number) => {
-//   const message = number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0';
-//   console.log(message);
-// }
 
-const checkIfPositive = (number) => {
-  switch (Math.sign(number)) {
-    case 1:
-      console.log('number is positive');
-      break;
-    case -1:
-      console.log('number is negative');
-      break;
-    default:
-      console.log('number = 0');
-      break;
-  }
+// !-------------  Working zone ------------------
+
+const lastCharacterOfString = (str) => {
+  console.log(str[str.length-1])
 }
 
-
-checkIfPositive(0)
-
+lastCharacterOfString("Given a string. Print the length of this string to the console.")
