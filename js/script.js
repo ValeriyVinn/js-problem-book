@@ -17,8 +17,10 @@ for (i = 0; i < acc.length; i++) {
 
 // !-------------  Working zone ------------------
 
-const lastCharacterOfString = (str) => {
-  console.log(str[str.length-1])
+const checkOrEven = (number) => {
+  console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
 }
 
-lastCharacterOfString("Given a string. Print the length of this string to the console.")
+
+checkOrEven(541)
+
