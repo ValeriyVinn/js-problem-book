@@ -51,16 +51,8 @@ window.onload = calcScrollValue;
 
 // !-------------  Working zone ------------------
 
-const checkOrEven = (number) => {
-  console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
+const checkIfFirstLetterEqual = function(firstWord, secondWord) {
+console.log (firstWord[0] === secondWord[0])
 }
-
-
-checkOrEven(541)
-
-const checkIfPositive = (number) => {
-  console.log(number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0');
-}
-
-checkIfPositive(-10)
+checkIfFirstLetterEqual('twoptmk', 'wrthwth')
 

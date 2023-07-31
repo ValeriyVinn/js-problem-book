@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- 
+    <link rel="stylesheet" href="./prism-default.css" />
+    <link rel="stylesheet" href="./prism-solarized-light.css" />
+    <link rel="stylesheet" href="./css/prism.css" />
+    <link rel="stylesheet" href="./prism-tomorrow-night.css" /> -->
+    <link rel="stylesheet" href="./css/prism/prism-coy.css" />
+  </head>
+
+  <body>
+    <header class="container header">
+      <nav class="nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./index.html" class="nav-link">Problem book by levels</a>
+</nav>
+        <h1 class="good-luck">Good luck!</h1>
+      
+    </header>
+
+    <main>
+      <section class="section container">
+        <h2 class="header-level">Level 1</h2>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">
+          Given a number. Check if it is positive or not. Print this information
+          to the console.
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const checkIfPositive = (number) => {
+              console.log(number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0');
+            }
+          </code></pre>
+
+          <pre><code class="language-js">
+            const checkIfPositive = (number) => {
+              switch (Math.sign(number)) {
+                case 1:
+                  console.log('number is positive');
+                  break;
+                case -1:
+                  console.log('number is negative');
+                  break;
+                default:
+                  console.log('number = 0');
+                  break;
+              }
+            }
+            
+          </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">
+          In this simple assignment you are given a number and have to make it
+          negative. But maybe the number is already negative?
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            function makeNegative(num) {
+              return -Math.abs(num);
+            }
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">
+          Given a string. Print the length of this string to the console.
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const lenghtOfString = (str) => {
+              console.log(str.length)
+            }
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">
+          Given a string. Print the last character of the string to the console.
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const lastCharacterOfString = (str) => {
+              console.log(str[str.length-1])
+            }
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">
+          Given a number. Check if it is even or not.
+        </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            const checkOrEven = (number) => {
+              console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
+            }
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Даны два слова. Проверьте, что первые буквы этих слов совпадают.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву. </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дано число. Выведите в консоль первую цифру этого числа. </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дано число. Выведите в консоль последнюю цифру этого числа.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дано число. Выведите в консоль сумму первой и последней цифры этого числа.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дано число. Выведите количество цифр в этом числе.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Даны два числа. Проверьте, что первые цифры этих чисел совпадают.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дана строка. Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Даны два целых числа. Проверьте, что первое число без остатка делится на второе.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Выведите в консоль все целые числа от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Выведите в консоль все целые числа от -100 до 0.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Выведите в консоль все целые числа от 100 до 1.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Выведите в консоль все четные числа из промежутка от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Выведите в консоль все числа кратные трем в промежутке от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Найдите сумму всех целых чисел от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Найдите сумму всех целых четных чисел в промежутке от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Даны два целых числа. Найдите остаток от деления первого числа на второе.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дана некоторая строка. Переберите и выведите в консоль по очереди все символы с конца строки.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дан массив с числами. Найдите сумму квадратов элементов этого массива.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дан массив с числами. Найдите сумму квадратных корней элементов этого массива.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дан массив с числами. Найдите сумму положительных элементов этого массива.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти. </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion"> Дана строка: 'abcde'. Получите массив букв этой строки.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дано некоторое число: 12345. Получите массив цифр этого числа.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дано некоторое число: 12345. Переверните его: 54321</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дано некоторое число: 12345. Найдите сумму цифр этого числа.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Заполните массив целыми числами от 1 до 10.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Заполните массив четными числами из промежутка от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дан массив с дробями: [1.456, 2.125, 3.32, 4.1, 5.34]. Округлите эти дроби до одного знака в дробной части.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion">Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion">Заполните массив случайными числами из промежутка от 1 до 100.</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion"> Дано некоторое число: 12345. Выведите в консоль все его символы с конца. </button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+        <!-- ============= Unit ================= -->
+
+        <button class="accordion"> Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]. По очереди выведите в консоль подмассивы из двух элементов нашего массива: <br>
+        1   [1, 2] <br>
+        2   [3, 4] <br>
+        3   [5, 6]</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+        <button class="accordion"> Даны два массива: <br>
+          let arr1 = [1, 2, 3]; <br>
+          let arr2 = [4, 5, 6]; <br>
+          Слейте эти массивы в новый массив:
+          [1, 2, 3, 4, 5, 6]</button>
+        <div class="panel">
+          <pre><code class="language-js">
+            There will be a function for fish composition
+        </code></pre>
+        </div>
+
+        <!-- ============= Unit ================= -->
+
+
+        <!-- ============= Scroll btn ================= -->
+
+        <!-- <button onclick="topFunction()" id="myBtn" >
+          Top
+        </button> -->
+        <!-- <button onclick="topFunction()" id="myBtn">Scroll to Top</button> -->
+
+        <div id="progress">
+          <span id="progress-value">&#x1F815;</span>
+        </div>
+
+        <!-- ============= Scroll btn ================= -->
+      </section>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/prism/prism-coy.js" type="module"></script>
+  </body>
+</html>
