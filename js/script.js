@@ -47,12 +47,21 @@ window.onload = calcScrollValue;
 
 
 
-
-
 // !-------------  Working zone ------------------
 
-const checkIfFirstLetterEqual = function(firstWord, secondWord) {
-console.log (firstWord[0] === secondWord[0])
-}
-checkIfFirstLetterEqual('twoptmk', 'wrthwth')
 
+// const lastConsonant = (word) => {
+//   if (word[word.length-1] === "a") {
+//      console.log(word[word.length-2])
+//   } else {console.log(word[word.length-1])}
+// }
+
+// lastConsonant("etryyeyao")
+
+const consonant = ['a','e','u','i','o'];
+
+const lastConsonant = (word) => {
+  console.log(word[word.length-1] === "a" ? word[word.length-2] : word[word.length-1]   )
+}
+
+lastConsonant("etryyeya")

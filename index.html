@@ -21,6 +21,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    
     <!-- 
     <link rel="stylesheet" href="./prism-default.css" />
     <link rel="stylesheet" href="./prism-solarized-light.css" />
@@ -33,7 +34,8 @@
     <header class="container header">
       <nav class="nav">
         <a href="./index.html" class="nav-link">Home</a>
-        <a href="./index.html" class="nav-link">Problem book by levels</a>
+        <a href="./Problem book by levels.html" class="nav-link">Problem book by levels</a>
+        <a href="./tabs.html" class="nav-link">Tabs</a>
       </nav>
       <h1 class="good-luck">Good luck!</h1>
     </header>
@@ -139,12 +141,13 @@
 
         <!-- ============= Unit ================= -->
         <button class="accordion"><span class="task-number">07</span>
-          Дано слово. Получите его последнюю букву. Если слово заканчивается на
-          мягкий знак, то получите предпоследнюю букву.
+          The word is given. Get his last letter. If the word ends with "a", then get the penultimate letter.
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const lastConsonant = (word) => {
+              console.log(word[word.length-1] === "a" ? word[word.length-2] : word[word.length-1]   )
+            }
         </code></pre>
         </div>
         <!-- ============= Unit ================= -->
@@ -539,6 +542,7 @@
         <!-- ============= Scroll btn ================= -->
       </section>
     </main>
+    <script src="./js/script.js" type="module"></script>
     <script src="./js/script.js" type="module"></script>
     <script src="./js/prism/prism-coy.js" type="module"></script>
   </body>
