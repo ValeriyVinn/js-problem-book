@@ -45,8 +45,6 @@ window.onload = calcScrollValue;
 
 
 
-
-
 // !-------------  Working zone ------------------
 
 
@@ -58,10 +56,39 @@ window.onload = calcScrollValue;
 
 // lastConsonant("etryyeyao")
 
+const vowels = "aeuio"
+
+const str = vowels.split("").reverse().join("");
+console.log(str)
+
 const consonant = ['a','e','u','i','o'];
 
 const lastConsonant = (word) => {
-  console.log(word[word.length-1] === "a" ? word[word.length-2] : word[word.length-1]   )
+  console.log(consonant.includes(word[word.length-1]) ? word[word.length-2] : word[word.length-1])
+  // console.log(consonant.includes(word[word.length-1]))
 }
 
-lastConsonant("etryyeya")
+
+
+lastConsonant("etryyeyet")
+
+// const firstDigit = (number) => {
+//    console.log(number[0])
+// }
+
+// firstDigit(234524)
+
+// const str = 'abcde'
+// console.log(str.split(''))
+
+// const number = 2345
+// const string = number + "s" 
+
+// console.log(string)
+// console.log(Number(string[0]) + Number(string[string.length - 2]))
+
+const sumFirstAndLastDigit = (number) => {
+  const toString = number + "s" 
+  console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
+}
+sumFirstAndLastDigit(45245261)

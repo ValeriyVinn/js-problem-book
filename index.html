@@ -174,12 +174,15 @@
 
         <!-- ============= Unit ================= -->
         <button class="accordion"><span class="task-number">10</span>
-          Дано число. Выведите в консоль сумму первой и последней цифры этого
-          числа.
+          Given a number. Print the sum of the first and last digits of this number to the console.
+
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const sumFirstAndLastDigit = (number) => {
+              const toString = number + "s" 
+              console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
+            }
         </code></pre>
         </div>
         <!-- ============= Unit ================= -->
