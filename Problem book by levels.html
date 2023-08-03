@@ -34,7 +34,9 @@
     <header class="container header">
       <nav class="nav">
         <a href="./index.html" class="nav-link">Home</a>
-        <a href="./Problem book by levels.html" class="nav-link">Problem book by levels</a>
+        <a href="./Problem book by levels.html" class="nav-link"
+          >Problem book by levels</a
+        >
         <a href="./tabs.html" class="nav-link">Tabs</a>
       </nav>
       <h1 class="good-luck">Good luck!</h1>
@@ -42,30 +44,52 @@
 
     <main>
       <section class="section container">
-        
-
         <div class="tabs">
-            <div id="tab1" onClick="JavaScript:selectTab(1);" class="tab initialColor">Level 1</div>
-               <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab">Level 2</div>
-               <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">Level 3</div>
-               <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">Level 4</div>
-               <div id="tab5" onClick="JavaScript:selectTab(5);" class="tab">Level 5</div>
-               <div id="tab6" onClick="JavaScript:selectTab(6);" class="tab">Level 6</div>
-               <div id="tab7" onClick="JavaScript:selectTab(7);" class="tab">Level 7</div>
-               <div id="tab8" onClick="JavaScript:selectTab(8);" class="tab">Level 8</div>
-               <div id="tab9" onClick="JavaScript:selectTab(9);" class="tab">Level 9</div>
-               <div id="tab10" onClick="JavaScript:selectTab(10);" class="tab">Level 10</div>
-            
-               </div>
-               
-               <br />
-               <div id="tab1Content">
-                <h2>level 1</h2>
-            
-                 <!-- ============= Unit ================= -->
-        <button class="accordion"><span class="task-number">01</span>
-            Given a number. Check if it is positive or not. Print this information
-            to the console.
+          <div
+            id="tab1"
+            onClick="JavaScript:selectTab(1);"
+            class="tab initialColor"
+          >
+            Level 1
+          </div>
+          <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab">
+            Level 2
+          </div>
+          <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">
+            Level 3
+          </div>
+          <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">
+            Level 4
+          </div>
+          <div id="tab5" onClick="JavaScript:selectTab(5);" class="tab">
+            Level 5
+          </div>
+          <div id="tab6" onClick="JavaScript:selectTab(6);" class="tab">
+            Level 6
+          </div>
+          <div id="tab7" onClick="JavaScript:selectTab(7);" class="tab">
+            Level 7
+          </div>
+          <div id="tab8" onClick="JavaScript:selectTab(8);" class="tab">
+            Level 8
+          </div>
+          <div id="tab9" onClick="JavaScript:selectTab(9);" class="tab">
+            Level 9
+          </div>
+          <div id="tab10" onClick="JavaScript:selectTab(10);" class="tab">
+            Level 10
+          </div>
+        </div>
+
+        <br />
+        <div id="tab1Content">
+          <h2 class="header-level">level 1</h2>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Given a number. Check if it is positive or not. Print this
+            information to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -73,7 +97,7 @@
                 console.log(number > 0 ? 'number is positive' : number < 0 ? 'number is negative' : 'number = 0');
               }
             </code></pre>
-  
+
             <pre><code class="language-js">
               const checkIfPositive = (number) => {
                 switch (Math.sign(number)) {
@@ -91,10 +115,11 @@
               
             </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">02</span>
+
+          <button class="accordion">
+            <span class="task-number">02</span>
             In this simple assignment you are given a number and have to make it
             negative. But maybe the number is already negative?
           </button>
@@ -105,10 +130,11 @@
               }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">03</span>
+
+          <button class="accordion">
+            <span class="task-number">03</span>
             Given a string. Print the length of this string to the console.
           </button>
           <div class="panel">
@@ -118,10 +144,12 @@
               }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">04</span>
-            Given a string. Print the last character of the string to the console.
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Given a string. Print the last character of the string to the
+            console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -131,8 +159,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">05</span>
+
+          <button class="accordion">
+            <span class="task-number">05</span>
             Given a number. Check if it is even or not.
           </button>
           <div class="panel">
@@ -142,10 +171,11 @@
               }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">06</span>
+
+          <button class="accordion">
+            <span class="task-number">06</span>
             Two words are given. Check that the first letters of these words
             match.
           </button>
@@ -156,10 +186,12 @@
               }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">07</span>
-            The word is given. Get his last letter. If the word ends with "a", then get the penultimate letter.
+          <button class="accordion">
+            <span class="task-number">07</span>
+            The word is given. Get his last letter. If the word ends with "a",
+            then get the penultimate letter.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -169,40 +201,51 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">08</span>
-            Дано число. Выведите в консоль первую цифру этого числа.
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Given a number. Print the first digit of this number to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const firstDigit = (number) => {
+                console.log(Number(String(number)[0]))
+              }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">09</span>
-            Дано число. Выведите в консоль последнюю цифру этого числа.
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Given a number. Print the last digit of this number to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const lastDigit = (number) => {
+                console.log(Number(String(number)[String(number).length-1]))
+              }
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">10</span>
-            Дано число. Выведите в консоль сумму первой и последней цифры этого
-            числа.
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Given a number. Print the sum of the first and last digits of this
+            number to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const sumFirstAndLastDigit = (number) => {
+                const toString = number + "s" 
+                console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
+              }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">11</span>
+
+          <button class="accordion">
+            <span class="task-number">11</span>
             Дано число. Выведите количество цифр в этом числе.
           </button>
           <div class="panel">
@@ -210,10 +253,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">12</span>
+
+          <button class="accordion">
+            <span class="task-number">12</span>
             Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
           </button>
           <div class="panel">
@@ -221,9 +265,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">13</span>
+          <button class="accordion">
+            <span class="task-number">13</span>
             Дана строка. Если в этой строке более одного символа, выведите в
             консоль предпоследний символ этой строки.
           </button>
@@ -233,10 +278,11 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">14</span>
-            Даны два целых числа. Проверьте, что первое число без остатка делится
-            на второе.
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Даны два целых числа. Проверьте, что первое число без остатка
+            делится на второе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -244,8 +290,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">15</span>
+
+          <button class="accordion">
+            <span class="task-number">15</span>
             Выведите в консоль все целые числа от 1 до 100.
           </button>
           <div class="panel">
@@ -254,7 +301,8 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">16</span>
+          <button class="accordion">
+            <span class="task-number">16</span>
             Выведите в консоль все целые числа от -100 до 0.
           </button>
           <div class="panel">
@@ -262,9 +310,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">17</span>
+          <button class="accordion">
+            <span class="task-number">17</span>
             Выведите в консоль все целые числа от 100 до 1.
           </button>
           <div class="panel">
@@ -273,8 +322,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">18</span>
+
+          <button class="accordion">
+            <span class="task-number">18</span>
             Выведите в консоль все четные числа из промежутка от 1 до 100.
           </button>
           <div class="panel">
@@ -282,10 +332,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">19</span>
+
+          <button class="accordion">
+            <span class="task-number">19</span>
             Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
           </button>
           <div class="panel">
@@ -293,9 +344,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">20</span>
+          <button class="accordion">
+            <span class="task-number">20</span>
             Найдите сумму всех целых чисел от 1 до 100.
           </button>
           <div class="panel">
@@ -304,8 +356,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">21</span>
+
+          <button class="accordion">
+            <span class="task-number">21</span>
             Найдите сумму всех целых четных чисел в промежутке от 1 до 100.
           </button>
           <div class="panel">
@@ -313,10 +366,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">22</span>
+
+          <button class="accordion">
+            <span class="task-number">22</span>
             Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.
           </button>
           <div class="panel">
@@ -324,9 +378,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">23</span>
+          <button class="accordion">
+            <span class="task-number">23</span>
             Даны два целых числа. Найдите остаток от деления первого числа на
             второе.
           </button>
@@ -336,10 +391,11 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">24</span>
-            Дана некоторая строка. Переберите и выведите в консоль по очереди все
-            символы с конца строки.
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Дана некоторая строка. Переберите и выведите в консоль по очереди
+            все символы с конца строки.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -347,18 +403,10 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">25</span>
-            Дан массив с числами. Найдите сумму квадратов элементов этого массива.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-          </code></pre>
-          </div>
-          <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">26</span>
-            Дан массив с числами. Найдите сумму квадратных корней элементов этого
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Дан массив с числами. Найдите сумму квадратов элементов этого
             массива.
           </button>
           <div class="panel">
@@ -366,9 +414,21 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">27</span>
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Дан массив с числами. Найдите сумму квадратных корней элементов
+            этого массива.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
             Дан массив с числами. Найдите сумму положительных элементов этого
             массива.
           </button>
@@ -378,8 +438,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">28</span>
+
+          <button class="accordion">
+            <span class="task-number">28</span>
             Дан массив с числами. Найдите сумму тех элементов этого массива,
             которые больше нуля и меньше десяти.
           </button>
@@ -388,10 +449,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">29</span>
+
+          <button class="accordion">
+            <span class="task-number">29</span>
             Дана строка: 'abcde'. Получите массив букв этой строки.
           </button>
           <div class="panel">
@@ -399,9 +461,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">30</span>
+          <button class="accordion">
+            <span class="task-number">30</span>
             Дано некоторое число: 12345. Получите массив цифр этого числа.
           </button>
           <div class="panel">
@@ -410,8 +473,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">31</span>
+
+          <button class="accordion">
+            <span class="task-number">31</span>
             Дано некоторое число: 12345. Переверните его: 54321
           </button>
           <div class="panel">
@@ -419,10 +483,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">32</span>
+
+          <button class="accordion">
+            <span class="task-number">32</span>
             Дано некоторое число: 12345. Найдите сумму цифр этого числа.
           </button>
           <div class="panel">
@@ -430,9 +495,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">33</span>
+          <button class="accordion">
+            <span class="task-number">33</span>
             Заполните массив целыми числами от 1 до 10.
           </button>
           <div class="panel">
@@ -441,8 +507,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">34</span>
+
+          <button class="accordion">
+            <span class="task-number">34</span>
             Заполните массив четными числами из промежутка от 1 до 100.
           </button>
           <div class="panel">
@@ -451,8 +518,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">35</span>
+
+          <button class="accordion">
+            <span class="task-number">35</span>
             Дан массив с дробями: [1.456, 2.125, 3.32, 4.1, 5.34]. Округлите эти
             дроби до одного знака в дробной части.
           </button>
@@ -462,7 +530,8 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">36</span>
+          <button class="accordion">
+            <span class="task-number">36</span>
             Дан массив со строками. Оставьте в этом массиве только те строки,
             которые начинаются на http://.
           </button>
@@ -471,9 +540,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">37</span>
+          <button class="accordion">
+            <span class="task-number">37</span>
             Дан массив со строками. Оставьте в этом массиве только те строки,
             которые заканчиваются на .html.
           </button>
@@ -483,8 +553,9 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">38</span>
+
+          <button class="accordion">
+            <span class="task-number">38</span>
             Дан массив с числами. Увеличьте каждое число из массива на 10
             процентов.
           </button>
@@ -493,10 +564,11 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">39</span>
+
+          <button class="accordion">
+            <span class="task-number">39</span>
             Заполните массив случайными числами из промежутка от 1 до 100.
           </button>
           <div class="panel">
@@ -504,9 +576,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">40</span>
+          <button class="accordion">
+            <span class="task-number">40</span>
             Дано некоторое число: 12345. Выведите в консоль все его символы с
             конца.
           </button>
@@ -516,11 +589,11 @@
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
-  
-          <button class="accordion"><span class="task-number">41</span>
-            Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]. По
-            очереди выведите в консоль подмассивы из двух элементов нашего
-            массива: <br />
+
+          <button class="accordion">
+            <span class="task-number">41</span> Дан некоторый массив, например,
+            вот такой: [1, 2, 3, 4, 5, 6]. По очереди выведите в консоль
+            подмассивы из двух элементов нашего массива: <br />
             1 [1, 2] <br />
             2 [3, 4] <br />
             3 [5, 6]
@@ -530,10 +603,10 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-          <button class="accordion"><span class="task-number">42</span>
-           Даны два массива: <br />
+          <button class="accordion">
+            <span class="task-number">42</span> Даны два массива: <br />
             let arr1 = [1, 2, 3]; <br />
             let arr2 = [4, 5, 6]; <br />
             Слейте эти массивы в новый массив: [1, 2, 3, 4, 5, 6]
@@ -543,241 +616,4322 @@
               There will be a function for fish composition
           </code></pre>
           </div>
-  
+
           <!-- ============= Unit ================= -->
-            
-            </div>
-            
-            
-    <!--! ------------------------------------------------------         -->
-            
-            
-            
-            
-               <div id="tab2Content">
-                <h2>level 2</h2>
-             <!-- ============= Unit ================= -->
-             <button class="accordion"><span class="task-number">02</span>
-                In this simple assignment you are given a number and have to make it
-                negative. But maybe the number is already negative?
-              </button>
-              <div class="panel">
-                <pre><code class="language-js">
-                  function makeNegative(num) {
-                    return -Math.abs(num);
-                  }
-              </code></pre>
-              </div>
-            
-                  <!-- ============= Unit ================= -->
-            
-                  
-            </div>
-            
-            
-               <div id="tab3Content">
-                <h2>level 3</h2>
-            <!-- ============= Unit ================= -->
-            <button class="accordion"><span class="task-number">03</span>
-                Given a string. Print the length of this string to the console.
-              </button>
-              <div class="panel">
-                <pre><code class="language-js">
-                  const lenghtOfString = (str) => {
-                    console.log(str.length)
-                  }
-              </code></pre>
-              </div>
-            
-                  <!-- ============= Unit ================= -->
-            
-                  </div>
-            
-            
-            
-                  <div id="tab4Content">
-                    <h2>level 4</h2>
-                
-                    <!-- ============= Unit ================= -->
-                    <button class="accordion"><span class="task-number">04</span>
-                        Given a string. Print the last character of the string to the console.
-                      </button>
-                      <div class="panel">
-                        <pre><code class="language-js">
-                          const lastCharacterOfString = (str) => {
-                            console.log(str[str.length-1])
-                          }
-                      </code></pre>
-                      </div>
-                
-                      <!-- ============= Unit ================= -->
-                
-                </div>
-                
-                
-                
-                
-                
-                
-                
-                   <div id="tab5Content">
-                    <h2>level 5</h2>
-                 <!-- ============= Unit ================= -->
-                 <button class="accordion"><span class="task-number">05</span>
-                    Given a number. Check if it is even or not.
-                  </button>
-                  <div class="panel">
-                    <pre><code class="language-js">
-                      const checkOrEven = (number) => {
-                        console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
-                      }
-                  </code></pre>
-                  </div>
-                
-                      <!-- ============= Unit ================= -->
-                
-                      
-                </div>
-                
-                
-                   <div id="tab6Content">
-                    <h2>level 6</h2>
-                <!-- ============= Unit ================= -->
-                <button class="accordion"><span class="task-number">06</span>
-                    Two words are given. Check that the first letters of these words
-                    match.
-                  </button>
-                  <div class="panel">
-                    <pre><code class="language-js">
-                      const checkIfFirstLetterEqual = function(firstWord, secondWord) {
-                        console.log (firstWord[0] === secondWord[0])
-                      }
-                  </code></pre>
-                  </div>
-                
-                      <!-- ============= Unit ================= -->
-                
-                      </div>
-            
-            
-            
-                      <div id="tab7Content">
-                        <h2>level 7</h2>
-                    
-                        <!-- ============= Unit ================= -->
-                        <button class="accordion"><span class="task-number">07</span>
-                            Дано слово. Получите его последнюю букву. Если слово заканчивается на
-                            мягкий знак, то получите предпоследнюю букву.
-                          </button>
-                          <div class="panel">
-                            <pre><code class="language-js">
-                              There will be a function for fish composition
-                          </code></pre>
-                          </div>
-                    
-                          <!-- ============= Unit ================= -->
-                    
-                    </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                       <div id="tab8Content">
-                        <h2>level 8</h2>
-                     <!-- ============= Unit ================= -->
-                     <button class="accordion"><span class="task-number">08</span>
-                        Дано число. Выведите в консоль первую цифру этого числа.
-                      </button>
-                      <div class="panel">
-                        <pre><code class="language-js">
-                          There will be a function for fish composition
-                      </code></pre>
-                      </div>
-                    
-                          <!-- ============= Unit ================= -->
-                    
-                          
-                    </div>
-                    
-                    
-                       <div id="tab9Content">
-                        <h2>level 9</h2>
-                    <!-- ============= Unit ================= -->
-                    <button class="accordion"><span class="task-number">09</span>
-                        Дано число. Выведите в консоль последнюю цифру этого числа.
-                      </button>
-                      <div class="panel">
-                        <pre><code class="language-js">
-                          There will be a function for fish composition
-                      </code></pre>
-                      </div>
-                    
-                          <!-- ============= Unit ================= -->
-                    
-                          </div>
-            
-                          <div id="tab10Content">
-                            <h2>level 10</h2>
-                        <!-- ============= Unit ================= -->
-                        <button class="accordion"><span class="task-number">10</span>
-                            Дано число. Выведите в консоль сумму первой и последней цифры этого
-                            числа.
-                          </button>
-                          <div class="panel">
-                            <pre><code class="language-js">
-                              There will be a function for fish composition
-                          </code></pre>
-                          </div>
-                        
-                              <!-- ============= Unit ================= -->
-                        
-                              </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-               <!-- Javascript Code of the tab -->
-               <script>
-                  function selectTab(tabIndex) {
-                //Hide All Tabs
-                document.getElementById("tab1Content").style.display = "none";
-                document.getElementById("tab2Content").style.display = "none";
-                document.getElementById("tab3Content").style.display = "none";
-                document.getElementById("tab4Content").style.display = "none";
-                document.getElementById("tab5Content").style.display = "none";
-                document.getElementById("tab6Content").style.display = "none";
-                document.getElementById("tab7Content").style.display = "none";
-                document.getElementById("tab8Content").style.display = "none";
-                document.getElementById("tab9Content").style.display = "none";
-                document.getElementById("tab10Content").style.display = "none";
-                //Show the Selected Tab
-                document.getElementById("tab" + tabIndex + "Content").style.display =
-                "block";
-             }
-               </script>
-            
+        </div>
 
+        <!--! ------------------------------------------------------         -->
 
+        <div id="tab2Content">
+          <h2 class="header-level">level 2</h2>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+              </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition.
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <!--! ------------------------------------------------------         -->
+        <div id="tab3Content">
+          <h2 class="header-level">level 3</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <!--! ------------------------------------------------------         -->
+        <div id="tab4Content">
+          <h2 class="header-level">level 4</h2>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+
+        <div id="tab5Content">
+          <h2 class="header-level">level 5</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <!--! ------------------------------------------------------         -->
+        <div id="tab6Content">
+          <h2 class="header-level">level 6</h2>
+          <!-- ============= Unit ================= -->
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+        <div id="tab7Content">
+          <h2 class="header-level">level 7</h2>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+        <div id="tab8Content">
+          <h2 class="header-level">level 8</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+        <div id="tab9Content">
+          <h2 class="header-level">level 9</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+        <div id="tab10Content">
+          <h2 class="header-level">level 10</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">01</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition.
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">11</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">12</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">13</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">14</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">15</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">16</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">17</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">18</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">19</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">20</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">21</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">22</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">23</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">24</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">25</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">26</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">27</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">28</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">29</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">30</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">31</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">32</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">33</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">34</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">35</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">36</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">37</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">38</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">39</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">40</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">41</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">42</span>
+            Fish.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              There will be a function for fish composition
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+        <!--! ------------------------------------------------------         -->
+<!-- ============= Scroll btn ================= -->
+
+        <!-- <button onclick="topFunction()" id="myBtn" >
+          Top
+        </button> -->
+        <!-- <button onclick="topFunction()" id="myBtn">Scroll to Top</button> -->
+
+        <div id="progress">
+          <span id="progress-value">&#x1F815;</span>
+        </div>
+
+        <!-- ============= Scroll btn ================= -->
+
+        <!-- Javascript Code of the tab -->
+        <script>
+          function selectTab(tabIndex) {
+            //Hide All Tabs
+            document.getElementById("tab1Content").style.display = "none";
+            document.getElementById("tab2Content").style.display = "none";
+            document.getElementById("tab3Content").style.display = "none";
+            document.getElementById("tab4Content").style.display = "none";
+            document.getElementById("tab5Content").style.display = "none";
+            document.getElementById("tab6Content").style.display = "none";
+            document.getElementById("tab7Content").style.display = "none";
+            document.getElementById("tab8Content").style.display = "none";
+            document.getElementById("tab9Content").style.display = "none";
+            document.getElementById("tab10Content").style.display = "none";
+            //Show the Selected Tab
+            document.getElementById(
+              "tab" + tabIndex + "Content"
+            ).style.display = "block";
+          }
+        </script>
       </section>
     </main>
-    <script src="./js/script.js" type="module"></script>
+    <!-- <script src="./js/script.js" type="module"></script> -->
     <script src="./js/script.js" type="module"></script>
     <script src="./js/prism/prism-coy.js" type="module"></script>
   </body>

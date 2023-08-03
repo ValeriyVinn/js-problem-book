@@ -93,6 +93,7 @@ lastConsonant("etryyeyet")
 // }
 // sumFirstAndLastDigit(45245261)
 
+
 const firstDigit = (number) => {
   console.log(Number(String(number)[0]))
 }
