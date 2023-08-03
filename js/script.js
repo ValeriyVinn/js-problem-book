@@ -87,8 +87,21 @@ lastConsonant("etryyeyet")
 // console.log(string)
 // console.log(Number(string[0]) + Number(string[string.length - 2]))
 
-const sumFirstAndLastDigit = (number) => {
-  const toString = number + "s" 
-  console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
+// const sumFirstAndLastDigit = (number) => {
+//   const toString = number + "s" 
+//   console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
+// }
+// sumFirstAndLastDigit(45245261)
+
+const firstDigit = (number) => {
+  console.log(Number(String(number)[0]))
 }
-sumFirstAndLastDigit(45245261)
+
+firstDigit(51234)
+
+const lastDigit = (number) => {
+  console.log(Number(String(number)[String(number).length-1]))
+}
+
+
+lastDigit(4563457)

@@ -153,22 +153,26 @@
         <!-- ============= Unit ================= -->
 
         <button class="accordion"><span class="task-number">08</span>
-          Дано число. Выведите в консоль первую цифру этого числа.
+          Given a number. Print the first digit of this number to the console.
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const firstDigit = (number) => {
+              console.log(Number(String(number)[0]))
+            }
         </code></pre>
         </div>
 
         <!-- ============= Unit ================= -->
 
         <button class="accordion"><span class="task-number">09</span>
-          Дано число. Выведите в консоль последнюю цифру этого числа.
+          Given a number. Print the last digit of this number to the console.
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const lastDigit = (number) => {
+              console.log(Number(String(number)[String(number).length-1]))
+            }
         </code></pre>
         </div>
 
