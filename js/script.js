@@ -44,7 +44,6 @@ window.onload = calcScrollValue;
 // ============= Scroll btn =================
 
 
-
 // !-------------  Working zone ------------------
 
 

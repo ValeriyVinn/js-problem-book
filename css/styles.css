@@ -42,9 +42,11 @@ a {
 }
 
 .task-number {
-  color: darkblue;
+  /* color: darkblue; */
   font-size: 20px;
   font-weight: 600;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 a:hover {
@@ -59,6 +61,18 @@ a:hover {
   padding: 20px 40px;
 }
 
+.header-home { 
+  color: darkblue;
+}
+
+.abzatz-notice {
+  padding: 15px 10px;
+  font-size: 18px;
+  color: darkblue;
+  outline: 1px solid darkblue;
+  border-radius: 3px;
+}
+
 .header-level {
   margin-bottom: 20px;
   color: royalblue;
@@ -71,11 +85,11 @@ a:hover {
   
 }
 
-.header::first-letter {
-  font-size: 58px;
+/* .good-luck::first-letter {
+  font-size: 48px;
   color: gold;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
+} */
 
 /* ============ Hoverable Dropdown =============== */
 
