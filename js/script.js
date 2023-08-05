@@ -105,3 +105,5 @@ const lastDigit = (number) => {
 
 
 lastDigit(4563457)
+
+//   ------- <br> -------
