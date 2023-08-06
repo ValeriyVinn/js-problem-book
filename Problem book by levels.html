@@ -212,6 +212,10 @@
                 console.log(Number(String(number)[0]))
               }
           </code></pre>
+          <pre><code class="language-js">
+            const firstDigit = (number) => {
+              console.log(Math.floor(number / Math.pow(10, Math.floor(Math.log10(number)))))
+        </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
@@ -260,23 +264,28 @@
 
           <button class="accordion">
             <span class="task-number">12</span>
-            Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+            Two numbers are given. Check that the first digits of these numbers are equal.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const firstDigitEquality = (blackNumber, whiteNumber) => {
+                console.log(blackNumber.toString()[0] === whiteNumber.toString()[0])
+            }
           </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">13</span>
-            Дана строка. Если в этой строке более одного символа, выведите в
-            консоль предпоследний символ этой строки.
+            Given a string. If there is more than one character in this string, print the penultimate character of this string to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const penultimateCharacter = (string) => {
+                if (string.length > 1) {
+                  console.log(string[string.length - 2])
+                }
+              }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->

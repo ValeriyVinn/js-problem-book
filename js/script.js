@@ -47,13 +47,6 @@ window.onload = calcScrollValue;
 // !-------------  Working zone ------------------
 
 
-// const lastConsonant = (word) => {
-//   if (word[word.length-1] === "a") {
-//      console.log(word[word.length-2])
-//   } else {console.log(word[word.length-1])}
-// }
-
-// lastConsonant("etryyeyao")
 
 const vowels = "aeuio"
 
@@ -70,40 +63,5 @@ const lastConsonant = (word) => {
 
 
 lastConsonant("etryyeyet")
-
-// const firstDigit = (number) => {
-//    console.log(number[0])
-// }
-
-// firstDigit(234524)
-
-// const str = 'abcde'
-// console.log(str.split(''))
-
-// const number = 2345
-// const string = number + "s" 
-
-// console.log(string)
-// console.log(Number(string[0]) + Number(string[string.length - 2]))
-
-// const sumFirstAndLastDigit = (number) => {
-//   const toString = number + "s" 
-//   console.log(Number(toString[0]) + Number(toString[toString.length - 2]))
-// }
-// sumFirstAndLastDigit(45245261)
-
-
-const firstDigit = (number) => {
-  console.log(Number(String(number)[0]))
-}
-
-firstDigit(51234)
-
-const lastDigit = (number) => {
-  console.log(Number(String(number)[String(number).length-1]))
-}
-
-
-lastDigit(4563457)
 
 //   ------- <br> -------
