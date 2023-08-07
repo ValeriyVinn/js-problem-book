@@ -292,12 +292,13 @@
 
           <button class="accordion">
             <span class="task-number">14</span>
-            Даны два целых числа. Проверьте, что первое число без остатка
-            делится на второе.
+            You are given two integers. Check that the first number is evenly divisible by the second.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const checkIfDevisorIs = (integer, devisor) => {
+                console.log(integer % devisor === 0)
+              }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->

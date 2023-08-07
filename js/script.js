@@ -65,3 +65,9 @@ const lastConsonant = (word) => {
 lastConsonant("etryyeyet")
 
 //   ------- <br> -------
+
+const checkIfDevisorIs = (integer, devisor) => {
+  console.log(integer % devisor === 0)
+}
+
+checkIfDevisorIs(6, 2)
