@@ -66,8 +66,8 @@ lastConsonant("etryyeyet")
 
 //   ------- <br> -------
 
-const checkIfDevisorIs = (integer, devisor) => {
-  console.log(integer % devisor === 0)
+const remainderOfDividing = (dividend, divisor) => {
+  console.log(dividend % divisor)
 }
 
-checkIfDevisorIs(6, 2)
+remainderOfDividing(10, 11)
