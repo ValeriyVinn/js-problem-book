@@ -66,8 +66,14 @@ lastConsonant("etryyeyet")
 
 //   ------- <br> -------
 
-const remainderOfDividing = (dividend, divisor) => {
-  console.log(dividend % divisor)
-}
 
-remainderOfDividing(10, 11)
+
+// let number = 100;
+// while(number >= 1) {
+//   console.log(number);
+//   number -= 1;
+// }
+
+// for (let number = 100; number >= 1; number -= 1) {
+//   console.log(number);
+// }
