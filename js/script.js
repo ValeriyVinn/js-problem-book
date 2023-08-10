@@ -2,7 +2,7 @@ const acc = document.getElementsByClassName("accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -43,37 +43,38 @@ window.onload = calcScrollValue;
 
 // ============= Scroll btn =================
 
-
 // !-------------  Working zone ------------------
 
-
-
-const vowels = "aeuio"
+const vowels = "aeuio";
 
 const str = vowels.split("").reverse().join("");
-console.log(str)
+console.log(str);
 
-const consonant = ['a','e','u','i','o'];
+const consonant = ["a", "e", "u", "i", "o"];
 
 const lastConsonant = (word) => {
-  console.log(consonant.includes(word[word.length-1]) ? word[word.length-2] : word[word.length-1])
+  console.log(
+    consonant.includes(word[word.length - 1])
+      ? word[word.length - 2]
+      : word[word.length - 1]
+  );
   // console.log(consonant.includes(word[word.length-1]))
-}
+};
 
-
-
-lastConsonant("etryyeyet")
+lastConsonant("etryyeyet");
 
 //   ------- <br> -------
 
-
-
-// let number = 100;
-// while(number >= 1) {
+// let number = 1;
+// while(number <= 100) {
+//   if(number % 3 === 0) {
 //   console.log(number);
-//   number -= 1;
+//   }
+//   number += 1;
 // }
 
-// for (let number = 100; number >= 1; number -= 1) {
-//   console.log(number);
+// for (let number = 1; number <= 100; number += 1) {
+//   if (number % 3 === 0) {
+//     console.log(number);
+//   }
 // }
