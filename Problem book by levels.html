@@ -416,23 +416,36 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">20</span>
-            Найдите сумму всех целых чисел от 1 до 100.
+            Find the sum of all integers from 1 to 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              let sum = 0;
+              for (let number = 1; number <= 100; number += 1) {
+                sum += number 
+              }
+              console.log(sum)
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Найдите сумму всех целых четных чисел в промежутке от 1 до 100.
+            Find the sum of all even integer numbers between 1 and 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              let sum = 0;
+              for (let number = 2; number <= 100; number += 2) {
+                sum += number;
+              }
+              console.log(sum);
           </code></pre>
+          <pre><code class="language-js">
+              let n = 100 / 2; 
+              let sum = n * (n + 1); 
+              console.log(sum);
+        </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
@@ -5913,7 +5926,7 @@
           </div>
           <!-- ============= Unit ================= -->
         </div>
-        <!--! -----------------------------------         -->
+        <!--! -----------------------         -->
         <div id="tab10Content">
           <h2 class="header-level">level 10</h2>
           <!-- ============= Unit ================= -->

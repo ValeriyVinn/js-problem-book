@@ -72,9 +72,19 @@ lastConsonant("etryyeyet");
 //   }
 //   number += 1;
 // }
-
-// for (let number = 1; number <= 100; number += 1) {
-//   if (number % 3 === 0) {
-//     console.log(number);
-//   }
+// let sum = 0;
+// for (let number = 2; number <= 100; number += 2) {
+//   sum += number;
 // }
+// console.log(sum);
+
+// let sum = 0;
+// let number = 1;
+// while(number <= 100) {
+// sum += number
+// number += 1;
+// }
+
+let n = 100 / 2; 
+let sum = n * (n + 1); 
+console.log(sum);
