@@ -426,12 +426,21 @@
               }
               console.log(sum)
           </code></pre>
+          <pre><code class="language-js">
+            const sumOfIntegers = (numberFrom, numberUp) => {
+              let sum = 0;
+              for (let number = numberFrom; number <= numberUp; number += 1) {
+                sum += number;
+              }
+              console.log(sum);
+            };
+        </code></pre>
           </div>
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Find the sum of all even integer numbers between 1 and 100.
+            Find the sum of all even integer between 1 and 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -452,12 +461,25 @@
 
           <button class="accordion">
             <span class="task-number">22</span>
-            Найдите сумму всех целых нечетных чисел в промежутке от 1 до 100.
+            Find the sum of all odd integers between 1 and 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              let sum = 0;
+              for (let number = 1; number <= 100; number +=2) {
+                sum += number
+              }
+              console.log(sum);
           </code></pre>
+          <pre><code class="language-js">
+            const sumOfOdd = (limit) => {
+              let sum = 0;
+              for (let number = 1; number <= limit; number += 2) {
+                sum += number;
+              }
+              console.log(sum);
+            };
+        </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
@@ -6658,7 +6680,7 @@
           <!-- ============= Unit ================= -->
 
         </div>
-        <!--! ------------------------------------------------------         -->
+        <!--! -----------------------------------------         -->
         <!-- ============= Scroll btn ================= -->
 
         <!-- <button onclick="topFunction()" id="myBtn" >

@@ -85,6 +85,3 @@ lastConsonant("etryyeyet");
 // number += 1;
 // }
 
-let n = 100 / 2; 
-let sum = n * (n + 1); 
-console.log(sum);
