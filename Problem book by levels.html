@@ -499,12 +499,16 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Дана некоторая строка. Переберите и выведите в консоль по очереди
-            все символы с конца строки.
+            Given a string. Iterate over and output to the console in turn all the characters from the end of the string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const charactersFromTheEnd = (string) => {
+                const reverseString = string.split('').reverse().join('');
+                for (const character of reverseString) {
+                  console.log(character)
+                }
+              }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->

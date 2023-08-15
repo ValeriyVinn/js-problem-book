@@ -85,3 +85,13 @@ lastConsonant("etryyeyet");
 // number += 1;
 // }
 
+const charactersFromTheEnd = (string) => {
+  const reverseString = string.split('').reverse().join('');
+  for (const character of reverseString) {
+    console.log(character)
+  }
+}
+charactersFromTheEnd("123456789")
+
+
+
