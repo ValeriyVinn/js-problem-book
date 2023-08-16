@@ -65,33 +65,10 @@ lastConsonant("etryyeyet");
 
 //   ------- <br> -------
 
-// let number = 1;
-// while(number <= 100) {
-//   if(number % 3 === 0) {
-//   console.log(number);
-//   }
-//   number += 1;
-// }
-// let sum = 0;
-// for (let number = 2; number <= 100; number += 2) {
-//   sum += number;
-// }
-// console.log(sum);
-
-// let sum = 0;
-// let number = 1;
-// while(number <= 100) {
-// sum += number
-// number += 1;
-// }
-
-const charactersFromTheEnd = (string) => {
-  const reverseString = string.split('').reverse().join('');
-  for (const character of reverseString) {
-    console.log(character)
-  }
-}
-charactersFromTheEnd("123456789")
-
-
-
+const sumOfTheSquares = (array) => {
+  const sum = array.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue ** 2;
+  }, 0);
+  return sum;
+};
+console.log(sumOfTheSquares([1, 2, 3, 4]));

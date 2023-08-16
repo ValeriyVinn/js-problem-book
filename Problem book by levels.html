@@ -515,12 +515,16 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            Дан массив с числами. Найдите сумму квадратов элементов этого
-            массива.
+            Given an array of numbers. Find the sum of the squares of the elements of this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const sumOfTheSquares = (array) => {
+                const sum = array.reduce((accumulator, currentValue) => {
+                  return accumulator + currentValue ** 2;
+                }, 0);
+                return sum;
+              };
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
