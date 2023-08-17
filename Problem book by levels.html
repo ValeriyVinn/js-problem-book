@@ -530,20 +530,23 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">26</span>
-            Дан массив с числами. Найдите сумму квадратных корней элементов
-            этого массива.
+            Given an array of numbers. Find the sum of the square roots of the elements in this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const sumOfTheSquareRoots = (array) => {
+                const sum = array.reduce((accumulator, currentValue) => {
+                  return accumulator + Math.sqrt(currentValue);
+                }, 0);
+                return sum;
+              };
           </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Дан массив с числами. Найдите сумму положительных элементов этого
-            массива.
+            Given an array of numbers. Find the sum of the positive elements of this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">

@@ -66,9 +66,52 @@ lastConsonant("etryyeyet");
 //   ------- <br> -------
 
 const sumOfTheSquares = (array) => {
-  const sum = array.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue ** 2;
-  }, 0);
-  return sum;
+  let positive = [].reduce((accumulator, currentValue) => {
+    if (currentValue > 0) {
+      positive.push(currentValue)
+    }
+    return accumulator + currentValue;
+  }, []);
+  return positive
+  
+  // return positive.reduce((acc, curVal) => {
+  //   acc + curVal
+  // });
 };
-console.log(sumOfTheSquares([1, 2, 3, 4]));
+console.log(sumOfTheSquares([4, -9, -25, 16]));
+
+
+
+const positive = (array) => {
+  const newArray = array.filter(value => value > 0).reduce((acc, curVal) => {
+    return acc + curVal;
+  }, 0);
+  return newArray;
+}
+
+
+console.log(positive([4, -9, -25, -16, 6]));
+
+// const sumOfThePositive = (arr) => {
+//   const sum = arr.reduce((acc + curVal) => {
+// return sum;
+//   },0 );
+// };
+
+// const sumOfThePositive = (arr) => {
+//   const sum = arr.reduce((acc, curVal) => {
+//     return acc + curVal;
+//   }, 0);
+//   return sum;
+// };
+
+// console.log(sumOfThePositive(newArray))
+
+
+const printNumber = (from, to) => {
+  for (let number = from; number <= to; number+=4) {
+      console.log(number)    
+  }
+}
+printNumber(1, 17)
+
