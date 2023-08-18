@@ -115,3 +115,11 @@ const printNumber = (from, to) => {
 }
 printNumber(1, 17)
 
+// const strng = 'qwerty';
+// const arrey = strng.split('');
+// console.log(arrey)
+
+const arrayOfLetters = (array) => {
+  console.log(array.split('')) 
+}
+arrayOfLetters('atdhdghdghdhd')
