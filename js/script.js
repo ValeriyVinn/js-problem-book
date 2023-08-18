@@ -82,15 +82,15 @@ console.log(sumOfTheSquares([4, -9, -25, 16]));
 
 
 
-const positive = (array) => {
-  const newArray = array.filter(value => value > 0).reduce((acc, curVal) => {
-    return acc + curVal;
-  }, 0);
-  return newArray;
-}
+// const positive = (array) => {
+//   const newArray = array.filter(value => value > 0).reduce((acc, curVal) => {
+//     return acc + curVal;
+//   });
+//   return newArray;
+// }
 
 
-console.log(positive([4, -9, -25, -16, 6]));
+// console.log(positive([4, -9, -25, -16, 6]));
 
 // const sumOfThePositive = (arr) => {
 //   const sum = arr.reduce((acc + curVal) => {
@@ -108,18 +108,11 @@ console.log(positive([4, -9, -25, -16, 6]));
 // console.log(sumOfThePositive(newArray))
 
 
-const printNumber = (from, to) => {
-  for (let number = from; number <= to; number+=4) {
-      console.log(number)    
-  }
+const sumOfPositive = (array) => {
+  const sum = array.reduce((accumulator, currentValue) => {
+    return currentValue > 0 && currentValue < 10 ? accumulator + currentValue : accumulator;
+  }, 0);
+  return sum;
 }
-printNumber(1, 17)
 
-// const strng = 'qwerty';
-// const arrey = strng.split('');
-// console.log(arrey)
-
-const arrayOfLetters = (array) => {
-  console.log(array.split('')) 
-}
-arrayOfLetters('atdhdghdghdhd')
+console.log(sumOfPositive([4, -9, 5, -16, 6]));

@@ -550,19 +550,36 @@
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const positive = (array) => {
+                const newArray = array.filter(value => value > 0).reduce((acc, curVal) => {
+                  return acc + curVal;
+                });
+                return newArray;
+              }
           </code></pre>
+          <pre><code class="language-js">
+            const sumOfPositive = (array) => {
+              const sum = array.reduce((acc, curVal) => {
+                return curVal > 0 ? acc + curVal : acc;
+              }, 0);
+              return sum;
+            }
+        </code></pre>
           </div>
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
             <span class="task-number">28</span>
-            Дан массив с числами. Найдите сумму тех элементов этого массива,
-            которые больше нуля и меньше десяти.
+            Given an array of numbers. Find the sum of those elements of this array that are greater than zero and less than ten.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const sumFromZeroToTen = (array) => {
+                const sum = array.reduce((accumulator, currentValue) => {
+                  return currentValue > 0 && currentValue < 10 ? accumulator + currentValue : accumulator;
+                }, 0);
+                return sum;
+              }
           </code></pre>
           </div>
 
