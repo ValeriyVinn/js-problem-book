@@ -65,54 +65,27 @@ lastConsonant("etryyeyet");
 
 //   ------- <br> -------
 
-const sumOfTheSquares = (array) => {
-  let positive = [].reduce((accumulator, currentValue) => {
-    if (currentValue > 0) {
-      positive.push(currentValue)
-    }
-    return accumulator + currentValue;
-  }, []);
-  return positive
-  
-  // return positive.reduce((acc, curVal) => {
-  //   acc + curVal
-  // });
+const arrayOfDig = (number) => {
+  const array = String(number).split("").map((value) => Number(value));
+  console.log(array);
 };
-console.log(sumOfTheSquares([4, -9, -25, 16]));
+
+arrayOfDig(1234567);
 
 
 
-// const positive = (array) => {
-//   const newArray = array.filter(value => value > 0).reduce((acc, curVal) => {
-//     return acc + curVal;
-//   });
-//   return newArray;
-// }
 
-
-// console.log(positive([4, -9, -25, -16, 6]));
-
-// const sumOfThePositive = (arr) => {
-//   const sum = arr.reduce((acc + curVal) => {
-// return sum;
-//   },0 );
+// const arrayOfDigits = (number) => {
+//   const array = [];
+//   while (number > 0) {
+//     const lastDigit = number % 10; 
+//     array.unshift(lastDigit); 
+//     number = Math.floor(number / 10);
+//   }
+//   console.log(array);
 // };
+// arrayOfDigits(9876)
 
-// const sumOfThePositive = (arr) => {
-//   const sum = arr.reduce((acc, curVal) => {
-//     return acc + curVal;
-//   }, 0);
-//   return sum;
-// };
-
-// console.log(sumOfThePositive(newArray))
-
-
-const sumOfPositive = (array) => {
-  const sum = array.reduce((accumulator, currentValue) => {
-    return currentValue > 0 && currentValue < 10 ? accumulator + currentValue : accumulator;
-  }, 0);
-  return sum;
-}
-
-console.log(sumOfPositive([4, -9, 5, -16, 6]));
+let n = 2348;
+let remainder = Math.floor(n/10)
+console.log(remainder)

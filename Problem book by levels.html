@@ -337,7 +337,7 @@
             number += 1;
             }
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             for (let number = -100; number <= 0; number += 1) {
             console.log(number);
             }
@@ -357,7 +357,7 @@
             number -= 1;
             }
             </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             for (let number = 100; number >= 1; number -= 1) {
             console.log(number);
             }
@@ -379,7 +379,7 @@
                 number += 1;
               }
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             for (let number = 1; number <= 100; number += 1) {
               if (number % 2 === 0) {
                 console.log(number);
@@ -392,7 +392,8 @@
 
           <button class="accordion">
             <span class="task-number">19</span>
-            Print to the console all numbers that are multiples of 3, from 1 to 100.
+            Print to the console all numbers that are multiples of 3, from 1 to
+            100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -404,7 +405,7 @@
                 number += 1;
               }
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             for (let number = 1; number <= 100; number += 1) {
               if (number % 3 === 0) {
                 console.log(number);
@@ -426,7 +427,7 @@
               }
               console.log(sum)
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             const sumOfIntegers = (numberFrom, numberUp) => {
               let sum = 0;
               for (let number = numberFrom; number <= numberUp; number += 1) {
@@ -450,7 +451,7 @@
               }
               console.log(sum);
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
               let n = 100 / 2; 
               let sum = n * (n + 1); 
               console.log(sum);
@@ -471,7 +472,7 @@
               }
               console.log(sum);
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             const sumOfOdd = (limit) => {
               let sum = 0;
               for (let number = 1; number <= limit; number += 2) {
@@ -499,7 +500,8 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Given a string. Iterate over and output to the console in turn all the characters from the end of the string.
+            Given a string. Iterate over and output to the console in turn all
+            the characters from the end of the string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -515,7 +517,8 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            Given an array of numbers. Find the sum of the squares of the elements of this array.
+            Given an array of numbers. Find the sum of the squares of the
+            elements of this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -530,7 +533,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">26</span>
-            Given an array of numbers. Find the sum of the square roots of the elements in this array.
+            Given an array of numbers. Find the sum of the square roots of the
+            elements in this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -546,7 +550,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Given an array of numbers. Find the sum of the positive elements of this array.
+            Given an array of numbers. Find the sum of the positive elements of
+            this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -557,7 +562,7 @@
                 return newArray;
               }
           </code></pre>
-          <pre><code class="language-js">
+            <pre><code class="language-js">
             const sumOfPositive = (array) => {
               const sum = array.reduce((acc, curVal) => {
                 return curVal > 0 ? acc + curVal : acc;
@@ -570,7 +575,8 @@
 
           <button class="accordion">
             <span class="task-number">28</span>
-            Given an array of numbers. Find the sum of those elements of this array that are greater than zero and less than ten.
+            Given an array of numbers. Find the sum of those elements of this
+            array that are greater than zero and less than ten.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -600,12 +606,26 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">30</span>
-            Дано некоторое число: 12345. Получите массив цифр этого числа.
+            Some number is given. Get an array of digits for this number.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const arrayOfDig = (number) => {
+                const array = String(number).split("").map((value) => Number(value));
+                console.log(array);
+              };
           </code></pre>
+            <pre><code class="language-js">
+            const arrayOfDigits = (number) => {
+              const array = [];
+              while (number > 0) {
+                const lastDigit = number % 10; 
+                array.unshift(lastDigit); 
+                number = Math.floor(number / 10);
+              }
+              console.log(array);
+            };
+        </code></pre>
           </div>
           <!-- ============= Unit ================= -->
 
@@ -4640,15 +4660,16 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">01</span>
-            Дан массив: <br>
-            [ <br>
-              [1, 2, 3], <br>
-              [1, 2], <br>
-              [1, 2, 3, 4, 5], <br>
-              [1], <br>
-              [1, 2, 3, 4], <br>
-            ] <br>
-            Отсортируйте элементы массива по возрастанию количества элементов в подмассиве. 
+            Дан массив: <br />
+            [ <br />
+            [1, 2, 3], <br />
+            [1, 2], <br />
+            [1, 2, 3, 4, 5], <br />
+            [1], <br />
+            [1, 2, 3, 4], <br />
+            ] <br />
+            Отсортируйте элементы массива по возрастанию количества элементов в
+            подмассиве.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4660,14 +4681,15 @@
 
           <button class="accordion">
             <span class="task-number">02</span>
-            Дан массив: <br>
-            [ <br>
-              [2, 4, 5], <br>
-              [1, 2, 3], <br>
-              [0, 1, 1], <br>
-              [5, 7, 1], <br>
-            ] <br>
-            Отсортируйте элементы массива по возрастанию суммы элементов подмассива. 
+            Дан массив: <br />
+            [ <br />
+            [2, 4, 5], <br />
+            [1, 2, 3], <br />
+            [0, 1, 1], <br />
+            [5, 7, 1], <br />
+            ] <br />
+            Отсортируйте элементы массива по возрастанию суммы элементов
+            подмассива.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4679,12 +4701,12 @@
 
           <button class="accordion">
             <span class="task-number">03</span>
-            Выведите на экран следующую пирамидку: <br>
-            x <br>
-            xx <br>
-            xxx <br>
-            xxxx <br>
-            xxxxx 
+            Выведите на экран следующую пирамидку: <br />
+            x <br />
+            xx <br />
+            xxx <br />
+            xxxx <br />
+            xxxxx
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4695,7 +4717,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
-            В текстареа вводится текст со словами. По потери фокуса сделайте таблицу, в первой колонке которой будут слова из текста, во второй колонке - количество раз, которое это слово встречается, а в третьей - процентное содержание этого слова в текста.
+            В текстареа вводится текст со словами. По потери фокуса сделайте
+            таблицу, в первой колонке которой будут слова из текста, во второй
+            колонке - количество раз, которое это слово встречается, а в третьей
+            - процентное содержание этого слова в текста.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4706,7 +4731,8 @@
 
           <button class="accordion">
             <span class="task-number">05</span>
-            Дан список ul и кнопка. По нажатию на кнопку отсортируйте пункты списка по возрастанию. 
+            Дан список ul и кнопка. По нажатию на кнопку отсортируйте пункты
+            списка по возрастанию.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4718,13 +4744,13 @@
 
           <button class="accordion">
             <span class="task-number">06</span>
-            Дан массив, подмассивы которого содержат цифры: <br>
-            [ <br>
-              [1, 2, 3], <br>
-              [4, 5, 6], <br>
-              [7, 8, 9], <br>
-            ] <br>
-           Слейте элементы этого массива в числа: <br>
+            Дан массив, подмассивы которого содержат цифры: <br />
+            [ <br />
+            [1, 2, 3], <br />
+            [4, 5, 6], <br />
+            [7, 8, 9], <br />
+            ] <br />
+            Слейте элементы этого массива в числа: <br />
             [123, 456, 789]
           </button>
           <div class="panel">
@@ -4736,12 +4762,12 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">07</span>
-            Выведите на экран следующую пирамидку: <br>
-            xx <br>
-            xxxx <br>
-            xxxxxx <br>
-            xxxxxxxx <br>
-            xxxxxxxxxx  <br>
+            Выведите на экран следующую пирамидку: <br />
+            xx <br />
+            xxxx <br />
+            xxxxxx <br />
+            xxxxxxxx <br />
+            xxxxxxxxxx <br />
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4752,7 +4778,8 @@
 
           <button class="accordion">
             <span class="task-number">08</span>
-            Пусть даны чекбоксы, отмеченные и нет. По нажатию на кнопку сделайте так, чтобы все чекбоксы сменили свое состояние. 
+            Пусть даны чекбоксы, отмеченные и нет. По нажатию на кнопку сделайте
+            так, чтобы все чекбоксы сменили свое состояние.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4764,11 +4791,12 @@
 
           <button class="accordion">
             <span class="task-number">09</span>
-            Дан следующий массив: <br>
-            let arr = [1, 2, 3, 4, 5, 6]; <br>
-            Дано также число: <br>
-            let num = 3; <br>
-             Добавьте в приведенный массив столько пустых строк, чтобы длина массива стала равна квадрату числа из переменной. 
+            Дан следующий массив: <br />
+            let arr = [1, 2, 3, 4, 5, 6]; <br />
+            Дано также число: <br />
+            let num = 3; <br />
+            Добавьте в приведенный массив столько пустых строк, чтобы длина
+            массива стала равна квадрату числа из переменной.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4779,16 +4807,16 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">10</span>
-            Выведите на экран следующую пирамидку: <br>
-            111 <br>
-            222 <br>
-            333 <br>
-            444 <br>
-            555 <br>
-            666 <br>
-            777 <br>
-            888 <br>
-            999 
+            Выведите на экран следующую пирамидку: <br />
+            111 <br />
+            222 <br />
+            333 <br />
+            444 <br />
+            555 <br />
+            666 <br />
+            777 <br />
+            888 <br />
+            999
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4799,7 +4827,8 @@
 
           <button class="accordion">
             <span class="task-number">11</span>
-            Дана кнопка и блок с текстом. Текст по высоте не влазит в блок и скрыт. По клику на кнопку распахните блок на всю высоту. 
+            Дана кнопка и блок с текстом. Текст по высоте не влазит в блок и
+            скрыт. По клику на кнопку распахните блок на всю высоту.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4811,7 +4840,9 @@
 
           <button class="accordion">
             <span class="task-number">12</span>
-            Дана строка с текстом. Получите процентное содержание каждого символа текста в виде объекта, в котором ключами будут символы, а значениями - их процентное содержание. 
+            Дана строка с текстом. Получите процентное содержание каждого
+            символа текста в виде объекта, в котором ключами будут символы, а
+            значениями - их процентное содержание.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4822,7 +4853,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">13</span>
-            Дан список ul и инпут. По мере ввода текста в инпут оставляйте видимыми только те li, текст которых начинается на текст, введенный в инпут. 
+            Дан список ul и инпут. По мере ввода текста в инпут оставляйте
+            видимыми только те li, текст которых начинается на текст, введенный
+            в инпут.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4833,16 +4866,16 @@
 
           <button class="accordion">
             <span class="task-number">14</span>
-            Выведите на экран следующую пирамидку: <br>
-            1 <br>
-            22 <br>
-            333 <br>
-            4444 <br>
-            55555 <br>
-            666666 <br>
-            7777777 <br>
-            88888888 <br>
-            999999999 
+            Выведите на экран следующую пирамидку: <br />
+            1 <br />
+            22 <br />
+            333 <br />
+            4444 <br />
+            55555 <br />
+            666666 <br />
+            7777777 <br />
+            88888888 <br />
+            999999999
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4853,48 +4886,49 @@
 
           <button class="accordion">
             <span class="task-number">15</span>
-            Дан список городов и их стран, хранящийся в следующей структуре:
-            let data = [ <br>
-              { <br>
-                country: 'country1', <br>
-                city:    'city11', <br>
-              }, <br>
-              { <br>
-                country: 'country2', <br>
-                city:    'city21', <br>
-              }, <br>
-              { <br>
-                country: 'country3', <br>
-                city:    'city31', <br>
-              }, <br>
-              { <br>
-                country: 'country1', <br>
-                city:    'city12', <br>
-              }, <br>
-              { <br>
-                country: 'country1', <br>
-                city:    'city13', <br>
-              }, <br>
-              { <br>
-                country: 'country2', <br>
-                city:    'city22', <br>
-              }, <br>
-              { <br>
-                country: 'country3', <br>
-                city:    'city31', <br>
-              }, <br>
-            ] <br>
-            Напишите код, которой переделает структуру данных вот в такую: <br>
-            { <br>
-              'country1': [ <br>
-                'city11', 'city12', 'city13', <br>
-              ], <br>
-              'country2': [ <br>
-                'city21', 'city22' <br>
-              ], <br>
-              'country3': [ <br>
-                'city31', 'city32' <br>
-              ], <br>
+            Дан список городов и их стран, хранящийся в следующей структуре: let
+            data = [ <br />
+            { <br />
+            country: 'country1', <br />
+            city: 'city11', <br />
+            }, <br />
+            { <br />
+            country: 'country2', <br />
+            city: 'city21', <br />
+            }, <br />
+            { <br />
+            country: 'country3', <br />
+            city: 'city31', <br />
+            }, <br />
+            { <br />
+            country: 'country1', <br />
+            city: 'city12', <br />
+            }, <br />
+            { <br />
+            country: 'country1', <br />
+            city: 'city13', <br />
+            }, <br />
+            { <br />
+            country: 'country2', <br />
+            city: 'city22', <br />
+            }, <br />
+            { <br />
+            country: 'country3', <br />
+            city: 'city31', <br />
+            }, <br />
+            ] <br />
+            Напишите код, которой переделает структуру данных вот в такую:
+            <br />
+            { <br />
+            'country1': [ <br />
+            'city11', 'city12', 'city13', <br />
+            ], <br />
+            'country2': [ <br />
+            'city21', 'city22' <br />
+            ], <br />
+            'country3': [ <br />
+            'city31', 'city32' <br />
+            ], <br />
             }
           </button>
           <div class="panel">
@@ -4905,7 +4939,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">16</span>
-            Дан массив со словами. Выведите слова, начинающиеся на одинаковые буквы в своем отдельном списке ul. Над каждым списком сделайте h2 с названием буквы, для которой сделан список. 
+            Дан массив со словами. Выведите слова, начинающиеся на одинаковые
+            буквы в своем отдельном списке ul. Над каждым списком сделайте h2 с
+            названием буквы, для которой сделан список.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4916,7 +4952,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">17</span>
-            Даны три селекта. В первом селекте выведите дни месяца от 1 до 31, во втором - названия месяцев года, а в третьем - года за предыдущие и следующие 10 лет. 
+            Даны три селекта. В первом селекте выведите дни месяца от 1 до 31,
+            во втором - названия месяцев года, а в третьем - года за предыдущие
+            и следующие 10 лет.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4927,7 +4965,8 @@
 
           <button class="accordion">
             <span class="task-number">18</span>
-            Модифицируйте предыдущую задачу так, чтобы по умолчанию в селектах была выбрана текущая дата.
+            Модифицируйте предыдущую задачу так, чтобы по умолчанию в селектах
+            была выбрана текущая дата.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4939,7 +4978,8 @@
 
           <button class="accordion">
             <span class="task-number">19</span>
-            Модифицируйте предыдущую задачу так, чтобы в первом селекте количество дней соответствовало выбранному месяцу и году. 
+            Модифицируйте предыдущую задачу так, чтобы в первом селекте
+            количество дней соответствовало выбранному месяцу и году.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4950,12 +4990,12 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">20</span>
-            Выведите на экран следующую пирамидку: <br>
-            1 <br>
-            333 <br>
-            55555 <br>
-            7777777 <br>
-            999999999 
+            Выведите на экран следующую пирамидку: <br />
+            1 <br />
+            333 <br />
+            55555 <br />
+            7777777 <br />
+            999999999
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4966,7 +5006,9 @@
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Дан абзац с текстом и кнопка. По клику на кнопку покрасьте каждый символ в случайный цвет так, чтобы у соседних символов были разные цвета. 
+            Дан абзац с текстом и кнопка. По клику на кнопку покрасьте каждый
+            символ в случайный цвет так, чтобы у соседних символов были разные
+            цвета.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4978,7 +5020,8 @@
 
           <button class="accordion">
             <span class="task-number">22</span>
-            Дан абзац со словами и инпут. В инпут вводится слово. По клику на кнопку найдите это в абзаце и покрасьте его в красный цвет.
+            Дан абзац со словами и инпут. В инпут вводится слово. По клику на
+            кнопку найдите это в абзаце и покрасьте его в красный цвет.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -4989,7 +5032,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">23</span>
-            Дано меню со ссылками. Покрасьте в красный цвет ту ссылку, адрес которой совпадает с URL из адресной строки браузера. 
+            Дано меню со ссылками. Покрасьте в красный цвет ту ссылку, адрес
+            которой совпадает с URL из адресной строки браузера.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5000,12 +5044,12 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Выведите на экран следующую пирамидку: <br>
-            xxxxx <br>
-            xxxx <br>
-            xxx <br>
-            xx <br>
-            x 
+            Выведите на экран следующую пирамидку: <br />
+            xxxxx <br />
+            xxxx <br />
+            xxx <br />
+            xx <br />
+            x
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5016,50 +5060,52 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            Дан список событий за определенные даты, хранящийся в следующей структуре: <br>
-            let events = [ <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name1' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-31' <br>
-                event: 'name2' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name3' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name4' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name5' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-31' <br>
-                event: 'name6' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name7' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name8' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name9' <br>
-              }, <br>
-            ] <br>
-            Напишите код, которой переделает структуру данных вот в такую: <br>
-            { <br>
-              '2019-12-29': ['name1', 'name3', 'name5', 'name7'], <br>
-              '2019-12-30': ['name4', 'name8', 'name9'], <br>
-              '2019-12-31': ['name2', 'name6'], <br>
+            Дан список событий за определенные даты, хранящийся в следующей
+            структуре: <br />
+            let events = [ <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name1' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-31' <br />
+            event: 'name2' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name3' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name4' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name5' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-31' <br />
+            event: 'name6' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name7' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name8' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name9' <br />
+            }, <br />
+            ] <br />
+            Напишите код, которой переделает структуру данных вот в такую:
+            <br />
+            { <br />
+            '2019-12-29': ['name1', 'name3', 'name5', 'name7'], <br />
+            '2019-12-30': ['name4', 'name8', 'name9'], <br />
+            '2019-12-31': ['name2', 'name6'], <br />
             }
           </button>
           <div class="panel">
@@ -5081,7 +5127,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Дан инпут, кнопка и список ul. В инпут вводится число. По клику на кнопку выведите список всех возможных вариантов разложения числа на два множителя. 
+            Дан инпут, кнопка и список ul. В инпут вводится число. По клику на
+            кнопку выведите список всех возможных вариантов разложения числа на
+            два множителя.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5092,7 +5140,9 @@
 
           <button class="accordion">
             <span class="task-number">28</span>
-            На странице через абсолютное позиционирование расположены дивы, могущие накладываться друг на друга. По клику на любой див сделайте так, чтобы он стал поверх остальных. 
+            На странице через абсолютное позиционирование расположены дивы,
+            могущие накладываться друг на друга. По клику на любой див сделайте
+            так, чтобы он стал поверх остальных.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5104,16 +5154,16 @@
 
           <button class="accordion">
             <span class="task-number">29</span>
-            Выведите на экран следующую пирамидку: <br>
-            999999999 <br>
-            88888888 <br>
-            7777777 <br>
-            666666 <br>
-            55555 <br>
-            4444 <br>
-            333 <br>
-            22 <br>
-            1 
+            Выведите на экран следующую пирамидку: <br />
+            999999999 <br />
+            88888888 <br />
+            7777777 <br />
+            666666 <br />
+            55555 <br />
+            4444 <br />
+            333 <br />
+            22 <br />
+            1
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5124,50 +5174,51 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">30</span>
-            Дан список событий за определенные даты, хранящийся в следующей структуре: <br>
-            let events = { <br>
-              '2019-12-29': ['name1', 'name3', 'name5', 'name7'], <br>
-              '2019-12-30': ['name4', 'name8', 'name9'], <br>
-              '2019-12-31': ['name2', 'name6'], <br>
-            } <br>
-            Напишите код, которой переделает структуру данных вот в такую:
-            let events = [ <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name1' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-31' <br>
-                event: 'name2' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name3' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name4' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name5' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-31' <br>
-                event: 'name6' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-29' <br>
-                event: 'name7' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name8' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12-30' <br>
-                event: 'name9' <br>
-              }, <br>
+            Дан список событий за определенные даты, хранящийся в следующей
+            структуре: <br />
+            let events = { <br />
+            '2019-12-29': ['name1', 'name3', 'name5', 'name7'], <br />
+            '2019-12-30': ['name4', 'name8', 'name9'], <br />
+            '2019-12-31': ['name2', 'name6'], <br />
+            } <br />
+            Напишите код, которой переделает структуру данных вот в такую: let
+            events = [ <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name1' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-31' <br />
+            event: 'name2' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name3' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name4' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name5' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-31' <br />
+            event: 'name6' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-29' <br />
+            event: 'name7' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name8' <br />
+            }, <br />
+            { <br />
+            date: '2019-12-30' <br />
+            event: 'name9' <br />
+            }, <br />
             ]
           </button>
           <div class="panel">
@@ -5179,7 +5230,8 @@
 
           <button class="accordion">
             <span class="task-number">31</span>
-            Даны два селекта. В первом селекте выводятся страны. Сделайте так, чтобы во втором селекте выводились города выбранной страны. 
+            Даны два селекта. В первом селекте выводятся страны. Сделайте так,
+            чтобы во втором селекте выводились города выбранной страны.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5191,7 +5243,8 @@
 
           <button class="accordion">
             <span class="task-number">32</span>
-            Даны инпут и кнопка. В инпут вводится число. По клику на кнопку, проверьте, является ли это число совершенным. 
+            Даны инпут и кнопка. В инпут вводится число. По клику на кнопку,
+            проверьте, является ли это число совершенным.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5202,64 +5255,66 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">33</span>
-            Дан список событий за определенные месяцы, хранящийся в следующей структуре: <br>
-            let events = [ <br>
-              { <br>
-                date:  '2019-12' <br>
-                event: 'name1' <br>
-              }, <br>
-              { <br>
-                date:  '2019-12' <br>
-                event: 'name2' <br>
-              }, <br>
-              { <br>
-                date:  '2019-11' <br>
-                event: 'name3' <br>
-              }, <br>
-              { <br>
-                date:  '2019-11' <br>
-                event: 'name4' <br>
-              }, <br>
-              { <br>
-                date:  '2020-10' <br>
-                event: 'name5' <br>
-              }, <br>
-              { <br>
-                date:  '2020-10' <br>
-                event: 'name6' <br>
-              }, <br>
-              { <br>
-                date:  '2020-11' <br>
-                event: 'name5' <br>
-              }, <br>
-              { <br>
-                date:  '2020-11' <br>
-                event: 'name6' <br>
-              }, <br>
-              { <br>
-                date:  '2020-12' <br>
-                event: 'name7' <br>
-              }, <br>
-              { <br>
-                date:  '2020-12' <br>
-                event: 'name8' <br>
-              }, <br>
-              { <br>
-                date:  '2020-12' <br>
-                event: 'name9' <br>
-              }, <br>
-            ] <br>
-            Напишите код, которой переделает структуру данных вот в такую: <br>
-            { <br>
-              2019: { <br>
-                11: [массив событий], <br>
-                12: [массив событий], <br>
-              } <br>
-              2020: { <br>
-                10: [массив событий], <br>
-                11: [массив событий], <br>
-                12: [массив событий], <br>
-              } <br>
+            Дан список событий за определенные месяцы, хранящийся в следующей
+            структуре: <br />
+            let events = [ <br />
+            { <br />
+            date: '2019-12' <br />
+            event: 'name1' <br />
+            }, <br />
+            { <br />
+            date: '2019-12' <br />
+            event: 'name2' <br />
+            }, <br />
+            { <br />
+            date: '2019-11' <br />
+            event: 'name3' <br />
+            }, <br />
+            { <br />
+            date: '2019-11' <br />
+            event: 'name4' <br />
+            }, <br />
+            { <br />
+            date: '2020-10' <br />
+            event: 'name5' <br />
+            }, <br />
+            { <br />
+            date: '2020-10' <br />
+            event: 'name6' <br />
+            }, <br />
+            { <br />
+            date: '2020-11' <br />
+            event: 'name5' <br />
+            }, <br />
+            { <br />
+            date: '2020-11' <br />
+            event: 'name6' <br />
+            }, <br />
+            { <br />
+            date: '2020-12' <br />
+            event: 'name7' <br />
+            }, <br />
+            { <br />
+            date: '2020-12' <br />
+            event: 'name8' <br />
+            }, <br />
+            { <br />
+            date: '2020-12' <br />
+            event: 'name9' <br />
+            }, <br />
+            ] <br />
+            Напишите код, которой переделает структуру данных вот в такую:
+            <br />
+            { <br />
+            2019: { <br />
+            11: [массив событий], <br />
+            12: [массив событий], <br />
+            } <br />
+            2020: { <br />
+            10: [массив событий], <br />
+            11: [массив событий], <br />
+            12: [массив событий], <br />
+            } <br />
             }
           </button>
           <div class="panel">
@@ -5271,7 +5326,8 @@
 
           <button class="accordion">
             <span class="task-number">34</span>
-            Дано меню со ссылками. Сделайте так, чтобы по клику на ссылку меню под ней выпадало подменю. 
+            Дано меню со ссылками. Сделайте так, чтобы по клику на ссылку меню
+            под ней выпадало подменю.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5282,7 +5338,9 @@
 
           <button class="accordion">
             <span class="task-number">35</span>
-            Дан абзац со словами и кнопка. По клику на кнопку покрасьте каждое слово в случайный цвет так, чтобы у соседних абзацев были разные цвета. 
+            Дан абзац со словами и кнопка. По клику на кнопку покрасьте каждое
+            слово в случайный цвет так, чтобы у соседних абзацев были разные
+            цвета.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5292,7 +5350,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">36</span>
-            Дан див. У этого дива есть крестик закрытия. Сделайте так, чтобы по клику на крестик, либо на любое место страницы вне дива, этот див прятался. 
+            Дан див. У этого дива есть крестик закрытия. Сделайте так, чтобы по
+            клику на крестик, либо на любое место страницы вне дива, этот див
+            прятался.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5303,7 +5363,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">37</span>
-            Дан текстареа и ul. В текстареа вводится текст. Сделайте так, чтобы по нажатию Shift + Enter каждая строка текста добавилась в список в виде отдельного тега li. 
+            Дан текстареа и ul. В текстареа вводится текст. Сделайте так, чтобы
+            по нажатию Shift + Enter каждая строка текста добавилась в список в
+            виде отдельного тега li.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5314,18 +5376,18 @@
 
           <button class="accordion">
             <span class="task-number">38</span>
-            Дан такой список дел за определенную дату: <br>
-            let affairs = { <br>
-              '2019-12-31': ['массив дел'], <br>
-              '2018-11-29': ['массив дел'], <br>
-              '2018-11-30': ['массив дел'], <br>
-              '2018-12-27': ['массив дел'], <br>
-              '2019-12-29': ['массив дел'], <br>
-              '2019-12-30': ['массив дел'], <br>
-              '2018-12-30': ['массив дел'], <br>
-              '2018-12-31': ['массив дел'], <br>
-            } <br>
-            Выведите на экран все дела за 2018 год. 
+            Дан такой список дел за определенную дату: <br />
+            let affairs = { <br />
+            '2019-12-31': ['массив дел'], <br />
+            '2018-11-29': ['массив дел'], <br />
+            '2018-11-30': ['массив дел'], <br />
+            '2018-12-27': ['массив дел'], <br />
+            '2019-12-29': ['массив дел'], <br />
+            '2019-12-30': ['массив дел'], <br />
+            '2018-12-30': ['массив дел'], <br />
+            '2018-12-31': ['массив дел'], <br />
+            } <br />
+            Выведите на экран все дела за 2018 год.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5337,7 +5399,8 @@
 
           <button class="accordion">
             <span class="task-number">39</span>
-            Даны два инпута и кнопка. В инпуты вводятся числа. По клику на кнопку, проверьте, являются ли эти числа дружественными или нет. 
+            Даны два инпута и кнопка. В инпуты вводятся числа. По клику на
+            кнопку, проверьте, являются ли эти числа дружественными или нет.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5348,11 +5411,11 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">40</span>
-            Дан некоторый массив: <br>
-            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] <br>
-            Дана переменная: <br>
-            let n = 3; <br>
-            Превратите этот массив в двухмерный, по n элементов в подмассиве. 
+            Дан некоторый массив: <br />
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] <br />
+            Дана переменная: <br />
+            let n = 3; <br />
+            Превратите этот массив в двухмерный, по n элементов в подмассиве.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5363,13 +5426,15 @@
 
           <button class="accordion">
             <span class="task-number">41</span>
-            Дан массив: <br>
-            [ <br>
-              [1, 2, 3, 4, 5], <br>
-              [1, 2, 3], <br>
-              [1, 2], <br>
-            ] <br>
-            Добавьте в каждый подмассив столько пустых строк, чтобы количество элементов в каждом подмассиве стало равно количеству элементов в самом длинном подмассиве. 
+            Дан массив: <br />
+            [ <br />
+            [1, 2, 3, 4, 5], <br />
+            [1, 2, 3], <br />
+            [1, 2], <br />
+            ] <br />
+            Добавьте в каждый подмассив столько пустых строк, чтобы количество
+            элементов в каждом подмассиве стало равно количеству элементов в
+            самом длинном подмассиве.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5378,7 +5443,6 @@
           </div>
 
           <!-- ============= Unit ================= -->
-          
         </div>
         <!--! ---------------------------------         -->
         <div id="tab9Content">
@@ -5386,7 +5450,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">01</span>
-            Дан текст со знаками препинаний. Получите массив предложений этого текста. 
+            Дан текст со знаками препинаний. Получите массив предложений этого
+            текста.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5398,7 +5463,7 @@
 
           <button class="accordion">
             <span class="task-number">02</span>
-            Всем ссылкам, ведующим на чужой сайт, добавьте target="_blank". 
+            Всем ссылкам, ведующим на чужой сайт, добавьте target="_blank".
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5410,11 +5475,12 @@
 
           <button class="accordion">
             <span class="task-number">03</span>
-            Дана некоторая строка: <br>
-            let str = 'abcde abcde' <br>
-            В переменной хранятся символы: <br>
-            let del = 'abe'; <br>
-            Удалите из строки все указанные в переменной символы. В нашем случае должно получится следующее: <br>
+            Дана некоторая строка: <br />
+            let str = 'abcde abcde' <br />
+            В переменной хранятся символы: <br />
+            let del = 'abe'; <br />
+            Удалите из строки все указанные в переменной символы. В нашем случае
+            должно получится следующее: <br />
             'cd cd'
           </button>
           <div class="panel">
@@ -5426,7 +5492,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
-            Дан список ul и кнопка. По нажатию на кнопку перемешайте пункты списка в случайном порядке. 
+            Дан список ul и кнопка. По нажатию на кнопку перемешайте пункты
+            списка в случайном порядке.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5437,7 +5504,9 @@
 
           <button class="accordion">
             <span class="task-number">05</span>
-            Два числа делятся друг на друга, в результате получается периодическая дробь. Напишите код, который определит период этой дроби. 
+            Два числа делятся друг на друга, в результате получается
+            периодическая дробь. Напишите код, который определит период этой
+            дроби.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5449,7 +5518,9 @@
 
           <button class="accordion">
             <span class="task-number">06</span>
-            Дан инпут, абзац и кнопка. В инпут вводится целое число. По нажатию на кнопку выведите в абзац разложение этого числа на простые множители. 
+            Дан инпут, абзац и кнопка. В инпут вводится целое число. По нажатию
+            на кнопку выведите в абзац разложение этого числа на простые
+            множители.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5460,7 +5531,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">07</span>
-            Даны два инпута и кнопка. По клику на кнопку выведите список список ul всех простых чисел из промежутка, заданном значениями инпутов. 
+            Даны два инпута и кнопка. По клику на кнопку выведите список список
+            ul всех простых чисел из промежутка, заданном значениями инпутов.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5471,7 +5543,8 @@
 
           <button class="accordion">
             <span class="task-number">08</span>
-            Дан массив со словами. Получите из этого массива случайное слово, начинающееся на заданную букву. 
+            Дан массив со словами. Получите из этого массива случайное слово,
+            начинающееся на заданную букву.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5483,7 +5556,8 @@
 
           <button class="accordion">
             <span class="task-number">09</span>
-            Пусть у нас есть дата 22.02.2017. В этой дате 4 двойки. Найдите все даты с 4-мя двойками в текущем столетии. 
+            Пусть у нас есть дата 22.02.2017. В этой дате 4 двойки. Найдите все
+            даты с 4-мя двойками в текущем столетии.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5494,11 +5568,11 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">10</span>
-            Дан массив с точками: <br>
-            [ <br>
-              [1, 2], [2, 4], [3, 8], [4, 16], [5, 32] <br>
-            ] <br>
-           Отрисуйте эти точки на графике. 
+            Дан массив с точками: <br />
+            [ <br />
+            [1, 2], [2, 4], [3, 8], [4, 16], [5, 32] <br />
+            ] <br />
+            Отрисуйте эти точки на графике.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5509,7 +5583,7 @@
 
           <button class="accordion">
             <span class="task-number">11</span>
-            Дана таблица. По нажатию на кнопку добавьте в эту таблицу новый ряд. 
+            Дана таблица. По нажатию на кнопку добавьте в эту таблицу новый ряд.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5521,7 +5595,8 @@
 
           <button class="accordion">
             <span class="task-number">12</span>
-            Дана таблица. По нажатию на кнопку добавьте в эту таблицу новую колонку. 
+            Дана таблица. По нажатию на кнопку добавьте в эту таблицу новую
+            колонку.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5532,7 +5607,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">13</span>
-            Дана таблица. По нажатию на кнопку добавьте в эту таблицу и новый ряд, и новую колонку. 
+            Дана таблица. По нажатию на кнопку добавьте в эту таблицу и новый
+            ряд, и новую колонку.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5543,7 +5619,8 @@
 
           <button class="accordion">
             <span class="task-number">14</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в ней появлялся инпут для редактирования этой ячейки. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в ней
+            появлялся инпут для редактирования этой ячейки.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5554,7 +5631,9 @@
 
           <button class="accordion">
             <span class="task-number">15</span>
-            Дана таблица и кнопка. По нажатию на кнопку покрасьте в красный цвет случайную ячейку таблицы. Повторное нажатие на кнопку должно закрашивать новую незакрашенную ячейку, пока ячейки не закончатся.
+            Дана таблица и кнопка. По нажатию на кнопку покрасьте в красный цвет
+            случайную ячейку таблицы. Повторное нажатие на кнопку должно
+            закрашивать новую незакрашенную ячейку, пока ячейки не закончатся.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5564,7 +5643,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">16</span>
-            Дана таблица и кнопка. Пусть каждое нажатие на кнопку красит в красный цвет следующую по порядку ячейку таблицы. 
+            Дана таблица и кнопка. Пусть каждое нажатие на кнопку красит в
+            красный цвет следующую по порядку ячейку таблицы.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5575,7 +5655,7 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">17</span>
-            Выведите на экран 6 случайных картинок игральных карт. 
+            Выведите на экран 6 случайных картинок игральных карт.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5586,7 +5666,9 @@
 
           <button class="accordion">
             <span class="task-number">18</span>
-            Дан селект и радио кнопочки, количество радио равно количеству пунктов в селекте. Сделайте так, чтобы при выборе пункта в селекте автоматически становилась отмеченной соответствующая радио кнопочка. 
+            Дан селект и радио кнопочки, количество радио равно количеству
+            пунктов в селекте. Сделайте так, чтобы при выборе пункта в селекте
+            автоматически становилась отмеченной соответствующая радио кнопочка.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5598,7 +5680,8 @@
 
           <button class="accordion">
             <span class="task-number">19</span>
-            Дана таблица. По нажатию на кнопку выделите в таблице красным цветом N случайных ячеек. 
+            Дана таблица. По нажатию на кнопку выделите в таблице красным цветом
+            N случайных ячеек.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5609,9 +5692,11 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">20</span>
-            Дан массив: <br>
-            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] <br>
-            Дан инпут и кнопка. В инпут вводится число. По нажатию на кнопку создайте таблицу, заполненную данными из этого массива, содержащую столько колонок, сколько указано в инпуте. 
+            Дан массив: <br />
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] <br />
+            Дан инпут и кнопка. В инпут вводится число. По нажатию на кнопку
+            создайте таблицу, заполненную данными из этого массива, содержащую
+            столько колонок, сколько указано в инпуте.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5622,19 +5707,21 @@
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Сделайте функцию, которая будет устанавливать правильную форму существительного после числа. Вот как должна работать эта функция: <br>
-            func(1, 'яблоко', 'яблока', 'яблок'); // выведет '1 яблоко' <br>
-            func(2, 'яблоко', 'яблока', 'яблок'); // выведет '2 яблока' <br>
-            func(3, 'яблоко', 'яблока', 'яблок'); // выведет '3 яблока' <br>
-            func(4, 'яблоко', 'яблока', 'яблок'); // выведет '4 яблока' <br>
-            func(5, 'яблоко', 'яблока', 'яблок'); // выведет '5 яблок' <br>
-            Вот пример для для двухзначных чисел: <br>
-            func(11, 'яблоко', 'яблока', 'яблок'); // выведет '11 яблок' <br>
-            func(12, 'яблоко', 'яблока', 'яблок'); // выведет '12 яблок' <br>
-            func(21, 'яблоко', 'яблока', 'яблок'); // выведет '21 яблоко' <br>
-            func(23, 'яблоко', 'яблока', 'яблок'); // выведет '23 яблока' <br>
-            Наша функция должна работать для чисел любой длины:
-            func(1223421, 'яблоко', 'яблока', 'яблок'); // выведет '1223421 яблоко'
+            Сделайте функцию, которая будет устанавливать правильную форму
+            существительного после числа. Вот как должна работать эта функция:
+            <br />
+            func(1, 'яблоко', 'яблока', 'яблок'); // выведет '1 яблоко' <br />
+            func(2, 'яблоко', 'яблока', 'яблок'); // выведет '2 яблока' <br />
+            func(3, 'яблоко', 'яблока', 'яблок'); // выведет '3 яблока' <br />
+            func(4, 'яблоко', 'яблока', 'яблок'); // выведет '4 яблока' <br />
+            func(5, 'яблоко', 'яблока', 'яблок'); // выведет '5 яблок' <br />
+            Вот пример для для двухзначных чисел: <br />
+            func(11, 'яблоко', 'яблока', 'яблок'); // выведет '11 яблок' <br />
+            func(12, 'яблоко', 'яблока', 'яблок'); // выведет '12 яблок' <br />
+            func(21, 'яблоко', 'яблока', 'яблок'); // выведет '21 яблоко' <br />
+            func(23, 'яблоко', 'яблока', 'яблок'); // выведет '23 яблока' <br />
+            Наша функция должна работать для чисел любой длины: func(1223421,
+            'яблоко', 'яблока', 'яблок'); // выведет '1223421 яблоко'
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5657,7 +5744,7 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">23</span>
-            Сгенерируйте таблицу, покрашенную в виде шахматной доски. 
+            Сгенерируйте таблицу, покрашенную в виде шахматной доски.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5668,7 +5755,8 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в нее писался ее порядковый номер в таблице. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в нее
+            писался ее порядковый номер в таблице.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5679,7 +5767,8 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в нее писался номер ее ряда и колонки в таблице. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в нее
+            писался номер ее ряда и колонки в таблице.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5689,7 +5778,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">26</span>
-            Дано пять чебоксов. Сделайте так, чтобы одновременно можно было отметить не более трех из них.
+            Дано пять чебоксов. Сделайте так, чтобы одновременно можно было
+            отметить не более трех из них.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5700,9 +5790,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Дан следующий массив: <br>
-            let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; <br>
-            Из приведенного массива динамически создайте таблицу размером в 5 колонок. 
+            Дан следующий массив: <br />
+            let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; <br />
+            Из приведенного массива динамически создайте таблицу размером в 5
+            колонок.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5713,7 +5804,8 @@
 
           <button class="accordion">
             <span class="task-number">28</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в красный цвет красился ряд с этой ячейкой. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в красный
+            цвет красился ряд с этой ячейкой.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5725,7 +5817,8 @@
 
           <button class="accordion">
             <span class="task-number">29</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в красный цвет красилась колонка с этой ячейкой. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в красный
+            цвет красилась колонка с этой ячейкой.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5736,7 +5829,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">30</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку удалялся ряд с этой ячейкой.
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку удалялся
+            ряд с этой ячейкой.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5747,7 +5841,8 @@
 
           <button class="accordion">
             <span class="task-number">31</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую удалялась колонка с этой ячейкой.
+            Дана таблица. Сделайте так, чтобы по клику на любую удалялась
+            колонка с этой ячейкой.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5759,7 +5854,8 @@
 
           <button class="accordion">
             <span class="task-number">32</span>
-            Дана таблица и кнопка. По клику на кнопку покрасьте в красный цвет ячейки, расположенные на диагонали таблицы. 
+            Дана таблица и кнопка. По клику на кнопку покрасьте в красный цвет
+            ячейки, расположенные на диагонали таблицы.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5770,7 +5866,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">33</span>
-            Дана таблица и кнопка. По клику на кнопку поменяйте местами первый и второй ряд таблицы. 
+            Дана таблица и кнопка. По клику на кнопку поменяйте местами первый и
+            второй ряд таблицы.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5781,7 +5878,8 @@
 
           <button class="accordion">
             <span class="task-number">34</span>
-            Дана таблица и кнопка. По клику на кнопку поменяйте местами первую и вторую колонки таблицы. 
+            Дана таблица и кнопка. По клику на кнопку поменяйте местами первую и
+            вторую колонки таблицы.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5792,7 +5890,8 @@
 
           <button class="accordion">
             <span class="task-number">35</span>
-            Дана таблица. По клику на заголовок любой колонки отсортируйте таблицу по значениям ячеек этой колонки. 
+            Дана таблица. По клику на заголовок любой колонки отсортируйте
+            таблицу по значениям ячеек этой колонки.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5802,7 +5901,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">36</span>
-            Дана таблица. Сделайте так, чтобы при кликах на любую яейку таблицы в нее по очереди вставлялись числа 1, 2 и 3. 
+            Дана таблица. Сделайте так, чтобы при кликах на любую яейку таблицы
+            в нее по очереди вставлялись числа 1, 2 и 3.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5813,7 +5913,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">37</span>
-            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в этой ячейке появлялся порядковый номер клика. 
+            Дана таблица. Сделайте так, чтобы по клику на любую ячейку в этой
+            ячейке появлялся порядковый номер клика.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5824,7 +5925,8 @@
 
           <button class="accordion">
             <span class="task-number">38</span>
-            Дана таблица, заполненная числами по порядку и кнопка. По нажатию на кнопку перемешайте числа в таблице. 
+            Дана таблица, заполненная числами по порядку и кнопка. По нажатию на
+            кнопку перемешайте числа в таблице.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5836,7 +5938,8 @@
 
           <button class="accordion">
             <span class="task-number">39</span>
-            Дан текстареа. В него вводится текст. По потери фокуса найдите самый часто используемый символ этого текста и выведите его в абзац.
+            Дан текстареа. В него вводится текст. По потери фокуса найдите самый
+            часто используемый символ этого текста и выведите его в абзац.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5847,7 +5950,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">40</span>
-            Даны инпуты. Поставьте первому инпуту в value число 1, через секунду второму число 2, еще через секунду третьему число 3 и так далее пока инпуты не закончатся. Когда инпуты закончатся продолжите нумерацию с первого инпута.
+            Даны инпуты. Поставьте первому инпуту в value число 1, через секунду
+            второму число 2, еще через секунду третьему число 3 и так далее пока
+            инпуты не закончатся. Когда инпуты закончатся продолжите нумерацию с
+            первого инпута.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5858,7 +5964,9 @@
 
           <button class="accordion">
             <span class="task-number">41</span>
-            Сделайте функцию, которая будет принимать число, а возвращать это число прописью. Пусть функция работает с числами до 999. Смотрите пример: <br>
+            Сделайте функцию, которая будет принимать число, а возвращать это
+            число прописью. Пусть функция работает с числами до 999. Смотрите
+            пример: <br />
             func(123); // выведет 'сто двадцать три'
           </button>
           <div class="panel">
@@ -5870,7 +5978,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">42</span>
-            Дана таблица. Юзер кликает по очереди на две ячейки, выделяя их. Сделайте так, чтобы красным цветом выделились все ячейки, расположенные по порядку между теми, на которые кликнул юзер. 
+            Дана таблица. Юзер кликает по очереди на две ячейки, выделяя их.
+            Сделайте так, чтобы красным цветом выделились все ячейки,
+            расположенные по порядку между теми, на которые кликнул юзер.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5881,7 +5991,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">43</span>
-            Напишите код, который определит максимальный уровень вложенности многомерного массива.
+            Напишите код, который определит максимальный уровень вложенности
+            многомерного массива.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5892,83 +6003,85 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">44</span>
-            Дан список каких-то данных за определенные даты, хранящийся в следующей структуре: <br>
-            let data = [ <br>
-              { <br>
-                year:  2019, <br>
-                month: 11, <br>
-                day: 20, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2019, <br>
-                month: 11, <br>
-                day: 21, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2019, <br>
-                month: 12, <br>
-                day: 25, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2019, <br>
-                month: 12, <br>
-                day: 26, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2020, <br>
-                month: 10, <br>
-                day: 29, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2020, <br>
-                month: 10, <br>
-                day: 30, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2020, <br>
-                month: 11, <br>
-                day: 19, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-              { <br>
-                year:  2020, <br>
-                month: 11, <br>
-                day: 20, <br>
-                data: ['массив с данными'] <br>
-              }, <br>
-            } <br>
-           Напишите код, которой переделает структуру данных в структуру вида: <br>
-            { <br>
-              год1: { <br>
-                месяц1: { <br>
-                  день1: [массив данных], <br>
-                  день2: [массив данных], <br>
-                  день3: [массив данных], <br>
-                } <br>
-                месяц2: { <br>
-                  день1: [массив данных], <br>
-                  день2: [массив данных], <br>
-                  день3: [массив данных], <br>
-                } <br>
-              } <br>
-              год2: { <br>
-                месяц1: { <br>
-                  день1: [массив данных], <br>
-                  день2: [массив данных], <br>
-                  день3: [массив данных], <br>
-                } <br>
-                месяц2: { <br>
-                  день1: [массив данных], <br>
-                  день2: [массив данных], <br>
-                  день3: [массив данных], <br>
-                } <br>
-              } <br>
+            Дан список каких-то данных за определенные даты, хранящийся в
+            следующей структуре: <br />
+            let data = [ <br />
+            { <br />
+            year: 2019, <br />
+            month: 11, <br />
+            day: 20, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2019, <br />
+            month: 11, <br />
+            day: 21, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2019, <br />
+            month: 12, <br />
+            day: 25, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2019, <br />
+            month: 12, <br />
+            day: 26, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2020, <br />
+            month: 10, <br />
+            day: 29, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2020, <br />
+            month: 10, <br />
+            day: 30, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2020, <br />
+            month: 11, <br />
+            day: 19, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            { <br />
+            year: 2020, <br />
+            month: 11, <br />
+            day: 20, <br />
+            data: ['массив с данными'] <br />
+            }, <br />
+            } <br />
+            Напишите код, которой переделает структуру данных в структуру вида:
+            <br />
+            { <br />
+            год1: { <br />
+            месяц1: { <br />
+            день1: [массив данных], <br />
+            день2: [массив данных], <br />
+            день3: [массив данных], <br />
+            } <br />
+            месяц2: { <br />
+            день1: [массив данных], <br />
+            день2: [массив данных], <br />
+            день3: [массив данных], <br />
+            } <br />
+            } <br />
+            год2: { <br />
+            месяц1: { <br />
+            день1: [массив данных], <br />
+            день2: [массив данных], <br />
+            день3: [массив данных], <br />
+            } <br />
+            месяц2: { <br />
+            день1: [массив данных], <br />
+            день2: [массив данных], <br />
+            день3: [массив данных], <br />
+            } <br />
+            } <br />
             }
           </button>
           <div class="panel">
@@ -5984,7 +6097,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">01</span>
-            Сделайте функцию, которая параметром будет принимать английское существительное в единственном числе и возвращать его во множественном числе. 
+            Сделайте функцию, которая параметром будет принимать английское
+            существительное в единственном числе и возвращать его во
+            множественном числе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -5996,7 +6111,8 @@
 
           <button class="accordion">
             <span class="task-number">02</span>
-            Сделайте так, чтобы при клике на любое место окна браузера в месте клика появлялся порядковый номер этого клика. 
+            Сделайте так, чтобы при клике на любое место окна браузера в месте
+            клика появлялся порядковый номер этого клика.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6008,9 +6124,9 @@
 
           <button class="accordion">
             <span class="task-number">03</span>
-            Дан текст со знаками препинаний: <br>
-            'aaa bbb, ccc. Xxx - eee bbb, kkk!' <br>
-            Получите массив слов из такого текста. 
+            Дан текст со знаками препинаний: <br />
+            'aaa bbb, ccc. Xxx - eee bbb, kkk!' <br />
+            Получите массив слов из такого текста.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6021,7 +6137,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
-            Дан инпут. По мере ввода в него числа он должен отделять тройки чисел пробелами. 
+            Дан инпут. По мере ввода в него числа он должен отделять тройки
+            чисел пробелами.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6032,7 +6149,8 @@
 
           <button class="accordion">
             <span class="task-number">05</span>
-            Даны два числа. Выведите на экран процесс умножения этих чисел в столбик, как в школе. 
+            Даны два числа. Выведите на экран процесс умножения этих чисел в
+            столбик, как в школе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6044,7 +6162,8 @@
 
           <button class="accordion">
             <span class="task-number">06</span>
-            Сделайте блок, который будет выезжать сверху экрана по нажатию на кнопку. 
+            Сделайте блок, который будет выезжать сверху экрана по нажатию на
+            кнопку.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6055,7 +6174,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">07</span>
-            Дана таблица. При клике на ячейку она активируется каким-нибудь цветом. Сделайте так, чтобы ячейки вокруг активированной не активировались. 
+            Дана таблица. При клике на ячейку она активируется каким-нибудь
+            цветом. Сделайте так, чтобы ячейки вокруг активированной не
+            активировались.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6066,7 +6187,9 @@
 
           <button class="accordion">
             <span class="task-number">08</span>
-            Дана таблица. Сделайте так, чтобы каждую секунду активировалась случайная ячейка таблицы. Одна ячейка не может быть активной два раза подряд. 
+            Дана таблица. Сделайте так, чтобы каждую секунду активировалась
+            случайная ячейка таблицы. Одна ячейка не может быть активной два
+            раза подряд.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6078,7 +6201,10 @@
 
           <button class="accordion">
             <span class="task-number">09</span>
-            Дан текстареа. Как известно, его размер можно менять, потянув за уголок. Сделайте так, чтобы можно было изменить размер этого текстареа, а затем обновить страницу - и изменения не должны пропасть. 
+            Дан текстареа. Как известно, его размер можно менять, потянув за
+            уголок. Сделайте так, чтобы можно было изменить размер этого
+            текстареа, а затем обновить страницу - и изменения не должны
+            пропасть.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6089,7 +6215,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">10</span>
-            Дан инпут и кнопка. По клику на кнопку выведите список список ul всех избыточных чисел из промежутка, заданном значениями инпутов. 
+            Дан инпут и кнопка. По клику на кнопку выведите список список ul
+            всех избыточных чисел из промежутка, заданном значениями инпутов.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6100,12 +6227,13 @@
 
           <button class="accordion">
             <span class="task-number">11</span>
-            Дана квадратная HTML таблица произвольного размера. По нажатию на кнопку заполните половину таблицу следующим образом: <br>
-            +	+	+	+	+ <br>
-            +	+	+	+	 <br>
-            +	+	+		 <br>
-            +	+			 <br>
-            + 
+            Дана квадратная HTML таблица произвольного размера. По нажатию на
+            кнопку заполните половину таблицу следующим образом: <br />
+            + + + + + <br />
+            + + + + <br />
+            + + + <br />
+            + + <br />
+            +
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6117,7 +6245,8 @@
 
           <button class="accordion">
             <span class="task-number">12</span>
-            Сделайте инпут, в который можно ввести только числа. Остальные символы не должны вводится в инпут. 
+            Сделайте инпут, в который можно ввести только числа. Остальные
+            символы не должны вводится в инпут.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6128,7 +6257,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">13</span>
-            Дан блок. По клику на блок покажите всплывающую подсказку с некоторым достаточно длинным текстом. Покажите подсказку или сверху или снизу с учетом того, чтобы она целиком поместилась на экране и не ушла под прокрутку. 
+            Дан блок. По клику на блок покажите всплывающую подсказку с
+            некоторым достаточно длинным текстом. Покажите подсказку или сверху
+            или снизу с учетом того, чтобы она целиком поместилась на экране и
+            не ушла под прокрутку.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6139,7 +6271,8 @@
 
           <button class="accordion">
             <span class="task-number">14</span>
-            Дан массив из шести цифр. Проверьте, можно ли собрать из этих цифр счастливый билет. 
+            Дан массив из шести цифр. Проверьте, можно ли собрать из этих цифр
+            счастливый билет.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6150,7 +6283,8 @@
 
           <button class="accordion">
             <span class="task-number">15</span>
-            Дана прямоугольная таблица. По нажатию на кнопку покрасьте ячейки одной диагонали в красный цвет, а второй диагонали - в зеленый. 
+            Дана прямоугольная таблица. По нажатию на кнопку покрасьте ячейки
+            одной диагонали в красный цвет, а второй диагонали - в зеленый.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6160,7 +6294,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">16</span>
-            Напишите код, который будет генерировать пароль заданного размера. Пароль обязательно должен будет содержать маленькую и большую буквы, цифру и какой-то специальный символ. 
+            Напишите код, который будет генерировать пароль заданного размера.
+            Пароль обязательно должен будет содержать маленькую и большую буквы,
+            цифру и какой-то специальный символ.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6171,7 +6307,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">17</span>
-            Дано окно браузера. Сделайте так, чтобы элементы, целиком находящиеся в левой половине окна покрасились в зеленый цвет, целиком находящиеся в правой половине окна - в синий, а находящиеся и там, и там - в красный. 
+            Дано окно браузера. Сделайте так, чтобы элементы, целиком
+            находящиеся в левой половине окна покрасились в зеленый цвет,
+            целиком находящиеся в правой половине окна - в синий, а находящиеся
+            и там, и там - в красный.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6182,7 +6321,8 @@
 
           <button class="accordion">
             <span class="task-number">18</span>
-            Даны два числа. Выведите на экран процесс деления этих чисел в столбик, как в школе. 
+            Даны два числа. Выведите на экран процесс деления этих чисел в
+            столбик, как в школе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6194,9 +6334,11 @@
 
           <button class="accordion">
             <span class="task-number">19</span>
-            Дана строка, содержащая два числа и математическую операцию между ними: <br>
-            '10 + 20' <br>
-            Напишите код, который вычислит результат записанной математической операции. 
+            Дана строка, содержащая два числа и математическую операцию между
+            ними: <br />
+            '10 + 20' <br />
+            Напишите код, который вычислит результат записанной математической
+            операции.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6207,7 +6349,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">20</span>
-            Дан текст со словами. Перемешайте все слова этого текста в случайном порядке.
+            Дан текст со словами. Перемешайте все слова этого текста в случайном
+            порядке.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6218,7 +6361,8 @@
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Выведите на страницу обратный отсчет дней, часов, минут и секунд, оставшихся до Нового Года.
+            Выведите на страницу обратный отсчет дней, часов, минут и секунд,
+            оставшихся до Нового Года.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6230,7 +6374,8 @@
 
           <button class="accordion">
             <span class="task-number">22</span>
-            Даны два числа. Выведите на экран процесс нахождения НОК, как в школе. 
+            Даны два числа. Выведите на экран процесс нахождения НОК, как в
+            школе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6241,7 +6386,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">23</span>
-            Даны два числа. Выведите на экран процесс нахождения НОД, как в школе.
+            Даны два числа. Выведите на экран процесс нахождения НОД, как в
+            школе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6252,7 +6398,8 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Дана HTML таблица, в которой в произвольных двух ячейках стоят плюсы:  <br>
+            Дана HTML таблица, в которой в произвольных двух ячейках стоят
+            плюсы: <br />
             <pre>
              +		 	
              
@@ -6260,7 +6407,8 @@
                    + 
                    
             </pre>
-             По нажатию на кнопку заполните минусами все ячейки между заданными следующим образом: <br>
+            По нажатию на кнопку заполните минусами все ячейки между заданными
+            следующим образом: <br />
             <pre>
              + - - - - 
            - - - - - - 
@@ -6277,7 +6425,8 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            На странице юзер выделяет текст. По нажатию Ctrl + Enter запишите этот текст в буфер обмена. 
+            На странице юзер выделяет текст. По нажатию Ctrl + Enter запишите
+            этот текст в буфер обмена.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6287,7 +6436,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">26</span>
-            Дан текстареа. В него вводится текст. По нажатию клавиши Tab вставьте в место моргания курсора символ табуляции. 
+            Дан текстареа. В него вводится текст. По нажатию клавиши Tab
+            вставьте в место моргания курсора символ табуляции.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6298,7 +6448,11 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Даны инпуты. В любой инпут можно ввести текст и нажать Enter. После этого текст из инпута исчезает. Сделайте так, чтобы каждый инпут запоминал введенные тексты. Над каждым инпутом разместите стрелочки, с помощью которых можно будет возвращать предыдущий введенный текст в инпут. 
+            Даны инпуты. В любой инпут можно ввести текст и нажать Enter. После
+            этого текст из инпута исчезает. Сделайте так, чтобы каждый инпут
+            запоминал введенные тексты. Над каждым инпутом разместите стрелочки,
+            с помощью которых можно будет возвращать предыдущий введенный текст
+            в инпут.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6309,7 +6463,8 @@
 
           <button class="accordion">
             <span class="task-number">28</span>
-            Дано число. Выведите на экран процесс разложения числа на простые множители, как в школе. 
+            Дано число. Выведите на экран процесс разложения числа на простые
+            множители, как в школе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6321,15 +6476,17 @@
 
           <button class="accordion">
             <span class="task-number">29</span>
-            Дан многомерный объект произвольного уровня вложенности: <br>
-            { <br>
-              a: { <br>
-                b: { <br>
-                  c: '+++' <br>
-                } <br>
-              }, <br>
-            } <br>
-           Сделайте функцию, которая будет возвращать элементы объекта, параметром получая строку с ключами объекта, разделенными точками: <br>
+            Дан многомерный объект произвольного уровня вложенности: <br />
+            { <br />
+            a: { <br />
+            b: { <br />
+            c: '+++' <br />
+            } <br />
+            }, <br />
+            } <br />
+            Сделайте функцию, которая будет возвращать элементы объекта,
+            параметром получая строку с ключами объекта, разделенными точками:
+            <br />
             func('a.b.c'); // вернет '+++'
           </button>
           <div class="panel">
@@ -6341,7 +6498,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">30</span>
-            Дана таблица. По нажатию на кнопку заполните ее следующим образом:    <br>
+            Дана таблица. По нажатию на кнопку заполните ее следующим образом:
+            <br />
             <pre>
             5	6	7	8	9
             4	5	6	7	8
@@ -6359,7 +6517,8 @@
 
           <button class="accordion">
             <span class="task-number">31</span>
-            Дан инпут. Сделайте так, чтобы при вводе в него слова 'blur' этот инпут терял фокус. 
+            Дан инпут. Сделайте так, чтобы при вводе в него слова 'blur' этот
+            инпут терял фокус.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6371,7 +6530,8 @@
 
           <button class="accordion">
             <span class="task-number">32</span>
-            Дана таблица. По очереди выведите в нее все фигурки тетриса так, чтобы начало фигуры было в центре таблицы.
+            Дана таблица. По очереди выведите в нее все фигурки тетриса так,
+            чтобы начало фигуры было в центре таблицы.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6382,7 +6542,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">33</span>
-            Модифицируйте предыдущую задачу так, чтобы рядом с таблицей были кнопки, с помощью которых фигуры можно будет вращать. 
+            Модифицируйте предыдущую задачу так, чтобы рядом с таблицей были
+            кнопки, с помощью которых фигуры можно будет вращать.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6404,7 +6565,9 @@
 
           <button class="accordion">
             <span class="task-number">35</span>
-            Дан текстареа. В нем записан текст. Юзер выделяет несколько строк текста и нажимает клавишу Tab. Сделайте так, чтобы в начало каждой выделенной строки вставилась табуляция.
+            Дан текстареа. В нем записан текст. Юзер выделяет несколько строк
+            текста и нажимает клавишу Tab. Сделайте так, чтобы в начало каждой
+            выделенной строки вставилась табуляция.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6414,14 +6577,19 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">36</span>
-            Дана строка, содержащая в себе любое количество вложенных парных круглых скобок. Напишите код, который проверит, что скобки расположены корректно. <br>
-             Так корректно: <br>
-            '()()' <br>
-             Так корректно: <br>
-            '(())' <br>
-             Так некорректно, так как количество открытых скобок не совпадает с количеством закрытых: <br>
-            '())' <br>
-             Так некорректно, так как, хотя количество открытых скобок и совпадает с количеством закрытых, но у них неправильный порядок: <br>
+            Дана строка, содержащая в себе любое количество вложенных парных
+            круглых скобок. Напишите код, который проверит, что скобки
+            расположены корректно. <br />
+            Так корректно: <br />
+            '()()' <br />
+            Так корректно: <br />
+            '(())' <br />
+            Так некорректно, так как количество открытых скобок не совпадает с
+            количеством закрытых: <br />
+            '())' <br />
+            Так некорректно, так как, хотя количество открытых скобок и
+            совпадает с количеством закрытых, но у них неправильный порядок:
+            <br />
             '))(('
           </button>
           <div class="panel">
@@ -6433,7 +6601,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">37</span>
-            Дана таблица. По клику на любую ячейку эта ячейка выделяется каким-то цветом, активируюясь. Сделайте так, чтобы в одном ряду таблицы можно было активировать не более 5-ти ячеек. 
+            Дана таблица. По клику на любую ячейку эта ячейка выделяется
+            каким-то цветом, активируюясь. Сделайте так, чтобы в одном ряду
+            таблицы можно было активировать не более 5-ти ячеек.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6444,7 +6614,9 @@
 
           <button class="accordion">
             <span class="task-number">38</span>
-            Дана таблица. По клику на любую ячейку эта ячейка выделяется каким-то цветом, активируюясь. Сделайте так, чтобы в одной колонке таблицы можно было активировать не более 5-ти ячеек. 
+            Дана таблица. По клику на любую ячейку эта ячейка выделяется
+            каким-то цветом, активируюясь. Сделайте так, чтобы в одной колонке
+            таблицы можно было активировать не более 5-ти ячеек.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6456,7 +6628,10 @@
 
           <button class="accordion">
             <span class="task-number">39</span>
-            Дана таблица. По клику на любую ячейку эта ячейка выделяется каким-то цветом, активируюясь. Сделайте так, чтобы для активированной ячейки нельзя было активировать ее соседей слева и справа. 
+            Дана таблица. По клику на любую ячейку эта ячейка выделяется
+            каким-то цветом, активируюясь. Сделайте так, чтобы для
+            активированной ячейки нельзя было активировать ее соседей слева и
+            справа.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6467,7 +6642,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">40</span>
-            Дана таблица. По клику на любую ячейку эта ячейка выделяется каким-то цветом, активируюясь. Сделайте так, чтобы в для активированной ячейки нельзя было активировать ее соседей сверху и снизу. 
+            Дана таблица. По клику на любую ячейку эта ячейка выделяется
+            каким-то цветом, активируюясь. Сделайте так, чтобы в для
+            активированной ячейки нельзя было активировать ее соседей сверху и
+            снизу.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6478,7 +6656,8 @@
 
           <button class="accordion">
             <span class="task-number">41</span>
-            Дана инпут. В него вводится длинное слово. Выведите список слов, которые можно составить из букв введенного в инпут слова. 
+            Дана инпут. В него вводится длинное слово. Выведите список слов,
+            которые можно составить из букв введенного в инпут слова.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6489,7 +6668,9 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">42</span>
-            Дан текстареа. В нем записан текст. Юзер выделяет несколько строк текста и нажимает клавишу Alt + Tab. Сделайте так, чтобы из начала каждой выделенной строки удалилась табуляция.
+            Дан текстареа. В нем записан текст. Юзер выделяет несколько строк
+            текста и нажимает клавишу Alt + Tab. Сделайте так, чтобы из начала
+            каждой выделенной строки удалилась табуляция.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6500,9 +6681,11 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">43</span>
-            Дана строка, содержащая две дроби и математическую операцию между ними: <br>
-            '2/3 + 3/4' <br>
-            Напишите код, который вычислит результат записанной математической операции.  <br>
+            Дана строка, содержащая две дроби и математическую операцию между
+            ними: <br />
+            '2/3 + 3/4' <br />
+            Напишите код, который вычислит результат записанной математической
+            операции. <br />
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6512,7 +6695,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">44</span>
-            Дан массив. Выведите в консоль все варианты перестановки элементов этого массива. 
+            Дан массив. Выведите в консоль все варианты перестановки элементов
+            этого массива.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6523,7 +6707,7 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">45</span>
-            Напишите код, который нарисует радугу на канвасе.  
+            Напишите код, который нарисует радугу на канвасе.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6534,7 +6718,9 @@
 
           <button class="accordion">
             <span class="task-number">46</span>
-            Даны два инпута и кнопка. По клику на кнопку выведите список список ul всех дружественных чисел из промежутка, заданном значениями инпутов. 
+            Даны два инпута и кнопка. По клику на кнопку выведите список список
+            ul всех дружественных чисел из промежутка, заданном значениями
+            инпутов.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6546,7 +6732,10 @@
 
           <button class="accordion">
             <span class="task-number">47</span>
-            Дана форма с инпутами, текстареа, чебоксами, радиокнопками и селектами. Юзер как-то изменяет элементы формы. Сделайте так, чтобы после перезагрузки окна браузера все элементы формы пришли в то состояние, в котором их оставил юзер. 
+            Дана форма с инпутами, текстареа, чебоксами, радиокнопками и
+            селектами. Юзер как-то изменяет элементы формы. Сделайте так, чтобы
+            после перезагрузки окна браузера все элементы формы пришли в то
+            состояние, в котором их оставил юзер.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6557,20 +6746,23 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">48</span>
-            Дана квадратная HTML таблица произвольного размера. По нажатию на кнопку транспонируйте ее, то есть завалите ее на бок. Посмотрим на примере. Пусть у нас есть вот такая таблица: <br>
+            Дана квадратная HTML таблица произвольного размера. По нажатию на
+            кнопку транспонируйте ее, то есть завалите ее на бок. Посмотрим на
+            примере. Пусть у нас есть вот такая таблица: <br />
             <pre>
               1	2	3	4
               5	6	7	8
               9	10 11 12
               13 14 15 16
-            </pre> <br>
-            После транспонирования она должна превратится в следующую: <br>
+            </pre>
+            <br />
+            После транспонирования она должна превратится в следующую: <br />
             <pre>
               1	5	9	13
               2	6	10 14
               3	7	11 15
               4	8	12 16
-            </pre> 
+            </pre>
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6581,7 +6773,9 @@
 
           <button class="accordion">
             <span class="task-number">49</span>
-            Напишите код, который нарисует стрелку на канвасе. Острие стрелки должно указывать в заданную точку, а сама стрелка должна быть наклонена под заданным углом.
+            Напишите код, который нарисует стрелку на канвасе. Острие стрелки
+            должно указывать в заданную точку, а сама стрелка должна быть
+            наклонена под заданным углом.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6592,7 +6786,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">50</span>
-            Дан див, текстом которого является некоторый CSS код. Напишите скрипт, который выполнит подсветку синтаксиса этого кода. 
+            Дан див, текстом которого является некоторый CSS код. Напишите
+            скрипт, который выполнит подсветку синтаксиса этого кода.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6603,7 +6798,10 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">51</span>
-            При заходе на страницу сайта покажите юзеру обратный отсчет, который закончится через час от момента захода юзера на сайт. Сделайте так, чтобы после обновления страницы, отсчет продолжался с того места, на котором он остановился. 
+            При заходе на страницу сайта покажите юзеру обратный отсчет, который
+            закончится через час от момента захода юзера на сайт. Сделайте так,
+            чтобы после обновления страницы, отсчет продолжался с того места, на
+            котором он остановился.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6614,7 +6812,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">52</span>
-            Напишите код, который сгенерирует таблицу, в которой случайным образом будут расставлены корабли для игры в морской бой. 
+            Напишите код, который сгенерирует таблицу, в которой случайным
+            образом будут расставлены корабли для игры в морской бой.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6625,16 +6824,20 @@
 
           <button class="accordion">
             <span class="task-number">53</span>
-            Дана HTML таблица, в которой в произвольных двух ячейках стоят плюсы: <br>
-            <pre> 
+            Дана HTML таблица, в которой в произвольных двух ячейках стоят
+            плюсы: <br />
+            <pre>
+ 
 					
                +				
 					
 					
                        +
               
-            </pre> <br>
-            По нажатию на кнопку заполните минусами все ячейки вокруг заданных следующим образом:
+            </pre>
+            <br />
+            По нажатию на кнопку заполните минусами все ячейки вокруг заданных
+            следующим образом:
             <pre>
               -	- -			
               -	+ -			
@@ -6643,7 +6846,6 @@
                      - +
                      - -
             </pre>
-             
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6655,9 +6857,10 @@
 
           <button class="accordion">
             <span class="task-number">54</span>
-            Дана строка, содержащая в себе дробь: <br>
-            '12/16' <br>
-            Напишите код, который распишет процесс сокращения дроби, как в школе: <br>
+            Дана строка, содержащая в себе дробь: <br />
+            '12/16' <br />
+            Напишите код, который распишет процесс сокращения дроби, как в
+            школе: <br />
             '12/16 = 6/8 = 3/4'
           </button>
           <div class="panel">
@@ -6669,7 +6872,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">55</span>
-            Реализуйте алгоритм Решето Эратосфена для поиска простых чисел в заданном промежутке. 
+            Реализуйте алгоритм Решето Эратосфена для поиска простых чисел в
+            заданном промежутке.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6680,7 +6884,8 @@
 
           <button class="accordion">
             <span class="task-number">56</span>
-            Напишите код, который выведет на канвасе тикающие стрелочные часы, показывающие текущее время. 
+            Напишите код, который выведет на канвасе тикающие стрелочные часы,
+            показывающие текущее время.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -6691,7 +6896,8 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">57</span>
-            Дана квадратная HTML таблица с четным количеством рядом и колонок. По нажатию на кнопку заполните центр таблицы следующим образом: 
+            Дана квадратная HTML таблица с четным количеством рядом и колонок.
+            По нажатию на кнопку заполните центр таблицы следующим образом:
             <pre>
               
               
@@ -6708,7 +6914,6 @@
           </div>
 
           <!-- ============= Unit ================= -->
-
         </div>
         <!--! -----------------------------------------         -->
         <!-- ============= Scroll btn ================= -->
