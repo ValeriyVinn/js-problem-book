@@ -65,8 +65,15 @@ lastConsonant("etryyeyet");
 
 //   ------- <br> -------
 
+// const arrayOfDig = (number) => {
+//   const array = String(number).split("").map((value) => Number(value));
+//   console.log(array);
+// };
+
+// arrayOfDig(1234567);
+
 const arrayOfDig = (number) => {
-  const array = String(number).split("").map((value) => Number(value));
+  const array = Array.from(String(number), Number);
   console.log(array);
 };
 
@@ -86,6 +93,24 @@ arrayOfDig(1234567);
 // };
 // arrayOfDigits(9876)
 
-let n = 2348;
-let remainder = Math.floor(n/10)
-console.log(remainder)
+// let n = 2348;
+// let remainder = Math.floor(n/10)
+// console.log(remainder)
+
+const reverseNumber = (number) => {
+  console.log(Number(String(number).split('').reverse().join('')))
+}
+
+// const reverseNumber = (number) => {
+//   const x = []
+//   const num = number.toString()
+//   for (const digit of num) {
+//     x.push(digit)
+//   } 
+//   console.log(x)
+// }
+
+
+reverseNumber(1234567)
+
+const strn = '123';

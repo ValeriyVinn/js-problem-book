@@ -610,8 +610,8 @@
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              const arrayOfDig = (number) => {
-                const array = String(number).split("").map((value) => Number(value));
+              const arrayOfDigits = (number) => {
+                const array = Array.from(String(number), Number);
                 console.log(array);
               };
           </code></pre>
@@ -631,11 +631,13 @@
 
           <button class="accordion">
             <span class="task-number">31</span>
-            Дано некоторое число: 12345. Переверните его: 54321
+            Given a number: 12345. Flip it over: 54321
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const flipNumber = (number) => {
+                console.log(Number(String(number).split('').reverse().join('')))
+              }
           </code></pre>
           </div>
 
