@@ -114,3 +114,13 @@ const reverseNumber = (number) => {
 reverseNumber(1234567)
 
 const strn = '123';
+
+// let arr1 = [1, 2, 3]; 
+// let arr2 = [4, 5, 6];
+
+// console.log(arr1.concat(arr2))
+
+const mergeArray = (arr1, arr2) => {
+  console.log(arr1.concat(arr2))
+}
+concatArray([1,2,3], [0,9,2,3,8])
