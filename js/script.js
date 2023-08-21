@@ -45,82 +45,11 @@ window.onload = calcScrollValue;
 
 // !-------------  Working zone ------------------
 
-const vowels = "aeuio";
-
-const str = vowels.split("").reverse().join("");
-console.log(str);
-
-const consonant = ["a", "e", "u", "i", "o"];
-
-const lastConsonant = (word) => {
-  console.log(
-    consonant.includes(word[word.length - 1])
-      ? word[word.length - 2]
-      : word[word.length - 1]
-  );
-  // console.log(consonant.includes(word[word.length-1]))
-};
-
-lastConsonant("etryyeyet");
-
-//   ------- <br> -------
-
-// const arrayOfDig = (number) => {
-//   const array = String(number).split("").map((value) => Number(value));
-//   console.log(array);
-// };
-
-// arrayOfDig(1234567);
-
-const arrayOfDig = (number) => {
+const summOfDigits = (number) => {
   const array = Array.from(String(number), Number);
-  console.log(array);
-};
-
-arrayOfDig(1234567);
-
-
-
-
-// const arrayOfDigits = (number) => {
-//   const array = [];
-//   while (number > 0) {
-//     const lastDigit = number % 10; 
-//     array.unshift(lastDigit); 
-//     number = Math.floor(number / 10);
-//   }
-//   console.log(array);
-// };
-// arrayOfDigits(9876)
-
-// let n = 2348;
-// let remainder = Math.floor(n/10)
-// console.log(remainder)
-
-const reverseNumber = (number) => {
-  console.log(Number(String(number).split('').reverse().join('')))
+  const summ = array.reduce((acc, number) => {
+    return acc + number
+  },0);
+  return summ;
 }
-
-// const reverseNumber = (number) => {
-//   const x = []
-//   const num = number.toString()
-//   for (const digit of num) {
-//     x.push(digit)
-//   } 
-//   console.log(x)
-// }
-
-
-reverseNumber(1234567)
-
-const strn = '123';
-
-// let arr1 = [1, 2, 3]; 
-// let arr2 = [4, 5, 6];
-
-// console.log(arr1.concat(arr2))
-
-const mergeArray = (arr1, arr2) => {
-  console.log(arr1.concat(arr2))
-}
-concatArray([1,2,3], [0,9,2,3,8])
+console.log(summOfDigits(12399));

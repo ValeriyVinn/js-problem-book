@@ -645,11 +645,17 @@
 
           <button class="accordion">
             <span class="task-number">32</span>
-            Дано некоторое число: 12345. Найдите сумму цифр этого числа.
+            Some number is given. Find the sum of the digits of this number.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const summOfDigits = (number) => {
+                const array = Array.from(String(number), Number);
+                const summ = array.reduce((acc, number) => {
+                  return acc + number
+                },0);
+                return summ;
+              }
           </code></pre>
           </div>
 
