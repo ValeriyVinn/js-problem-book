@@ -47,9 +47,19 @@ window.onload = calcScrollValue;
 
 const summOfDigits = (number) => {
   const array = Array.from(String(number), Number);
-  const summ = array.reduce((acc, number) => {
-    return acc + number
-  },0);
+  const summ = array.reduce((acc, num) => {
+    return acc + num;
+  }, 0);
   return summ;
-}
-console.log(summOfDigits(12399));
+};
+console.log(summOfDigits(123));
+
+const fillArrayWithIntegers = (from, to) => {
+  const array = [];
+  for (let number = from; number <= to; number += 1) {
+    array.push(number);
+  }
+  return array;
+};
+
+console.log(fillArrayWithIntegers(1, 10));

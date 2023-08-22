@@ -662,11 +662,17 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">33</span>
-            Заполните массив целыми числами от 1 до 10.
+            Fill the array with integers from 1 to 10.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const fillArrayWithIntegers = (from, to) => {
+                const array = [];
+                for (let number = from; number <= to; number+= 1) {
+                  array.push(number) 
+                }
+                return array;
+                }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
