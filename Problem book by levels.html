@@ -679,11 +679,19 @@
 
           <button class="accordion">
             <span class="task-number">34</span>
-            Заполните массив четными числами из промежутка от 1 до 100.
+            Fill the array with even numbers from 1 to 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const fillArrayWithEvens = (from, to) => {
+                const array = [];
+                for (let number = from; number <= to; number += 1) {
+                  if (!(number % 2)) {
+                    array.push(number)
+                  }
+                }
+                return array;
+              };
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->

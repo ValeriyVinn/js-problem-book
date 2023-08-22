@@ -54,10 +54,12 @@ const summOfDigits = (number) => {
 };
 console.log(summOfDigits(123));
 
-const fillArrayWithIntegers = (from, to) => {
+const fillArrayWithEvens = (from, to) => {
   const array = [];
   for (let number = from; number <= to; number += 1) {
-    array.push(number);
+    if (!(number % 2)) {
+      array.push(number)
+    }
   }
   return array;
 };
