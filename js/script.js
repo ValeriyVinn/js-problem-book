@@ -58,10 +58,16 @@ const fillArrayWithEvens = (from, to) => {
   const array = [];
   for (let number = from; number <= to; number += 1) {
     if (!(number % 2)) {
-      array.push(number)
+      array.push(number);
     }
   }
   return array;
 };
 
-console.log(fillArrayWithIntegers(1, 10));
+console.log(fillArrayWithEvens(1, 10));
+
+const toOneDecimalPlace = (array) => {
+  return array.map((number) => Number(number.toFixed(1)));
+};
+
+console.log(toOneDecimalPlace([1.456, 2.125, 3.32, 4.1, 5.34]))
