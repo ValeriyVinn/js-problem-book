@@ -230,6 +230,11 @@
                 console.log(Number(String(number)[String(number).length-1]))
               }
           </code></pre>
+          <pre><code class="language-js">
+            const lastDigit = (number) => {
+              return number % 10
+            }
+        </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
@@ -734,8 +739,7 @@
 
           <button class="accordion">
             <span class="task-number">38</span>
-            Дан массив с числами. Увеличьте каждое число из массива на 10
-            процентов.
+            Given an array of numbers. Increase each number in the array by 10 percent.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -758,12 +762,16 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">40</span>
-            Дано некоторое число: 12345. Выведите в консоль все его символы с
-            конца.
+            Some number is given: 12345. Print to the console all its characters from the end.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const charactersFromTheEnd = (number) => {
+                const numberToString = Array.from(String(number)).reverse();
+                for (const letter of numberToString) {
+                console.log(Number(letter))
+              }
+              }
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->

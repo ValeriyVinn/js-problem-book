@@ -71,3 +71,44 @@ const toOneDecimalPlace = (array) => {
 };
 
 console.log(toOneDecimalPlace([1.456, 2.125, 3.32, 4.1, 5.34]))
+
+const x = 12345;
+const z = String(x)
+console.log(z)
+
+// console.log( y.unshift(String(x)) )
+
+// const charactersFromTheEnd = (number) => {
+  let number = 12345 
+  while (number > 0) {
+   
+  let lastDigit = number % 10 
+  console.log(lastDigit)
+  number = Number((number / 10).toFixed())
+  // console.log(number)
+  
+  }
+ 
+// }
+
+let q = 123
+q = Number((q / 10).toFixed())
+console.log(q)
+
+
+// for (let number = 0; number > 0; number -= 1) {
+//   const element = array[index];
+  
+// }
+ 
+// const r = [1,2,4,5,6]
+// const p = r.reverse().join('')
+// console.log(p)
+
+// charactersFromTheEnd(123456)
+
+// const tenPercentIncrease = (array) => {
+
+// }
+
+
