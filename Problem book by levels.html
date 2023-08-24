@@ -232,7 +232,7 @@
           </code></pre>
           <pre><code class="language-js">
             const lastDigit = (number) => {
-              return number % 10
+              console.log(number % 10)
             }
         </code></pre>
           </div>
@@ -773,6 +773,15 @@
               }
               }
           </code></pre>
+          <pre><code class="language-js">
+            const charactersFromTheEnd = (number) => {
+              while (number > 0) {
+              let lastDigit = number % 10 
+              console.log(lastDigit)
+              number = Math.floor(number / 10)
+              }
+            }
+        </code></pre>
           </div>
           <!-- ============= Unit ================= -->
 

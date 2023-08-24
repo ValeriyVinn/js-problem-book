@@ -78,22 +78,15 @@ console.log(z)
 
 // console.log( y.unshift(String(x)) )
 
-// const charactersFromTheEnd = (number) => {
-  let number = 12345 
+const charactersFromTheEnd = (number) => {
   while (number > 0) {
-   
   let lastDigit = number % 10 
   console.log(lastDigit)
-  number = Number((number / 10).toFixed())
-  // console.log(number)
-  
+  number = Math.floor(number / 10)
   }
- 
-// }
+}
 
-let q = 123
-q = Number((q / 10).toFixed())
-console.log(q)
+charactersFromTheEnd(987654321)
 
 
 // for (let number = 0; number > 0; number -= 1) {
@@ -105,7 +98,7 @@ console.log(q)
 // const p = r.reverse().join('')
 // console.log(p)
 
-// charactersFromTheEnd(123456)
+// 
 
 // const tenPercentIncrease = (array) => {
 
