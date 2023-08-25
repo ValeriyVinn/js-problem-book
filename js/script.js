@@ -45,63 +45,8 @@ window.onload = calcScrollValue;
 
 // !-------------  Working zone ------------------
 
-const summOfDigits = (number) => {
-  const array = Array.from(String(number), Number);
-  const summ = array.reduce((acc, num) => {
-    return acc + num;
-  }, 0);
-  return summ;
-};
-console.log(summOfDigits(123));
-
-const fillArrayWithEvens = (from, to) => {
-  const array = [];
-  for (let number = from; number <= to; number += 1) {
-    if (!(number % 2)) {
-      array.push(number);
-    }
-  }
-  return array;
-};
-
-console.log(fillArrayWithEvens(1, 10));
-
-const toOneDecimalPlace = (array) => {
-  return array.map((number) => Number(number.toFixed(1)));
-};
-
-console.log(toOneDecimalPlace([1.456, 2.125, 3.32, 4.1, 5.34]))
-
-const x = 12345;
-const z = String(x)
-console.log(z)
-
-// console.log( y.unshift(String(x)) )
-
-const charactersFromTheEnd = (number) => {
-  while (number > 0) {
-  let lastDigit = number % 10 
-  console.log(lastDigit)
-  number = Math.floor(number / 10)
-  }
+const increaseByTenPercent = (array) => {
+  return array.map(number => number +  0.1 * number)
 }
 
-charactersFromTheEnd(987654321)
-
-
-// for (let number = 0; number > 0; number -= 1) {
-//   const element = array[index];
-  
-// }
- 
-// const r = [1,2,4,5,6]
-// const p = r.reverse().join('')
-// console.log(p)
-
-// 
-
-// const tenPercentIncrease = (array) => {
-
-// }
-
-
+console.log(increaseByTenPercent([1,2,3,4,5]))
