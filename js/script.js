@@ -46,7 +46,33 @@ window.onload = calcScrollValue;
 // !-------------  Working zone ------------------
 
 const increaseByTenPercent = (array) => {
-  return array.map(number => number +  0.1 * number)
+  return array.map((number) => number + 0.1 * number);
+};
+
+console.log(increaseByTenPercent([1, 2, 3, 4, 5.5]));
+
+const d = "6767320444590";
+const f = d.indexOf(0);
+console.log(f);
+
+function findLargestNumber() {
+  const arr = [...arguments];
+  let max = arr[0];
+  console.log(max);
+  console.log(arguments);
 }
 
-console.log(increaseByTenPercent([1,2,3,4,5]))
+console.log(findLargestNumber(2, 45, 35, 21, 1, 95));
+console.log(findLargestNumber(12, 5, 365, 61, 11, 35));
+
+const startWith = (array, start) => {
+  const result = [];
+  for (const str of array) {
+    if (str.startsWith(start)) {
+      result.push(str);
+    }
+  }
+  return result;
+};
+
+console.log(startWith(["http://sfgsfgfsg.html", "fhjfhj", "eyhty"], 'http://'));

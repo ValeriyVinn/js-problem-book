@@ -715,24 +715,38 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">36</span>
-            Дан массив со строками. Оставьте в этом массиве только те строки,
-            которые начинаются на http://.
+            Given an array with strings. Leave in this array only those lines that begin with http:// (start).
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const startWith = (array, start) => {
+                const result = [];
+                for (const str of array) {
+                  if (str.startsWith(start)) {
+                    result.push(str);
+                  }
+                }
+                return result;
+              };
           </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">37</span>
-            Дан массив со строками. Оставьте в этом массиве только те строки,
-            которые заканчиваются на .html.
+            Given an array with strings. Leave only those strings in this array that end in .html (ending).
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              const endIn = (array, ending) => {
+                const result = [];
+                for (const str of array) {
+                  if (str.endsWith(ending)) {
+                    result.push(str);
+                  }
+                }
+                return result;
+              };
           </code></pre>
           </div>
           <!-- ============= Unit ================= -->
