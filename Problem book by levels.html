@@ -841,11 +841,13 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">01</span>
-            Дана некоторая строка. Найдите позицию первого нуля в строке.
+            Given a string. Find the position of the first zero in the string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              const firstZeroPosition = (string) => {
+                return string.indexOf(0) + 1;
+              }
               </code></pre>
           </div>
 

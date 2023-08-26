@@ -51,9 +51,19 @@ const increaseByTenPercent = (array) => {
 
 console.log(increaseByTenPercent([1, 2, 3, 4, 5.5]));
 
-const d = "6767320444590";
-const f = d.indexOf(0);
+
+const firstZeroPosition = (string) => {
+  return string.indexOf(0) + 1;
+}
+console.log(firstZeroPosition('dk0kn'))
+
+const d = "607vv67n3244459";
+const f = d.indexOf(0) + 1;
 console.log(f);
+
+
+
+
 
 function findLargestNumber() {
   const arr = [...arguments];
