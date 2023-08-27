@@ -767,11 +767,17 @@
 
           <button class="accordion">
             <span class="task-number">39</span>
-            Заполните массив случайными числами из промежутка от 1 до 100.
+            Fill the array with a certain number of random numbers from 1 to 100.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              There will be a function for fish composition
+              function getRandomNumbers(min, max, n) {
+                const array = []
+                for (let num = 0; num < n; num+=1) {
+                  array.push (Math.round(Math.random() * (max - min) + min))
+                }
+                return array
+              }
           </code></pre>
           </div>
 

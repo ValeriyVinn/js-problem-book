@@ -64,7 +64,6 @@ console.log(f);
 
 
 
-
 function findLargestNumber() {
   const arr = [...arguments];
   let max = arr[0];
@@ -75,14 +74,12 @@ function findLargestNumber() {
 console.log(findLargestNumber(2, 45, 35, 21, 1, 95));
 console.log(findLargestNumber(12, 5, 365, 61, 11, 35));
 
-const startWith = (array, start) => {
-  const result = [];
-  for (const str of array) {
-    if (str.startsWith(start)) {
-      result.push(str);
-    }
+function getRandomNumbers(min, max, n) {
+  const array = []
+  for (let num = 0; num < n; num+=1) {
+    array.push (Math.round(Math.random() * (max - min) + min))
   }
-  return result;
-};
+  return array
+}
 
-console.log(startWith(["http://sfgsfgfsg.html", "fhjfhj", "eyhty"], 'http://'));
+console.log(getRandomNumbers(1, 100, 10))
