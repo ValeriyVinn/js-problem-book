@@ -874,12 +874,29 @@
 
           <button class="accordion">
             <span class="task-number">03</span>
-            Дан массив. Удалите из него элементы с заданным значением.
+            Given an array. Remove elements with the given value from it.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              function removeElements(array, element) {
+                return array.filter((el) => el !== element);
+              }
+              // creating a new array
             </code></pre>
+            <pre><code class="language-js">
+              function removeElements(array, element) {
+                let index = array.length - 1;
+              
+                while (index >= 0) {
+                  if (array[index] === element) {
+                    array.splice(index, 1);
+                  }
+                  index -= 1;
+                }
+                return array;
+              }
+              // mutating the array
+          </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
