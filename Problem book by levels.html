@@ -914,12 +914,13 @@
 
           <button class="accordion">
             <span class="task-number">05</span>
-            Дан массив с числами. Подсчитайте количество отрицательных чисел в
-            этом массиве.
+            Given an array of numbers. Count the number of negative numbers in this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              function sumOfNegatives(array) {
+                return array.reduce((acc, el) => el < 0 ? acc + el : acc, 0);
+              }
             </code></pre>
           </div>
 

@@ -151,3 +151,17 @@ function removeElement(array, element) {
 console.log(
   removeElement([34, 34, "abc", 34, "xyz", false, "welcome", 34], 34)
 );
+
+
+function sumOfNegatives(array) {
+  const summ = array.reduce((acc, el) => {
+    if(el < 0) {
+      return acc + el 
+    } else {
+      return acc
+    }
+  }, 0)
+  return summ
+}
+console.log(sumOfNegatives([3, -8, 8, 0, -5, 4, 33, 34]))
+
