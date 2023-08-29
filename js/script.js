@@ -154,14 +154,20 @@ console.log(
 
 
 function sumOfNegatives(array) {
-  const summ = array.reduce((acc, el) => {
-    if(el < 0) {
-      return acc + el 
-    } else {
-      return acc
-    }
-  }, 0)
-  return summ
+  return array.reduce((acc, el) => el < 0 ? acc + el : acc, 0);
 }
 console.log(sumOfNegatives([3, -8, 8, 0, -5, 4, 33, 34]))
 
+
+function removeNegative(array) {
+  let index = array.length - 1;
+  while (index >= 0) {
+    if (array[index] < 0) {
+      array.splice(index, 1);
+    }
+    index -= 1;
+  }
+  return array;
+}
+
+console.log(removeNegative([1,-2,3,-4,5,-6,7,-8]))
