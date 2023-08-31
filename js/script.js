@@ -173,8 +173,8 @@ console.log(removeNegative([1, -2, 3, -4, 5, -6, 7, -8]));
 
 function deletePenultimate(string) {
   const arrayToCut = string.split("");
-  arrayToCut.splice([string.length - 2], 1)
+  arrayToCut.splice([arrayToCut.length - 2], 1)
   const newString = arrayToCut.join("");
   return newString;
 };
-console.log(deletePenultimate("123456789"));
+console.log(deletePenultimate("1234567890"));

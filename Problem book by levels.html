@@ -954,7 +954,7 @@
             <pre><code class="language-js">
               function deletePenultimate(string) {
                 const arrayToCut = string.split("");
-                arrayToCut.splice([string.length - 2], 1)
+                arrayToCut.splice([arrayToCut.length - 2], 1)
                 const newString = arrayToCut.join("");
                 return newString;
               };
