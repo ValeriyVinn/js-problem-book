@@ -152,12 +152,10 @@ console.log(
   removeElement([34, 34, "abc", 34, "xyz", false, "welcome", 34], 34)
 );
 
-
 function sumOfNegatives(array) {
-  return array.reduce((acc, el) => el < 0 ? acc + el : acc, 0);
+  return array.reduce((acc, el) => (el < 0 ? acc + el : acc), 0);
 }
-console.log(sumOfNegatives([3, -8, 8, 0, -5, 4, 33, 34]))
-
+console.log(sumOfNegatives([3, -8, 8, 0, -5, 4, 33, 34]));
 
 function removeNegative(array) {
   let index = array.length - 1;
@@ -170,4 +168,13 @@ function removeNegative(array) {
   return array;
 }
 
-console.log(removeNegative([1,-2,3,-4,5,-6,7,-8]))
+
+console.log(removeNegative([1, -2, 3, -4, 5, -6, 7, -8]));
+
+function deletePenultimate(string) {
+  const arrayToCut = string.split("");
+  arrayToCut.splice([string.length - 2], 1)
+  const newString = arrayToCut.join("");
+  return newString;
+};
+console.log(deletePenultimate("123456789"));

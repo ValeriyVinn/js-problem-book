@@ -948,11 +948,16 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">07</span>
-            Дана строка. Удалите предпоследний символ из этой строки.
+            Given a line. Remove the penultimate character from this string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              function deletePenultimate(string) {
+                const arrayToCut = string.split("");
+                arrayToCut.splice([string.length - 2], 1)
+                const newString = arrayToCut.join("");
+                return newString;
+              };
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->
