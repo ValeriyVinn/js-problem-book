@@ -178,3 +178,9 @@ function deletePenultimate(string) {
   return newString;
 };
 console.log(deletePenultimate("1234567890"));
+
+function lastLetterFirstLetter(firstWord, secondWord) {
+  return firstWord[firstWord.length-1] === secondWord[0]
+}
+console.log(lastLetterFirstLetter('12323g', 'ghghdb'))
+

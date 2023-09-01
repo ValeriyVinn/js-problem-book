@@ -978,12 +978,13 @@
 
           <button class="accordion">
             <span class="task-number">09</span>
-            Даны два слова. Проверьте, что последняя буква первого слова
-            совпадает с первой буквой второго слова.
+            Two words are given. Check that the last letter of the first word matches the first letter of the second word.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function lastLetterFirstLetter(firstWord, secondWord) {
+                return firstWord[firstWord.length-1] === secondWord[0]
+              }
             </code></pre>
           </div>
 
