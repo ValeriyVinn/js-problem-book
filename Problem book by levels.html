@@ -1085,13 +1085,17 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">17</span>
-            Дана некоторая строка со словами:. 'aaa bbb ccc'.Сделайте заглавным
-            первый символ каждого слова в этой строке. В нашем случае должно
-            получится следующее: 'Aaa Bbb Ccc'
+            Given a string with the words: 'aaa bbb ccc'. Capitalize the first character of each word in this line. In our case, it should look like this: 'Aaa Bbb Ccc'
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function capitalizeFirstCharacter(string) {
+                const result = string
+                  .split(" ")
+                  .map((el) => el[0].toUpperCase() + el.slice(1))
+                  .join(" ");
+                return result;
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

@@ -205,3 +205,38 @@ function sumOfNumbers(string) {
   return result;
 }
 console.log(sumOfNumbers("1,3,1,3,4"));
+
+let stri = "2025-12-31";
+stri = stri.split("-");
+const newArr = [];
+// stri = stri.replace('-', ',')
+// for (const iterator of object) {
+
+// }
+newArr.push("year");
+newArr.push(stri[0]);
+newArr.push("month");
+newArr.push(stri[1]);
+newArr.push("day");
+newArr.push(stri[2]);
+stri.unshift("year");
+console.log(stri);
+console.log(newArr);
+const na = newArr;
+
+const year = "year";
+const month = "month";
+const day = "day";
+// const strng = {`'${year}':'2025','${month}':'12','${day}':'31'`}
+// console.log(strng)
+// let object = JSON.parse(strng)
+
+function capitalizeFirstCharacter(string) {
+  const result = string
+    .split(" ")
+    .map((el) => el[0].toUpperCase() + el.slice(1))
+    .join(" ");
+  return result;
+}
+
+console.log(capitalizeFirstCharacter("aaa bbb ccc"));
