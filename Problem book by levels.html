@@ -1002,12 +1002,18 @@
 
           <button class="accordion">
             <span class="task-number">11</span>
-            Даны числа, разделенные запятыми: '12,34,56'. Найдите сумму этих
-            чисел.
+            Given a string of numbers separated by commas: '12,34,56'. Find the sum of these numbers.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function sumOfNumbers(string) {
+                const result = string.split(",").reduce((acc, str) => {
+                  const num = Number(str);
+                  acc += num;
+                  return acc;
+                }, 0);
+                return result;
+              }
             </code></pre>
           </div>
 

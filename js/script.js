@@ -168,19 +168,40 @@ function removeNegative(array) {
   return array;
 }
 
-
 console.log(removeNegative([1, -2, 3, -4, 5, -6, 7, -8]));
 
 function deletePenultimate(string) {
   const arrayToCut = string.split("");
-  arrayToCut.splice([arrayToCut.length - 2], 1)
+  arrayToCut.splice([arrayToCut.length - 2], 1);
   const newString = arrayToCut.join("");
   return newString;
-};
+}
 console.log(deletePenultimate("1234567890"));
 
 function lastLetterFirstLetter(firstWord, secondWord) {
-  return firstWord[firstWord.length-1] === secondWord[0]
+  return firstWord[firstWord.length - 1] === secondWord[0];
 }
-console.log(lastLetterFirstLetter('12323g', 'ghghdb'))
+console.log(lastLetterFirstLetter("12323g", "ghghdb"));
 
+function summOfNumbers(string) {
+  const result = string
+    .split(",")
+    .map((str) => (str = Number(str)))
+    .reduce((acc, val) => {
+      acc += val;
+      return acc;
+    });
+  return result;
+}
+
+console.log(summOfNumbers("12,34,1,3"));
+
+function sumOfNumbers(string) {
+  const result = string.split(",").reduce((acc, str) => {
+    const num = Number(str);
+    acc += num;
+    return acc;
+  }, 0);
+  return result;
+}
+console.log(sumOfNumbers("1,3,1,3,4"));
