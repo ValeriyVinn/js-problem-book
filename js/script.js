@@ -231,12 +231,27 @@ const day = "day";
 // console.log(strng)
 // let object = JSON.parse(strng)
 
-function capitalizeFirstCharacter(string) {
-  const result = string
-    .split(" ")
-    .map((el) => el[0].toUpperCase() + el.slice(1))
-    .join(" ");
-  return result;
+function firstDigitPosition(string) {
+  for (let index = 0; index < string.length; index++) {
+    if (!isNaN(string[index])) 
+    {
+      return index;
+    }
+  }
+  return -1;
 }
 
-console.log(capitalizeFirstCharacter("aaa bbb ccc"));
+// function firstDigitPosition(string) {
+//   let index = 0;
+//   for (const char of string) {
+//     if (!isNaN(char)) {
+//       return index;
+//     }
+//     index++;
+//   }
+//   return -1;
+// }
+
+console.log(firstDigitPosition("1gjkfSD"));
+
+const a = "fS4D6";

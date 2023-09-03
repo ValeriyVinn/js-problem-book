@@ -1038,12 +1038,19 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">13</span>
-            Дана некоторая строка с буквами и цифрами. Получите позицию первой
-            цифры в этой строке.
+            Given a string with letters and numbers. Get the position of the first index in this string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function firstDigitPosition(string) {
+                for (let index = 0; index < string.length; index++) {
+                  if (!isNaN(string[index])) 
+                  {
+                    return index;
+                  }
+                }
+                return -1;
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->
