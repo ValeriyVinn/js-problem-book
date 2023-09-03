@@ -1057,12 +1057,25 @@
 
           <button class="accordion">
             <span class="task-number">14</span>
-            Дан объект с ключами и значениями. Запишите в первый массив ключи
-            объекта, а во второй - значения.
+            Given an object with keys and values. Write the keys of the object to the first array, and the values to the second.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function arraysOfKeysAndValues(object) {
+                const arrayOfKeys = Object.keys(object)
+                const arrayOfValues = Object.values(object)
+                console.log(arrayOfKeys, arrayOfValues)
+              }
+            </code></pre>
+            <pre><code class="language-js">
+              const arrayOfKeys = []
+              const arrayOfValues = []
+              function arraysOfKeysAndValues(object) {
+                for (const key in object) {
+                  arrayOfKeys.push(key)
+                  arrayOfValues.push(object[key])
+                }
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

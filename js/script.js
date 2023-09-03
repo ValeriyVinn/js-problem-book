@@ -231,27 +231,42 @@ const day = "day";
 // console.log(strng)
 // let object = JSON.parse(strng)
 
-function firstDigitPosition(string) {
-  for (let index = 0; index < string.length; index++) {
-    if (!isNaN(string[index])) 
-    {
-      return index;
-    }
-  }
-  return -1;
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  rating: 8.38,
+};
+for (const key in book) {
+  // Ключ
+  console.log(key);
+  // Значення властивості з таким ключем
+  console.log(book[key]);
 }
 
-// function firstDigitPosition(string) {
-//   let index = 0;
-//   for (const char of string) {
-//     if (!isNaN(char)) {
-//       return index;
-//     }
-//     index++;
-//   }
-//   return -1;
+// function arraysOfKeysAndValues(object) {
+//   const arrayOfKeys = Object.keys(object)
+//   const arrayOfValues = Object.values(object)
+//   console.log(arrayOfKeys, arrayOfValues)
 // }
 
-console.log(firstDigitPosition("1gjkfSD"));
 
-const a = "fS4D6";
+
+// return `Array of keys: ${arrayOfKeys}, array of  values ${arrayOfValues}`
+// const arrays = [arrayOfKeys, arrayOfValues] 
+// return arrays
+
+const arrayOfKeys = []
+const arrayOfValues = []
+function arraysOfKeysAndValues(object) {
+  for (const key in object) {
+    arrayOfKeys.push(key)
+    arrayOfValues.push(object[key])
+  }
+}
+
+arraysOfKeysAndValues(book)
+
+console.log(arrayOfKeys)
+console.log(arrayOfValues)
+
