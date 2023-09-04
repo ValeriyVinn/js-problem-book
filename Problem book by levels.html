@@ -1122,12 +1122,19 @@
 
           <button class="accordion">
             <span class="task-number">18</span>
-            Дана некоторая строка, например, вот такая: '023m0df0dfg0'. Получите
-            массив позиций всех нулей в этой в строке.
+            Some string is given, for example, this one: '023m0df0dfg0'. Get an array of indices of all zeros in this one in the string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function findZeroesIndexes(string) {
+                const arrayOfIndexZero = [];
+                for (let index = 0; index < string.length; index += 1) {
+                  if (string[index] === "0") {
+                    arrayOfIndexZero.push(index);
+                  }
+                }
+                return arrayOfIndexZero;
+              }
             </code></pre>
           </div>
 

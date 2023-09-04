@@ -250,23 +250,34 @@ for (const key in book) {
 //   console.log(arrayOfKeys, arrayOfValues)
 // }
 
-
-
 // return `Array of keys: ${arrayOfKeys}, array of  values ${arrayOfValues}`
-// const arrays = [arrayOfKeys, arrayOfValues] 
+// const arrays = [arrayOfKeys, arrayOfValues]
 // return arrays
 
-const arrayOfKeys = []
-const arrayOfValues = []
+const arrayOfKeys = [];
+const arrayOfValues = [];
 function arraysOfKeysAndValues(object) {
   for (const key in object) {
-    arrayOfKeys.push(key)
-    arrayOfValues.push(object[key])
+    arrayOfKeys.push(key);
+    arrayOfValues.push(object[key]);
   }
 }
 
-arraysOfKeysAndValues(book)
+arraysOfKeysAndValues(book);
 
-console.log(arrayOfKeys)
-console.log(arrayOfValues)
+console.log(arrayOfKeys);
+console.log(arrayOfValues);
 
+
+function findZeroesIndexes(string) {
+  const arrayOfIndexZero = [];
+  for (let index = 0; index < string.length; index += 1) {
+    if (string[index] === "0") {
+      arrayOfIndexZero.push(index);
+    }
+  }
+  return arrayOfIndexZero;
+}
+
+
+console.log(findZeroesIndexes("023m0df0dfg0"));
