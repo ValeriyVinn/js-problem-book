@@ -902,12 +902,17 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
-            Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6].
-            Найдите сумму первой половины элементов этого массива.
+            Some array is given, for example, like this: [1, 2, 3, 4, 5, 6]. Find the sum of the first half of the elements of this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              function sumOfFirstHalfOfArray(array) {
+                let sum = 0
+              for (let i = 0; i < array.length/2; i+=1) {
+                sum += array[i]
+              }
+              return sum
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

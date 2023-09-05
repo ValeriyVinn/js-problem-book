@@ -269,15 +269,25 @@ console.log(arrayOfKeys);
 console.log(arrayOfValues);
 
 
-function findZeroesIndexes(string) {
-  const arrayOfIndexZero = [];
-  for (let index = 0; index < string.length; index += 1) {
-    if (string[index] === "0") {
-      arrayOfIndexZero.push(index);
-    }
-  }
-  return arrayOfIndexZero;
+// task-number 4
+
+const w =  [1, 2, 3, 4, 5, 6, 7, 8]
+let t = 0
+for (let index = 0; index < w.length/2; index++) {
+  t += w[index]
+}
+console.log(t)
+
+const q = w.slice(w.length/2)
+console.log(q)
+
+
+function sumOfFirstHalfOfArray(array) {
+  let sum = 0
+for (let i = 0; i < array.length/2; i+=1) {
+  sum += array[i]
+}
+return sum
 }
 
-
-console.log(findZeroesIndexes("023m0df0dfg0"));
+console.log(sumOfFirstHalfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
