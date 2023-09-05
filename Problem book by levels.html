@@ -902,7 +902,7 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
-            Some array is given, for example, like this: [1, 2, 3, 4, 5, 6]. Find the sum of the first half of the elements of this array.
+            Some array is given, for example, like this: [1, 2, 3, 4, 5, 6]. Find the sum of the first half of the elements of this array. Find the sum of the second half of the elements of this array.
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -910,6 +910,16 @@
                 let sum = 0
               for (let i = 0; i < array.length/2; i+=1) {
                 sum += array[i]
+              }
+              return sum
+              }
+            </code></pre>
+            <pre><code class="language-js">
+              function sumOfSecondHalfOfArray(array) {
+                let sum = 0
+                const secondHalf = array.slice(array.length/2)
+              for (let i = 0; i < array.length/2; i+=1) {
+                sum += secondHalf[i]
               }
               return sum
               }

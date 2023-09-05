@@ -290,4 +290,16 @@ for (let i = 0; i < array.length/2; i+=1) {
 return sum
 }
 
-console.log(sumOfFirstHalfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+console.log(sumOfFirstHalfOfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+function sumOfSecondHalfOfArray(array) {
+  let sum = 0
+  const secondHalf = array.slice(array.length/2)
+for (let i = 0; i < array.length/2; i+=1) {
+  sum += secondHalf[i]
+}
+return sum
+}
+
+
+console.log(sumOfSecondHalfOfArray([1, 2, 3, 4, 5, 6]))
