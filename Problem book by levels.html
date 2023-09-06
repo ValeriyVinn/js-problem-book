@@ -861,12 +861,21 @@
 
           <button class="accordion">
             <span class="task-number">02</span>
-            Выведите в консоль все числа в промежутке от 1 до 1000, сумма первой
-            и второй цифры которых равна пяти.
+            Print to the console all numbers in the range from 1 to "number", the sum of the first and second digits of which is "sum".
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition.
+              function sumFirstAndSecond(number, sum) {
+                let currentNumber = 1;
+                while (currentNumber < number) {
+                  currentNumber = String(currentNumber);
+                  if (Number(currentNumber[0]) + Number(currentNumber[1]) === sum) {
+                    console.log(currentNumber);
+                  }
+                  currentNumber = Number(currentNumber);
+                  currentNumber += 1;
+                }
+              }
             </code></pre>
           </div>
 

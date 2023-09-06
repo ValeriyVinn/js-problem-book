@@ -268,38 +268,19 @@ arraysOfKeysAndValues(book);
 console.log(arrayOfKeys);
 console.log(arrayOfValues);
 
+// task-number 2
 
-// task-number 4
 
-const w =  [1, 2, 3, 4, 5, 6, 7, 8]
-let t = 0
-for (let index = 0; index < w.length/2; index++) {
-  t += w[index]
+function sumFirstAndSecond(number, sum) {
+  let currentNumber = 1;
+  while (currentNumber < number) {
+    currentNumber = String(currentNumber);
+    if (Number(currentNumber[0]) + Number(currentNumber[1]) === sum) {
+      console.log(currentNumber);
+    }
+    currentNumber = Number(currentNumber);
+    currentNumber += 1;
+  }
 }
-console.log(t)
+sumFirstAndSecond(100, 5);
 
-const q = w.slice(w.length/2)
-console.log(q)
-
-
-function sumOfFirstHalfOfArray(array) {
-  let sum = 0
-for (let i = 0; i < array.length/2; i+=1) {
-  sum += array[i]
-}
-return sum
-}
-
-console.log(sumOfFirstHalfOfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-
-function sumOfSecondHalfOfArray(array) {
-  let sum = 0
-  const secondHalf = array.slice(array.length/2)
-for (let i = 0; i < array.length/2; i+=1) {
-  sum += secondHalf[i]
-}
-return sum
-}
-
-
-console.log(sumOfSecondHalfOfArray([1, 2, 3, 4, 5, 6]))
