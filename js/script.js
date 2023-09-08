@@ -283,14 +283,9 @@ function sumFirstAndSecond(number, sum) {
 }
 sumFirstAndSecond(30, 5);
 
-function numberOfEvenDigits(number) {
-  let result = 0;
-  const numberToString = String(number);
-  for (const currentSymbol of numberToString) {
-    if (Number(currentSymbol) % 2 === 0) {
-      result += 1;
-    }
+function capitalizeOddLetters (string) {
+  let result =''
+  for (const currentLetter of string) {
+    
   }
-  console.log(result);
 }
-numberOfEvenDigits(234567);
