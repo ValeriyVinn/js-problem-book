@@ -866,7 +866,7 @@
           <div class="panel">
             <pre><code class="language-js">
               function sumFirstAndSecond(number, sum) {
-                let currentNumber = 1;
+                let currentNumber = 10;
                 while (currentNumber < number) {
                   currentNumber = String(currentNumber);
                   if (Number(currentNumber[0]) + Number(currentNumber[1]) === sum) {
@@ -1106,11 +1106,20 @@
 
           <button class="accordion">
             <span class="task-number">15</span>
-            Дано число. Выведите в консоль количество четных цифр в этом числе.
+            Given a number. Print the number of even digits in this number to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function numberOfEvenDigits(number) {
+                let result = 0;
+                const numberToString = String(number);
+                for (const currentSymbol of numberToString) {
+                  if (Number(currentSymbol) % 2 === 0) {
+                    result += 1;
+                  }
+                }
+                console.log(result);
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

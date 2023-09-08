@@ -270,9 +270,8 @@ console.log(arrayOfValues);
 
 // task-number 2
 
-
 function sumFirstAndSecond(number, sum) {
-  let currentNumber = 1;
+  let currentNumber = 10;
   while (currentNumber < number) {
     currentNumber = String(currentNumber);
     if (Number(currentNumber[0]) + Number(currentNumber[1]) === sum) {
@@ -282,5 +281,16 @@ function sumFirstAndSecond(number, sum) {
     currentNumber += 1;
   }
 }
-sumFirstAndSecond(100, 5);
+sumFirstAndSecond(30, 5);
 
+function numberOfEvenDigits(number) {
+  let result = 0;
+  const numberToString = String(number);
+  for (const currentSymbol of numberToString) {
+    if (Number(currentSymbol) % 2 === 0) {
+      result += 1;
+    }
+  }
+  console.log(result);
+}
+numberOfEvenDigits(234567);
