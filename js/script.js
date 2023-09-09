@@ -289,3 +289,26 @@ function capitalizeOddLetters (string) {
     
   }
 }
+
+
+//   const firstHalf = array.slice(0, array.length/2)
+// console.log(firstHalf)
+// const secondHalf = array.slice(array.length/2)
+// console.log(secondHalf)
+
+
+function divideSumOfFirstHalfBySumOfSecondHalf (array) {
+let first = 0
+let second = 0
+ for (let index = 0; index < array.length; index++) {
+   if (index < array.length/2) {
+    first += array[index]
+   }
+   else {
+    second += array[index]
+   }
+  }
+  return first/second
+}
+
+console.log(divideSumOfFirstHalfBySumOfSecondHalf([1, 2, 3, 4, 5, 6]))
