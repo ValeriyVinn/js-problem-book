@@ -312,3 +312,14 @@ let second = 0
 }
 
 console.log(divideSumOfFirstHalfBySumOfSecondHalf([1, 2, 3, 4, 5, 6]))
+
+
+const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+const fruit = "berry";
+const hasFruit = redFruits.includes(fruit);
+
+if (hasFruit) {
+  console.log(`${fruit} is a red fruit!`);
+} else {
+  console.log(`${fruit} is not a red fruit!`)
+}
