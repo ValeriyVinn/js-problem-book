@@ -283,36 +283,31 @@ function sumFirstAndSecond(number, sum) {
 }
 sumFirstAndSecond(30, 5);
 
-function capitalizeOddLetters (string) {
-  let result =''
+function capitalizeOddLetters(string) {
+  let result = "";
   for (const currentLetter of string) {
-    
   }
 }
-
 
 //   const firstHalf = array.slice(0, array.length/2)
 // console.log(firstHalf)
 // const secondHalf = array.slice(array.length/2)
 // console.log(secondHalf)
 
-
-function divideSumOfFirstHalfBySumOfSecondHalf (array) {
-let first = 0
-let second = 0
- for (let index = 0; index < array.length; index++) {
-   if (index < array.length/2) {
-    first += array[index]
-   }
-   else {
-    second += array[index]
-   }
+function divideSumOfFirstHalfBySumOfSecondHalf(array) {
+  let first = 0;
+  let second = 0;
+  for (let index = 0; index < array.length; index++) {
+    if (index < array.length / 2) {
+      first += array[index];
+    } else {
+      second += array[index];
+    }
   }
-  return first/second
+  return first / second;
 }
 
-console.log(divideSumOfFirstHalfBySumOfSecondHalf([1, 2, 3, 4, 5, 6]))
-
+console.log(divideSumOfFirstHalfBySumOfSecondHalf([1, 2, 3, 4, 5, 6]));
 
 const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
 const fruit = "berry";
@@ -321,5 +316,13 @@ const hasFruit = redFruits.includes(fruit);
 if (hasFruit) {
   console.log(`${fruit} is a red fruit!`);
 } else {
-  console.log(`${fruit} is not a red fruit!`)
+  console.log(`${fruit} is not a red fruit!`);
 }
+
+function inWhatRegister(character) {
+  console.log(
+    character === character.toLowerCase() ? "In lower case" : "In upper case"
+  );
+}
+
+inWhatRegister("K");

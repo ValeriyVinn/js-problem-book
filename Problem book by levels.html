@@ -1302,12 +1302,15 @@
 
           <button class="accordion">
             <span class="task-number">28</span>
-            Дан символ. Узнайте, в каком регистре этот символ - в верхнем или
-            нижнем.
+            Given the symbol. Find out whether this character is in upper or lower case.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function inWhatRegister(character) {
+                console.log(
+                  character === character.toLowerCase() ? "In lower case" : "In upper case"
+                );
+              }
             </code></pre>
           </div>
 
