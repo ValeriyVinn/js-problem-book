@@ -1289,13 +1289,21 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">27</span>
-            Дана некоторая строка: 'a bc def ghij'. Переведите в верхний регистр
-            все подстроки, в которых количество букв меньше или равно трем. В
-            нашем случае должно получится следующее: 'A BC DEF ghij'
+            Given some string: 'a bc def ghij'. Convert to uppercase all substrings in which the number of letters is less than or equal to three. In our case it should look like this: 'A BC DEF ghij'
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function transformShortSubstringsToUppercase(string) {
+                const inputWords = string.split(' ');
+                const outputWords = [];
+              
+                inputWords.map((word) => {
+                  word.length <= 3 ? outputWords.push(word.toUpperCase()) : outputWords.push(word);
+                });
+              
+                return outputWords.join(' ');
+              }
+              
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

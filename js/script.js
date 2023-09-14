@@ -319,10 +319,18 @@ if (hasFruit) {
   console.log(`${fruit} is not a red fruit!`);
 }
 
-function inWhatRegister(character) {
-  console.log(
-    character === character.toLowerCase() ? "In lower case" : "In upper case"
-  );
+
+
+function transformShortSubstringsToUppercase(string) {
+  const inputWords = string.split(' ');
+  const outputWords = [];
+
+  inputWords.map((word) => {
+    word.length <= 3 ? outputWords.push(word.toUpperCase()) : outputWords.push(word);
+  });
+
+  return outputWords.join(' ');
 }
 
-inWhatRegister("K");
+
+console.log(toUpperCaseSmallSubstrings('sfgsf xff vv fggsg f ff'))
