@@ -1253,12 +1253,20 @@
 
           <button class="accordion">
             <span class="task-number">24</span>
-            Дана некоторая строка: 'AbCdE'. Смените регистр букв этой строки на
-            противоположный. В нашем случае должно получится следующее: 'aBcDe'
+            A certain string is given. Change the case of the letters in this string to the opposite case.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function changeLetterCase(string) {
+                const inputLetters = string.split('');
+                const outputLetters = [];
+              
+                inputLetters.map((word) => {
+                  word === word.toUpperCase() ? outputLetters.push(word.toLowerCase()) : outputLetters.push(word.toUpperCase());
+                });
+              
+                return outputLetters.join('');
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

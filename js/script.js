@@ -321,16 +321,31 @@ if (hasFruit) {
 
 
 
-function transformShortSubstringsToUppercase(string) {
-  const inputWords = string.split(' ');
-  const outputWords = [];
+function changeLetterCase(string) {
+  const inputLetters = string.split('');
+  const outputLetters = [];
 
-  inputWords.map((word) => {
-    word.length <= 3 ? outputWords.push(word.toUpperCase()) : outputWords.push(word);
+  inputLetters.map((word) => {
+    word === word.toUpperCase() ? outputLetters.push(word.toLowerCase()) : outputLetters.push(word.toUpperCase());
   });
 
-  return outputWords.join(' ');
+  return outputLetters.join('');
 }
 
 
-console.log(toUpperCaseSmallSubstrings('sfgsf xff vv fggsg f ff'))
+console.log(changeLetterCase('AbCdE'))
+
+
+
+
+// function capitalizeEachSecond (string) {
+//   const inputWords = string.split(' ')
+//   const outputWords = [];
+//   for (let index = 0; index < inputWords.length; index += 1) {
+//     outputWords.push(inputWords[index].toUpperCase())
+    
+//   }
+//   return outputWords.join(' ')
+// }
+
+// console.log(capitalizeEachSecond('aaa bbb ccc eee fff'))
