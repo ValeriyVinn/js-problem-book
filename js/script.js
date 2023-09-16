@@ -319,33 +319,57 @@ if (hasFruit) {
   console.log(`${fruit} is not a red fruit!`);
 }
 
-
-
 function changeLetterCase(string) {
-  const inputLetters = string.split('');
+  const inputLetters = string.split("");
   const outputLetters = [];
 
   inputLetters.map((word) => {
-    word === word.toUpperCase() ? outputLetters.push(word.toLowerCase()) : outputLetters.push(word.toUpperCase());
+    word === word.toUpperCase()
+      ? outputLetters.push(word.toLowerCase())
+      : outputLetters.push(word.toUpperCase());
   });
 
-  return outputLetters.join('');
+  return outputLetters.join("");
 }
 
-
-console.log(changeLetterCase('AbCdE'))
-
-
-
+console.log(changeLetterCase("AbCdE"));
 
 // function capitalizeEachSecond (string) {
 //   const inputWords = string.split(' ')
 //   const outputWords = [];
 //   for (let index = 0; index < inputWords.length; index += 1) {
 //     outputWords.push(inputWords[index].toUpperCase())
-    
+
 //   }
 //   return outputWords.join(' ')
 // }
 
 // console.log(capitalizeEachSecond('aaa bbb ccc eee fff'))
+
+let anyString = "Mozilla";
+let anyArray = anyString.split("");
+let anyString4 = anyString.substring(anyString.length - 4);
+console.log(anyString4);
+console.log(anyString);
+console.log(anyArray);
+
+const arrr = [123, 456, 789];
+const arrr1 = arrr.map((item) => {
+  String(item);
+  return typeof item;
+});
+console.log(arrr.reverse());
+console.log(arrr1);
+
+function divideSumEvenBySumOdd(array) {
+  let even = 0;
+  let odd = 0;
+
+  for (let index = 0; index < array.length; index += 1) {
+    index % 2 === 0 ? (even += array[index]) : (odd += array[index]);
+  }
+  
+  return even / odd;
+}
+
+console.log(divideSumEvenBySumOdd([1, 2, 3, 4, 5, 6]));
