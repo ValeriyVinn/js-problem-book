@@ -1031,11 +1031,38 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">10</span>
-            Дана некоторая строка. Найдите позицию третьего нуля в строке.
+            A certain string is given. Find the index of the third zero in the string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function thirdZeroIndex(string) {
+                const arrayOfZeros = [];
+
+                for (let index = 0; index < string.length; index += 1) {
+                  if (string[index] === "0") {
+                    arrayOfZeros.push(index);
+                  }
+                }
+
+                return arrayOfZeros[2];
+              }
+            </code></pre>
+            <pre><code class="language-js">
+              function thirdZeroIndex(string) {
+                let zeroCount = 0;
+                
+                for (let index = 0; index < string.length; index+=1) {
+                  if (string[index] === "0") {
+                    zeroCount+=1; 
+                    if (zeroCount === 3) {
+                      
+                      return index;  
+                    }
+                  }
+                }
+
+                return -1; 
+                }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

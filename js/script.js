@@ -368,8 +368,37 @@ function divideSumEvenBySumOdd(array) {
   for (let index = 0; index < array.length; index += 1) {
     index % 2 === 0 ? (even += array[index]) : (odd += array[index]);
   }
-  
+
   return even / odd;
 }
 
 console.log(divideSumEvenBySumOdd([1, 2, 3, 4, 5, 6]));
+
+// function thirdZeroIndex(string) {
+//   const arrayOfZeros = [];
+//   for (let index = 0; index < string.length; index += 1) {
+//     if (string[index] === "0") {
+//       arrayOfZeros.push(index);
+//     }
+//   }
+//   return arrayOfZeros[2];
+// }
+
+
+
+
+function thirdZeroIndex(string) {
+  let zeroCount = 0;
+  
+  for (let index = 0; index < string.length; index+=1) {
+    if (string[index] === "0") {
+      zeroCount+=1; 
+      if (zeroCount === 3) {
+        return index;  
+      }
+    }
+  }
+  return -1; 
+  }
+  
+console.log(thirdZeroIndex("10100143403"));
