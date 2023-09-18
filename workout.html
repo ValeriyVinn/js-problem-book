@@ -51,11 +51,26 @@
 
         <button class="accordion">
           <span class="task-number">01</span>
-          Exercise
+          doMath
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const doMath = function (a, b, callback) {
+              const result = callback(a, b);
+            
+              console.log(result);
+            };
+            
+            const add = function (x, y) {
+              return x + y;
+            };
+            
+            const sub = function (x, y) {
+              return x - y;
+            };
+            
+            doMath(2, 3, add);
+            doMath(10, 7, sub);
           </code></pre>
 
         </div>

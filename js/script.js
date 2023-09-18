@@ -183,29 +183,6 @@ function lastLetterFirstLetter(firstWord, secondWord) {
 }
 console.log(lastLetterFirstLetter("12323g", "ghghdb"));
 
-function summOfNumbers(string) {
-  const result = string
-    .split(",")
-    .map((str) => (str = Number(str)))
-    .reduce((acc, val) => {
-      acc += val;
-      return acc;
-    });
-  return result;
-}
-
-console.log(summOfNumbers("12,34,1,3"));
-
-function sumOfNumbers(string) {
-  const result = string.split(",").reduce((acc, str) => {
-    const num = Number(str);
-    acc += num;
-    return acc;
-  }, 0);
-  return result;
-}
-console.log(sumOfNumbers("1,3,1,3,4"));
-
 let stri = "2025-12-31";
 stri = stri.split("-");
 const newArr = [];
@@ -374,31 +351,19 @@ function divideSumEvenBySumOdd(array) {
 
 console.log(divideSumEvenBySumOdd([1, 2, 3, 4, 5, 6]));
 
-// function thirdZeroIndex(string) {
-//   const arrayOfZeros = [];
-//   for (let index = 0; index < string.length; index += 1) {
-//     if (string[index] === "0") {
-//       arrayOfZeros.push(index);
-//     }
-//   }
-//   return arrayOfZeros[2];
-// }
+const doMath = function (a, b, callback) {
+  const result = callback(a, b);
 
+  console.log(result);
+};
 
+const add = function (x, y) {
+  return x + y;
+};
 
+const sub = function (x, y) {
+  return x - y;
+};
 
-function thirdZeroIndex(string) {
-  let zeroCount = 0;
-  
-  for (let index = 0; index < string.length; index+=1) {
-    if (string[index] === "0") {
-      zeroCount+=1; 
-      if (zeroCount === 3) {
-        return index;  
-      }
-    }
-  }
-  return -1; 
-  }
-  
-console.log(thirdZeroIndex("10100143403"));
+doMath(2, 3, add);
+doMath(10, 7, sub);
