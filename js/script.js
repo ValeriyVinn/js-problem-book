@@ -367,3 +367,45 @@ const sub = function (x, y) {
 
 doMath(2, 3, add);
 doMath(10, 7, sub);
+
+function registerGuests(name, callback) {
+  console.log(`Реєструємо гостя ${name}.`);
+  callback(name);
+}
+
+// Передаємо інлайн функцію greet у якості колбека
+registerGuests("Манго", function greet(name) {
+  console.log(`Ласкаво просимо ${name}.`);
+});
+
+// Передаємо інлайн функцію notify у якості колбека
+registerGuests("Полі", function notify(name) {
+  console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+});
+
+function greet(name) {
+  console.log(`Ласкаво просимо ${name}.`);
+}
+
+function registerGuest(name, callback) {
+  console.log(`Реєструємо гостя ${name}.`);
+  callback(name);
+}
+
+registerGuest("Манго", greet);
+
+// let str = "abcdefg";
+// let newStr = [...str].filter((_, index) => (index + 1) % 3 !== 0).join("");
+// console.log(newStr);
+
+
+
+function removeEveryThirdCharacter(string) {
+  let newString =  [...string].filter((_, index) => (index + 1) % 3 !== 0).join("");
+  return newString
+}
+console.log(removeEveryThirdCharacter("abcdefghiklmn"));
+ 
+let str = "1234567890";
+const newStr = str.match(/..?.?/g).map(s => s[0] + (s[1] ?? '')).join('')
+console.log(newStr);
