@@ -1261,12 +1261,34 @@
 
           <button class="accordion">
             <span class="task-number">21</span>
-            Дана некоторая строка с буквами и цифрами. Получите массив позиций
-            всех цифр из этой строки.
+            Given a string with letters and numbers. Get an array of positions of all numbers from this string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function arrayOfDigitPositions(string) {
+                const arrayOfNumbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+                const array = [];
+                for (let index = 0; index < string.length; index += 1) {
+                  if (arrayOfNumbers.includes(string[index])) {
+                    array.push(index);
+                  }
+                }
+                return array;
+              }
+            </code></pre>
+            <pre><code class="language-js">
+              function arrayOfDigitPositions(string) {
+                const regex = /[0-9]/g; // A regular expression for finding numbers
+                const array = [];
+                let match;
+                
+                while ((match = regex.exec(string)) !== null) {
+                  array.push(match.index);
+                }
+                
+                return array;
+              }
+              
             </code></pre>
           </div>
 
