@@ -87,7 +87,6 @@
               const filteredArray = [];
           
               for (const el of array) {
-                  console.log(el);
                   const passed = test(el);
           
                   if (passed) {
@@ -97,11 +96,6 @@
           
               return filteredArray;
           };
-          
-          // 1. надо передать функцию
-          // 2. функция получает элемент массива
-          // 3. если элемент массива удовлетворяет условию то функция вернет true
-          // 3. если элемент массива НЕ удовлетворяет условию то функция вернет false
           
           const callback1 = function (value) {
               return value >= 3;
@@ -136,11 +130,27 @@
 
         <button class="accordion">
           <span class="task-number">03</span>
-          Exercise
+          makeSheff
         </button>
         <div class="panel">
           <pre><code class="language-js">
-            There will be a function for fish composition
+            const makeSheff = function (name) {
+              const makeDish = function (dish) {
+                  console.log(`${name} готовит ${dish}`);
+              };
+            
+              return makeDish;
+            };
+            
+            const mango = makeSheff('Mango');
+            
+            mango('котлеты');
+            mango('пирожок');
+            
+            const poly = makeSheff('Poly');
+            
+            poly('чай');
+            poly('омлет');
         </code></pre>
         </div>
 

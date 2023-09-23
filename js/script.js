@@ -395,3 +395,20 @@ function registerGuest(name, callback) {
 registerGuest("Манго", greet);
 
 
+const makeSheff = function (name) {
+  const makeDish = function (dish) {
+      console.log(`${name} готовит ${dish}`);
+  };
+
+  return makeDish;
+};
+
+const mango = makeSheff('Mango');
+
+mango('котлеты');
+mango('пирожок');
+
+const poly = makeSheff('Poly');
+
+poly('чай');
+poly('омлет');
