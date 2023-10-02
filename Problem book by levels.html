@@ -1296,13 +1296,18 @@
 
           <button class="accordion">
             <span class="task-number">22</span>
-            Дан массив с некоторыми числами, например, вот такой: [123, 456,
-            789]. Напишите код, который перевернет числа в этом массиве по
-            следующему принципу: [321, 654, 987].
+            Given an array with some numbers, for example, this one: [123, 456, 789]. Write code that will reverse the numbers in this array using the following principle: [321, 654, 987].
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function reverseNumbers(array) {
+                const resultArray = []
+                for (const num of array) {
+                 const str = String(num).split('').reverse().join('')
+                 resultArray.push(Number(str))
+                }
+                return resultArray
+              }
             </code></pre>
           </div>
 
