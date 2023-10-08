@@ -45,14 +45,25 @@ window.onload = calcScrollValue;
 
 // !-------------  Working zone ------------------
 
-function reverseNumbers(array) {
-  const resultArray = []
-  for (const num of array) {
-   const str = String(num).split('').reverse().join('')
-   resultArray.push(Number(str))
-  }
-  return resultArray
+function mergePairsOfElements(array) {
+ for (let index = 0; index < array.length; index+=1) {
+   const arrayOutput = []
+   if(index % 2 === 0) {
+     arrayOutput.push( String(array[index]) + String(array[index+1]))
+   }
+   return arrayOutput
+ }
 }
 
-console.log(reverseNumbers([123, 456, 789]))
+console.log(mergePairsOfElements([1, 2, 3, 4, 5, 6]))
 
+
+function printElementsInReverseOrder(array) {
+  const reverseArray = array.reverse()
+  
+  for (const number of reverseArray) {
+    console.log(number)
+  }
+}
+
+printElementsInReverseOrder([1, 2, 3, 4, 5, 6])

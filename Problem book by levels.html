@@ -1347,8 +1347,7 @@
 
           <button class="accordion">
             <span class="task-number">25</span>
-            Дан некоторый массив с числами, например, вот такой: [1, 2, 3, 4, 5,
-            6]. Слейте пары элементов вместе: [12, 34, 56]
+            Given some array with numbers, for example, like this: [1, 2, 3, 4, 5, 6]. Merge pairs of elements together: [12, 34, 56]
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -1474,12 +1473,17 @@
 
           <button class="accordion">
             <span class="task-number">34</span>
-            Дан массив с числами: [1, 2, 3, 4, 5]. Выведите в консоль элементы
-            этого массива в обратном порядке.
+            Given an array with numbers. Print the elements of this array to the console in reverse order.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function printElementsInReverseOrder(array) {
+                const reverseArray = array.reverse()
+                
+                for (const number of reverseArray) {
+                  console.log(number)
+                }
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->
