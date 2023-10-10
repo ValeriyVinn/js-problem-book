@@ -67,3 +67,15 @@ function printElementsInReverseOrder(array) {
 }
 
 printElementsInReverseOrder([1, 2, 3, 4, 5, 6])
+
+function firstEvenFromEnd(number) {
+   const reverseNumber = String(number).split('').reverse()
+
+ for (const number of reverseNumber) {
+  if (Number(number) % 2 === 0) {
+    return number
+  }
+ }
+}
+
+console.log(firstEvenFromEnd(1234567))

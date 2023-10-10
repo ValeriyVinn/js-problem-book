@@ -1501,11 +1501,19 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">36</span>
-            Дано число. Получите первую четную цифру с конца этого числа.
+            A number is given. Get the first even digit from the end of this number.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function firstEvenFromEnd(number) {
+                const reverseNumber = String(number).split('').reverse()
+             
+              for (const number of reverseNumber) {
+               if (number % 2 === 0) {
+                 return number
+               }
+              }
+             }
             </code></pre>
           </div>
 
