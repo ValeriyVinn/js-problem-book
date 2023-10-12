@@ -1432,13 +1432,32 @@
 
           <button class="accordion">
             <span class="task-number">31</span>
-            Дана некоторая строка: '1 22 333 4444 22 5555 1'. Удалите из этой
-            строки все подстроки, в которых количество символов больше трех. В
-            нашем случае должно получится следующее: '1 22 333 22 1'
+            A certain string is given. Remove from this string all substrings that contain more than three characters.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function smallStrings(string) {
+                const arrayFromString = string.split(' ')
+                 const result = []
+                 
+                for (const substring of arrayFromString) {
+                  if(substring.length <= 3) {
+              result.push(substring)
+                  }
+                }
+              
+                let resultString = result.join(' ')
+                return resultString
+              }
+            </code></pre>
+            <pre><code class="language-js">
+              function smallStrings(string) {
+                const arrayFromString = string.split(' ');
+                const resultArray = arrayFromString.filter(substring => substring.length <= 3);
+                const resultString = resultArray.join(' ');
+                
+                return resultString;
+              }
             </code></pre>
           </div>
 
