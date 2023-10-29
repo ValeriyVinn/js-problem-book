@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/prism.css" />
     <link rel="stylesheet" href="./prism-tomorrow-night.css" /> -->
     <link rel="stylesheet" href="./css/prism/prism-coy.css" />
+    <link rel="stylesheet" href="./css/tabs.css" />
   </head>
 
   <body>
@@ -37,9 +38,7 @@
         <a href="./Problem book by levels.html" class="nav-link"
           >Problem book by levels</a
         >
-        <a href="./workout.html" class="nav-link"
-          >Workout</a
-        >
+        <a href="./workout.html" class="nav-link">Workout</a>
         <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
       </nav>
       <h1 class="good-luck">Welcome!</h1>
@@ -47,14 +46,58 @@
 
     <main>
       <section class="section container">
-        <h1 class="header-home">Workout</h1>
+        
+        <!-- HTML Of the Tab -->
+        <div class="tabs">
+          <div
+            id="tab1"
+            onClick="JavaScript:selectTab(1);"
+            class="tab initialColor"
+          >
+            Репета
+          </div>
+          <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab">
+            Level 2
+          </div>
+          <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">
+            Level 3
+          </div>
+          <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">
+            Level 4
+          </div>
+          <div id="tab5" onClick="JavaScript:selectTab(5);" class="tab">
+            Level 5
+          </div>
+          <div id="tab6" onClick="JavaScript:selectTab(6);" class="tab">
+            Level 6
+          </div>
+          <div id="tab7" onClick="JavaScript:selectTab(7);" class="tab">
+            Level 7
+          </div>
+          <div id="tab8" onClick="JavaScript:selectTab(8);" class="tab">
+            Level 8
+          </div>
+          <div id="tab9" onClick="JavaScript:selectTab(9);" class="tab">
+            Level 9
+          </div>
+          <div id="tab10" onClick="JavaScript:selectTab(10);" class="tab">
+            Level 10
+          </div>
+        </div>
 
-        <button class="accordion">
-          <span class="task-number">01</span>
-          doMath
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
+        <br />
+        <div id="tab1Content">
+          <h2></h2>
+
+          <!-- ============= Unit ================= -->
+          
+
+          <button class="accordion">
+            <span class="task-number">01</span>
+            doMath
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
             const doMath = function (a, b, callback) {
               const result = callback(a, b);
             
@@ -72,17 +115,16 @@
             doMath(2, 3, add);
             doMath(10, 7, sub);
           </code></pre>
+          </div>
 
-        </div>
+          <!-- ============= Unit ================= -->
 
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">02</span>
-          Filter
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Filter
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
             const filter = function (array, test) {
               const filteredArray = [];
           
@@ -124,16 +166,16 @@
           const r3 = filter(fruits, getFruitsWithQuantity);
           console.log(r3);
         </code></pre>
-        </div>
+          </div>
 
-        <!-- ============= Unit ================= -->
+          <!-- ============= Unit ================= -->
 
-        <button class="accordion">
-          <span class="task-number">03</span>
-          makeSheff
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
+          <button class="accordion">
+            <span class="task-number">03</span>
+            makeSheff
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
             const makeSheff = function (name) {
               const makeDish = function (dish) {
                   console.log(`${name} готовит ${dish}`);
@@ -152,461 +194,196 @@
             poly('чай');
             poly('омлет');
         </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">04</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
+        <div id="tab2Content">
+          <h2>level 2</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">02</span>
+            In this simple assignment you are given a number and have to make it
+            negative. But maybe the number is already negative?
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        function makeNegative(num) {
+          return -Math.abs(num);
+        }
+    </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <div id="tab3Content">
+          <h2>level 3</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">03</span>
+            Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <div id="tab4Content">
+          <h2>level 4</h2>
+
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Given a string. Print the last character of the string to the
+            console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                const lastCharacterOfString = (str) => {
+                  console.log(str[str.length-1])
+                }
+            </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <div id="tab5Content">
+          <h2>level 5</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Given a number. Check if it is even or not.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+            const checkOrEven = (number) => {
+              console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
+            }
         </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
+          </div>
 
-        <button class="accordion">
-          <span class="task-number">05</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
+          <!-- ============= Unit ================= -->
+        </div>
+
+        <div id="tab6Content">
+          <h2>level 6</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Two words are given. Check that the first letters of these words
+            match.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+            const checkIfFirstLetterEqual = function(firstWord, secondWord) {
+              console.log (firstWord[0] === secondWord[0])
+            }
         </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
+        <div id="tab7Content">
+          <h2>level 7</h2>
 
-        <button class="accordion">
-          <span class="task-number">06</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Дано слово. Получите его последнюю букву. Если слово заканчивается
+            на мягкий знак, то получите предпоследнюю букву.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                    There will be a function for fish composition
+                </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">07</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
+        <div id="tab8Content">
+          <h2>level 8</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">08</span>
+            Дано число. Выведите в консоль первую цифру этого числа.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
 
-        <button class="accordion">
-          <span class="task-number">08</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-          
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
+        <div id="tab9Content">
+          <h2>level 9</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Дано число. Выведите в консоль последнюю цифру этого числа.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
 
-        <button class="accordion">
-          <span class="task-number">09</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">10</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
+        <div id="tab10Content">
+          <h2>level 10</h2>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Дано число. Выведите в консоль сумму первой и последней цифры этого
+            числа.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                    There will be a function for fish composition
+                </code></pre>
+          </div>
 
-        <button class="accordion">
-          <span class="task-number">11</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
+          <!-- ============= Unit ================= -->
         </div>
 
-        <!-- ============= Unit ================= -->
+        <!-- Javascript Code of the tab -->
+        <script>
+          function selectTab(tabIndex) {
+            //Hide All Tabs
+            document.getElementById("tab1Content").style.display = "none";
+            document.getElementById("tab2Content").style.display = "none";
+            document.getElementById("tab3Content").style.display = "none";
+            document.getElementById("tab4Content").style.display = "none";
+            document.getElementById("tab5Content").style.display = "none";
+            document.getElementById("tab6Content").style.display = "none";
+            document.getElementById("tab7Content").style.display = "none";
+            document.getElementById("tab8Content").style.display = "none";
+            document.getElementById("tab9Content").style.display = "none";
+            document.getElementById("tab10Content").style.display = "none";
+            //Show the Selected Tab
+            document.getElementById(
+              "tab" + tabIndex + "Content"
+            ).style.display = "block";
+          }
+        </script>
 
-        <button class="accordion">
-          <span class="task-number">12</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">13</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">14</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">15</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-          
-        </div>
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">16</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-          
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">17</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-          </code></pre>
-          
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">18</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-          
-        </div>
-
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">19</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">20</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">21</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">22</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">23</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">24</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">25</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">26</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">27</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">28</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">29</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">30</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">31</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">32</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">33</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">34</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">35</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">36</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">37</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">38</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">39</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">40</span>
-          Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-      </code></pre>
-        </div>
-        <!-- ============= Unit ================= -->
-
-        <button class="accordion">
-          <span class="task-number">41</span> Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-        <button class="accordion">
-          <span class="task-number">42</span> Exercise
-        </button>
-        <div class="panel">
-          <pre><code class="language-js">
-            There will be a function for fish composition
-        </code></pre>
-        </div>
-
-        <!-- ============= Unit ================= -->
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <script src="./js/tabs.js" type="module"></script>
+        <script src="./js/script.js" type="module"></script>
+        <script src="./js/prism/prism-coy.js" type="module"></script>
       </section>
     </main>
     <!-- ============= Scroll btn ================= -->
