@@ -46,36 +46,36 @@ window.onload = calcScrollValue;
 // !-------------  Working zone ------------------
 
 function mergePairsOfElements(array) {
- for (let index = 0; index < array.length; index+=1) {
-   const arrayOutput = []
-   if(index % 2 === 0) {
-     arrayOutput.push( String(array[index]) + String(array[index+1]))
-   }
-   return arrayOutput
- }
+  for (let index = 0; index < array.length; index += 1) {
+    const arrayOutput = [];
+    if (index % 2 === 0) {
+      arrayOutput.push(String(array[index]) + String(array[index + 1]));
+    }
+    return arrayOutput;
+  }
 }
 
-console.log(mergePairsOfElements([1, 2, 3, 4, 5, 6]))
-
+console.log(mergePairsOfElements([1, 2, 3, 4, 5, 6]));
 
 function printElementsInReverseOrder(array) {
-  const reverseArray = array.reverse()
-  
+  const reverseArray = array.reverse();
+
   for (const number of reverseArray) {
-    console.log(number)
+    console.log(number);
   }
 }
 
-printElementsInReverseOrder([1, 2, 3, 4, 5, 6])
+// printElementsInReverseOrder([1, 2, 3, 4, 5, 6])
 
 function firstEvenFromEnd(number) {
-   const reverseNumber = String(number).split('').reverse()
+  const reverseNumber = String(number).split("").reverse();
 
- for (const number of reverseNumber) {
-  if (Number(number) % 2 === 0) {
-    return number
+  for (const number of reverseNumber) {
+    if (Number(number) % 2 === 0) {
+      return number;
+    }
   }
- }
 }
 
-console.log(firstEvenFromEnd(1234567))
+// console.log(firstEvenFromEnd(1234567))
+
