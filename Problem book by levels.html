@@ -1539,12 +1539,18 @@
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">37</span>
-            Дана некоторая строка: 'abcde abcde abcde'. Замените в ней первый
-            символ каждого слова на '!': '!bcde !bcde !bcde'
+            A certain string is given. Replace the first character of each word with the given string.
           </button>
           <div class="panel">
             <pre><code class="language-js">
-                There will be a function for fish composition
+              function replaceFirstSymbol(string, replacement) {
+                const arrayOfWords = string.split(' ')
+                const resultArray = []
+                for (const word of arrayOfWords) {
+                   resultArray.push(word.replace(word[0], replacement))
+                }
+                return resultArray.join(' ')
+              }
             </code></pre>
           </div>
           <!-- ============= Unit ================= -->

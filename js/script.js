@@ -76,6 +76,3 @@ function firstEvenFromEnd(number) {
     }
   }
 }
-
-// console.log(firstEvenFromEnd(1234567))
-
