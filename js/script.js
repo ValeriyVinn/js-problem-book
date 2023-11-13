@@ -76,3 +76,18 @@ function firstEvenFromEnd(number) {
     }
   }
 }
+
+
+const separateTripletsWithSpacesFromEnd = function(string) {
+  let result = '';
+
+  for (let index = string.length; index > 0; index -= 3) {
+    result = ' ' + string.slice(Math.max(0, index - 3), index) + result;
+  }
+
+  result = result.trim();
+
+  return result;
+};
+
+console.log(separateTripletsWithSpacesFromEnd('1234567890'));

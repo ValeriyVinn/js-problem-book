@@ -1,4 +1,4 @@
-console.log(23);
+// ! Color picker, Репета 6 - 11 1:32 - создание коллекций
 
 const colorPickerOptions = [
   { label: "red", color: "#F44336" },
@@ -8,17 +8,17 @@ const colorPickerOptions = [
   { label: "pink", color: "#E91E63" },
   { label: "indigo", color: "#3F51B5" },
 ];
-
+// !
 const colorPickerContainerEl = document.querySelector(".js-color-picker");
 
-const elements = colorPickerOptions.map(option => {
-     const buttonEl = document.createElement('button')
-        buttonEl.type = 'button'
-        buttonEl.classList.add('color-picker__option')
-        buttonEl.textContent = option.label
-        buttonEl.style.backgroundColor = option.color
+const elements = colorPickerOptions.map((option) => {
+  const buttonEl = document.createElement("button");
+  buttonEl.type = "button";
+  buttonEl.classList.add("color-picker__option");
+  buttonEl.textContent = option.label;
+  buttonEl.style.backgroundColor = option.color;
 
-     return   buttonEl
+  return buttonEl;
 });
 
 // for (let i = 0; i < colorPickerOptions.length; i += 1) {
@@ -31,8 +31,20 @@ const elements = colorPickerOptions.map(option => {
 
 //     elements.push(buttonEl)
 
-    
 // }
-console.log(elements)
+console.dir(elements);
 
-colorPickerContainerEl.append(...elements)
+colorPickerContainerEl.append(...elements);
+
+// !
+
+const getVerbsInColumn = function(string) {
+  const array = string.split(', ')
+  const result = array.map(el => {
+    console.log(el)
+  })
+  
+}
+
+console.log(getVerbsInColumn("abandon, abate, abbreviate, abide, absorb, accelerate, accept, accompany, accomplish"))
+
