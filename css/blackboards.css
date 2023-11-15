@@ -1,16 +1,44 @@
 /* Color picker, Репета 6 - 11 1:32 - создание коллекций*/
 
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
 .color-picker__option {
-    display: inline-block;
-    width: 70px;
-    height: 60px;
-    margin: 4px;
-    border: 2px solid yellow;
-    /* outline: 2px solid yellow; */
-    cursor: pointer;
-    color: yellow;
-    text-transform: uppercase;
-    border-radius: 10px;
-  }
-  
-  /*  */
+  display: inline-block;
+  width: 70px;
+  height: 60px;
+  margin: 4px;
+  border: 2px solid yellow;
+  /* outline: 2px solid yellow; */
+  cursor: pointer;
+  color: yellow;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+/*  */
+
+.homework {
+  background-color: royalblue;
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(0, 47, 0);
+}
+
+.homework-title {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+.homework-title-task {
+  color:darkgreen;
+  margin-left: 20px;
+}
+
+.tasks {
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 5px;
+}

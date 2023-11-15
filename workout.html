@@ -60,7 +60,7 @@
             Рисіч
           </div>
           <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">
-            DOM+
+            HW 6
           </div>
           <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">
             Level 4
@@ -216,11 +216,152 @@
         </div>
 
         <div id="tab3Content">
-          <h2>level 3</h2>
+          <h2>Homework 6</h2>
           <!-- ============= Unit ================= -->
           <button class="accordion">
+            <span class="task-number">01</span>
+            Write a script that: It will count and output to the console the
+            number of categories in ul#categories, i.e. li.item elements. For
+            each li.item element in the ul#categories list, it will find and
+            output to the console the text of the element's title (the
+            &lt;h2&gt; tag) and the number of elements in the category (all
+            &lt;li&gt;'s nested in it). To perform this task, you need to use
+            the forEach() method and DOM navigation properties. В результаті, в
+            консолі будуть виведені наступні повідомлення. <br />
+            <br />
+            Number of categories: 3<br />
+            <br />
+            Category: Animals<br />
+            Elements: 4<br />
+            <br />
+            Category: Products<br />
+            Elements: 3<br />
+            <br />
+            Category: Technologies<br />
+            Elements: 5<br />
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              const numberOfCategories = document.querySelectorAll(".item");
+
+              console.log(`Number of categories: ${numberOfCategories.length}`);
+              
+              numberOfCategories.forEach((elem) => {
+                console.log(`Category: ${elem.firstElementChild.textContent}`);
+                console.log(`Elements: ${elem.lastElementChild.children.length}`);
+              });
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            HTML містить порожній список ul#ingredients.
+
+            &lt;ul id="ingredients"&gt;&lt;/ul&gt;
+
+            JavaScript містить масив рядків. const ingredients = [ "Potatoes",
+            "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments", ]; Напиши
+            скрипт, який для кожного елемента масиву ingredients: Створить
+            окремий елемент &lt;li&gt;. Обов'язково використовуй метод
+            document.createElement(). Додасть назву інгредієнта як його
+            текстовий вміст. Додасть елементу клас item. Після чого, вставить
+            усі &lt;li&gt; за одну операцію у список ul#ingredients.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
             <span class="task-number">03</span>
-            Given a string. Print the length of this string to the console.
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">04</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">07</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">08</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            11Given a string. Print the length of this string to the console.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+        const lenghtOfString = (str) => {
+          console.log(str.length)
+        }
+    </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">10</span>
+            11Given a string. Print the length of this string to the console.
           </button>
           <div class="panel">
             <pre><code class="language-js">

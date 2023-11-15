@@ -90,4 +90,4 @@ const separateTripletsWithSpacesFromEnd = function(string) {
   return result;
 };
 
-console.log(separateTripletsWithSpacesFromEnd('1234567890'));
+console.log(separateTripletsWithSpacesFromEnd('fgsfgfsgsfg'));

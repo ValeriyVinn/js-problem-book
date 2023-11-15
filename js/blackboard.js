@@ -46,5 +46,17 @@ const getVerbsInColumn = function(string) {
   
 }
 
-console.log(getVerbsInColumn("abandon, abate, abbreviate, abide, absorb, accelerate, accept, accompany, accomplish"))
+// console.log(getVerbsInColumn("abandon, abate, abbreviate, abide, absorb, accelerate, accept, accompany, accomplish"))
 
+
+
+const numbersOfCategories = document.querySelectorAll('.item')
+
+console.log('Number of categories:', numbersOfCategories.length)
+
+numbersOfCategories.forEach(elem => {
+  console.log(`Category: ${elem.firstElementChild.textContent}`)
+  console.log(`Amount of elements: ${elem.lastElementChild.children.length}`)
+});
+
+// console.log(numbersOfCategories.firstElementChild.textContent)
