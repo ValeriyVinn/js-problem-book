@@ -22,6 +22,56 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/blackboards.css" />
+    <style>
+      #validation-input {
+        border: 2px solid #bdbdbd;
+      }
+
+      #validation-input.valid {
+        border-color: #4caf50;
+      }
+
+      #validation-input.invalid {
+        border-color: #f44336;
+      }
+
+      .login-form {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-form label {
+        margin-bottom: 16px;
+      }
+
+      .login-form input,
+      .login-form button {
+        width: 100%;
+        padding: 4px;
+        font: inherit;
+      }
+
+      .widget {
+        text-align: center;
+      }
+
+      .widget p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 48px;
+      }
+
+      .widget span {
+        font-family: monospace;
+      }
+
+      .widget button {
+        padding: 8px 12px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header class="container header">
@@ -80,6 +130,85 @@
                 </ul>
               </li>
             </ul>
+          </div>
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 2</h3>
+            <ul id="ingredients"></ul>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 3</h3>
+            <ul class="gallery"></ul>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 4</h3>
+            <div id="counter">
+              <button type="button" data-action="decrement">-1</button>
+              <span id="value">0</span>
+              <button type="button" data-action="increment">+1</button>
+            </div>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 5</h3>
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Please enter your name"
+            />
+            <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 6</h3>
+            <input
+              type="text"
+              id="validation-input"
+              data-length="6"
+              placeholder="Please enter 6 symbols"
+            />
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 7</h3>
+            <input id="font-size-control" type="range" min="16" max="96" />
+            <br />
+            <span id="text">Abracadabra!</span>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 8</h3>
+            <form class="login-form">
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Password
+                <input type="password" name="password" />
+              </label>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 9</h3>
+            <div class="widget">
+              <p>Background color: <span class="color">-</span></p>
+              <button type="button" class="change-color">Change color</button>
+            </div>
+          </div>
+
+          <div class="tasks">
+            <h3 class="homework-title-task">Task 10</h3>
+            <div id="controls">
+              <input class="inp" type="number" min="1" max="100" step="1" />
+              <button type="button" data-create>Create</button>
+              <button type="button" data-destroy>Destroy</button>
+            </div>
+
+            <div id="boxes"></div>
           </div>
         </div>
       </section>

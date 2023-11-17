@@ -4,6 +4,9 @@ li {
   list-style-type: none;
   /* Убираем маркеры */
 }
+img {
+  display: block;
+}
 
 .color-picker__option {
   display: inline-block;
@@ -41,4 +44,7 @@ li {
   background-color: cadetblue;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
+
+
