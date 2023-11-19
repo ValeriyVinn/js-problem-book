@@ -47,6 +47,9 @@ const getVerbsInColumn = function (string) {
 
 // console.log(getVerbsInColumn("abandon, abate, abbreviate, abide, absorb, accelerate, accept, accompany, accomplish"))
 
+
+// ?------- 6 homework -- write here -------
+// ! Task 2 ---------
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -55,22 +58,13 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+// ! Task 2 ----------
 
-const ingridientContainer = document.querySelector("#ingredients");
 
-const createUl = ingredients.map((ingridient) => {
-  const liEl = document.createElement("li");
-  liEl.classList.add("item");
-  liEl.textContent = ingridient;
 
-  console.log(liEl);
-  return liEl;
-});
 
-ingridientContainer.append(...createUl);
 
-console.log(createUl);
-
+// ! Task 3 -------------
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -85,138 +79,19 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+// img.classList.add('img-properties')
+// ! Task 3 ---------------
 
-const gallery = document.querySelector(".gallery");
 
-const galleryMarkup = images.reduce(
-  (acc, { alt, url }) =>
-    (acc += `<li><img src="${url}" alt="${alt}" width = "300" height = "auto"></li>`),
-  []
-);
 
-gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+// ?------- 7 homework -- write here -------
 
-let counterValue = 0;
 
-const btnDecrement = document
-  .querySelector('[data-action="decrement"]')
-  .addEventListener("click", () => {
-    counterValue -= 1;
-    targetValue.textContent = counterValue;
-    // console.log(counterValue);
-  });
+// ?------- 8 homework -- write here -------
 
-const btnIncrement = document
-  .querySelector('[data-action="increment"]')
-  .addEventListener("click", () => {
-    counterValue += 1;
-    targetValue.textContent = counterValue;
-    // console.log(counterValue);
-  });
+// ?------- 9 homework -- write here -------
 
-const targetValue = document.querySelector("#value");
+// ?------- 10 homework -- write here -------
 
-const input = document.getElementById("name-input");
-const span = document.getElementById("name-output");
+// ?------- 11 homework -- write here -------
 
-input.addEventListener("input", () => {
-  span.textContent = input.value.trim() || "Anonimous";
-});
-
-const inputEl = document.querySelector("#validation-input");
-inputEl.addEventListener("blur", onInputBlur);
-function onInputBlur(event) {
-  const total = event.currentTarget.value.length;
-  if (Number(inputEl.dataset.length) !== total) {
-    inputEl.classList.add("invalid");
-    inputEl.classList.remove("valid");
-    return;
-  }
-  inputEl.classList.add("valid");
-  inputEl.classList.remove("invalid");
-}
-
-const i = document.querySelector("#font-size-control");
-const textToChange = document.querySelector("#text");
-
-textToChange.style.fontSize = i.value + "px";
-
-i.addEventListener("input", (event) => {
-  textToChange.style.fontSize = `${i.value}px`;
-});
-
-const loginForm = document.querySelector(".login-form");
-loginForm.addEventListener("submit", onFormSubmit);
-
-function onFormSubmit(event) {
-  event.preventDefault();
-
-  const formElements = event.currentTarget.elements;
-  const mail = formElements.email.value;
-  const password = formElements.password.value;
-  const formData = {
-    mail,
-    password,
-  };
-
-  if (mail === "") {
-    alert("Email fields should not be empty");
-  } else if (password === "") {
-    alert("Password fields should not be empty");
-  } else {
-    alert("This form has been successfully submitted!");
-    console.log(formData);
-  }
-  loginForm.reset();
-}
-
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215)
-//     .toString(16)
-//     .padStart(6, 0)}`;
-// }
-
-// const button = document.querySelector(".change-color");
-// const sp = document.querySelector(".color");
-
-// button.addEventListener("click", changeBGC);
-
-// function changeBGC() {
-//   const randomizator = getRandomHexColor();
-//   sp.textContent = `${randomizator}`;
-//   document.body.style.backgroundColor = randomizator;
-// }
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
-function createBoxes(amount) {
-  for (let i = 0; i < amount; i++) {
-    const div = document.createElement("div");
-    div.style.width = `${30 + i * 10}px`;
-    div.style.height = `${30 + i * 10}px`;
-    div.style.background = getRandomHexColor();
-    document.querySelector("#boxes").appendChild(div);
-  }
-}
-
-function destroyBoxes() {
-  let boxes = document.querySelector("#boxes");
-  while (boxes.firstChild) {
-    boxes.removeChild(boxes.firstChild);
-  }
-}
-
-const controls = document.querySelector("#controls");
-const createButton = controls.querySelector("[data-create]");
-const destroyButton = controls.querySelector("[data-destroy]");
-const inp = controls.querySelector(".inp");
-
-createButton.addEventListener("click", () => {
-  createBoxes(inp.value);
-});
-
-destroyButton.addEventListener("click", () => {
-  destroyBoxes();
-});
