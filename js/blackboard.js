@@ -40,6 +40,7 @@ colorPickerContainerEl.append(...elements);
 
 const getVerbsInColumn = function (string) {
   const array = string.split(", ");
+  console.log(array)
   const result = array.map((el) => {
     console.log(el);
   });
@@ -49,6 +50,18 @@ const getVerbsInColumn = function (string) {
 
 
 // ?------- 6 homework -- write here -------
+
+// const liEl = document.querySelectorAll('.item')
+// console.log('Quantity of category:', liEl.length)
+// console.log('')
+// liEl.forEach((el) => {
+//   console.log('Name of category:', el.firstElementChild.textContent)
+//   console.log('Quantity of subcategory:',el.lastElementChild.children.length)
+//   console.log('')
+// })
+
+
+
 // ! Task 2 ---------
 const ingredients = [
   "Potatoes",
@@ -58,9 +71,24 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+
+
+// const createList = ingredients.map((el) => {
+//   const listEl = document.createElement('li')
+//   const tittleEl = document.createElement('h3')
+
+//   listEl.classList.add('itemchik')
+//   tittleEl.textContent = el
+//   listEl.append(tittleEl)
+
+//   return listEl
+// })
+
+// const container = document.getElementById('ingredients').append(...createList)
+
+
+
 // ! Task 2 ----------
-
-
 
 
 
