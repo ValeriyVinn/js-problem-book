@@ -1,12 +1,15 @@
 // ! Color picker, Репета 6 - 11 1:32 - создание коллекций
 
 const colorPickerOptions = [
-  { label: "red", color: "#F44336" },
-  { label: "green", color: "#4CAF50" },
+  { label: "red", color: "#FF0000" },
+  { label: "lime", color: "#00FF00" },
   { label: "blue", color: "#2196F3" },
+  { label: "maroon", color: "#800000" },
+  { label: "pink", color: "#FFC0CB" },
   { label: "grey", color: "#607D8B" },
-  { label: "pink", color: "#E91E63" },
   { label: "indigo", color: "#3F51B5" },
+  { label: "green", color: "#008000" },
+  { label: "salmon", color: "#FA8072" },
 ];
 // !
 const colorPickerContainerEl = document.querySelector(".js-color-picker");
@@ -93,13 +96,38 @@ const images = [
 // ! Task 6 ---------------
 
 
+
+
 // ! Task 7 ---------------
 
+const input = document.getElementById("font-size-control")
+const span = document.getElementById("text")
+
+span.style.fontSize = input.value + 'px'
+
+input.addEventListener("input", () => {
+  span.style.fontSize = `${input.value}px`
+})
 
 // ! Task 8 ---------------
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
 
+const btnEl = document.querySelector('.change-color')
+console.log(btnEl)
+const spanEl = document.querySelector('.color')
+console.log(spanEl.textContent)
 
+btnEl.addEventListener('click', () => {
+
+ document.body.style.backgroundColor = getRandomHexColor()
+ spanEl.textContent = getRandomHexColor()
+})
 // ! Task 9 ---------------
+
 
 
 // ! Task 10 ---------------
