@@ -100,33 +100,48 @@ const images = [
 
 // ! Task 7 ---------------
 
-const input = document.getElementById("font-size-control")
-const span = document.getElementById("text")
 
-span.style.fontSize = input.value + 'px'
-
-input.addEventListener("input", () => {
-  span.style.fontSize = `${input.value}px`
-})
 
 // ! Task 8 ---------------
+
+const loginForm = document.querySelector('.login-form')
+loginForm.addEventListener('submit', onFormSubmit)
+
+function onFormSubmit(event) {
+  event.preventDefault()
+
+  const formElements = event.currentTarget.elements
+  const mail = formElements.email.value
+  const password = formElements.password.value
+  
+  const formData = {
+    mail,
+    password
+  }
+
+  if(mail === '') {
+    alert('Email`s field should not be empty')
+  }
+  else if(password === '') {
+    alert('Password`s field should not be empty')
+  }
+  else {
+    alert('This form has been successfully submited')
+    console.log(formData)
+  }
+  loginForm.reset()
+}
+
+// console.log(loginForm)
+
+
+
+// ! Task 9 ---------------
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
-
-const btnEl = document.querySelector('.change-color')
-console.log(btnEl)
-const spanEl = document.querySelector('.color')
-console.log(spanEl.textContent)
-
-btnEl.addEventListener('click', () => {
-
- document.body.style.backgroundColor = getRandomHexColor()
- spanEl.textContent = getRandomHexColor()
-})
-// ! Task 9 ---------------
 
 
 
