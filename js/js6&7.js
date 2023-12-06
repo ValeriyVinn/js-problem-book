@@ -1,6 +1,8 @@
 // ?------- 6 homework -- write here -------
 // ! Task 1 ---------------
 
+
+
 // ! Task 2 ---------
 const ingredients = [
   "Potatoes",
@@ -10,6 +12,9 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+
+
+
 
 // ! Task 3 -------------
 const images = [
@@ -42,59 +47,58 @@ const images = [
 
 // ! Task 4 ---------------
 
-const span = document.querySelector("#value");
-console.log(typeof span.textContent);
-let value = 0;
-console.log(typeof value);
-const increment = document
-  .querySelector('[data-action="increment"]')
-  .addEventListener("click", () => {
-    value += 1;
-    span.textContent = value;
-  });
 
-const decrement = document
-  .querySelector('[data-action="decrement"]')
-  .addEventListener("click", () => {
-    value -= 1;
-    span.textContent = String(value);
-  });
 
 // ! Task 5 ---------------
 
 // ! Task 6 ---------------
 
+
+
 // ! Task 7 ---------------
+
+
 
 // ! Task 8 ---------------
 
-const loginForm = document.querySelector(".login-form");
-loginForm.addEventListener("submit", onFormSubmit);
+// const loginForm = document.querySelector(".login-form");
+// loginForm.addEventListener("submit", (event) => {
+//   event.preventDefault()
 
-function onFormSubmit(event) {
-  event.preventDefault();
+//   const formElements = event.currentTarget.elements;
+//   const mail = formElements.email.value;
+//   const password = formElements.password.value;
 
+//   const formData = {
+//     mail,
+//     password,
+//   };
+
+
+//   if (mail === "") {
+//     alert("Email`s field should not be empty");
+//   } else if (password === "") {
+//     alert("Password`s field should not be empty");
+//   } else {
+//     alert("This form has been successfully submited");
+//     console.log(formData);
+//   }
+//   loginForm.reset();
+// });
+
+
+const loginForm = document.querySelector('.login-form')
+console.log(loginForm )
+
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault()
   const formElements = event.currentTarget.elements;
-  const mail = formElements.email.value;
-  const password = formElements.password.value;
+  console.log(formElements)
 
-  const formData = {
-    mail,
-    password,
-  };
 
-  if (mail === "") {
-    alert("Email`s field should not be empty");
-  } else if (password === "") {
-    alert("Password`s field should not be empty");
-  } else {
-    alert("This form has been successfully submited");
-    console.log(formData);
-  }
-  loginForm.reset();
-}
+})
 
-// console.log(loginForm)
+
 
 // ! Task 9 ---------------
 function getRandomHexColor() {
