@@ -30,7 +30,7 @@ li {
     margin-left: 20px;
   }
   
-  .tasks {
+  .task {
     background-color: rgb(129, 251, 255);
     padding: 10px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ li {
     background-color: rgb(129, 251, 255);
     border: 3px solid rgb(92, 172, 172);
     border-radius: 3px;
-    color: rgb(92, 172, 172);;
+    color: rgb(92, 172, 172);
   }
   
   

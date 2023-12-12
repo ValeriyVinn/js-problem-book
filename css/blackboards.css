@@ -12,6 +12,10 @@ img {
   display: block;
 }
 
+.container.blackboard {
+  border-radius: 7px;
+}
+
 .color-picker__option {
   display: inline-block;
   width: 90px;
@@ -27,7 +31,7 @@ img {
 
 /*  */
 
-.homework {
+/* .homework {
   background-color: rgb(100, 180, 180);
   padding: 20px;
   border-radius: 5px;
@@ -42,9 +46,17 @@ img {
 .homework-title-task {
   color:rgb(100, 180, 180);
   margin-left: 20px;
+} */
+
+.blackboard-header-name {
+  color: royalblue;
+  margin-bottom: 15px;
 }
 
-.tasks {
+.blackboard-header-task {
+  color: rgb(92, 172, 172);
+}
+.task {
   background-color: rgb(129, 251, 255);
   padding: 10px;
   border-radius: 5px;
