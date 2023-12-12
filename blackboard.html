@@ -33,8 +33,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/blackboards.css" />
+    
   </head>
   <body>
+    <div class="container"></div>
     <header class="container header">
       <nav class="nav">
         <a href="./index.html" class="nav-link">Home</a>
@@ -48,14 +50,28 @@
       </nav>
       <h1 class="good-luck">Welcome!</h1>
     </header>
-    <main>
-      <section class="section container">
-        <h1 class="header-home">Color picker</h1>
 
-        <!-- Color picker, Репета 6 - 11 1:32 - создание коллекций -->
-        <div class="color-picker js-color-picker"></div>
-        <!-- ) -->
-        <h1 class="header-home">Сервоприводы</h1>
+    <main>
+      <!-- * Репета -->
+      <section class="section container">
+        <h1 class="section-header-name">Репета</h1>
+
+        <!--! Color picker, Репета 6 - 11 1:32 - создание коллекций -->
+        <div class="task color-picker js-color-picker">
+          <h2 class="header-home">Color picker</h2>
+        </div>
+        <!-- ! Сервоприводы -->
+        <div class="task">
+          <h2 class="header-home">Сервоприводы</h2>
+        </div>
+      </section>
+      <!-- * Рисіч -->
+      <section class="section container">
+        <h1 class="section-header-name">Рисіч</h1>
+      </section>
+      <!-- * Сімак -->
+      <section class="section container">
+        <h1 class="section-header-name">Сімак</h1>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>

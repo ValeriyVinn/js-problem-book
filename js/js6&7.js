@@ -31,29 +31,47 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-// img.classList.add('img-properties')
 
-// const toGetContainer = document.querySelector('.gallery3')
-// console.log(toGetContainer)
 
-// const markUp = images.map(({url, alt}) => {
 
-// const objectItem = `<li><img src=${url} alt=${alt} width=300 height=200></>`
-
-// return objectItem
-// }).join('')
-
-// toGetContainer.insertAdjacentHTML('afterbegin', markUp)
 
 // ! Task 4 ---------------
 
+const decrement = document.querySelector('[data-action="decrement"]')
+const increment = document.querySelector('[data-action="increment"]')
+const valueEl = document.getElementById('value')
+ 
+let value = 0
+
+const d = decrement.addEventListener('click', decreace)
+const i = increment.addEventListener('click', increace)
+
+function decreace() {
+value -= 1
+valueEl.textContent = value 
+// console.log(value)
+// return value
+}
+function increace() {
+  value +=1
+  valueEl.textContent = value 
+  // console.log(value)
+  // return value
+}
+
+// console.log(i)
 
 
 // ! Task 5 ---------------
 
 // ! Task 6 ---------------
 
-
+// document.addEventListener('keydown', (event) => {
+//   console.log('KeyCode', event.keyCode)
+//   console.log('key', event.key)
+//   console.log('code', event.code)
+  
+// })
 
 // ! Task 7 ---------------
 
@@ -88,7 +106,7 @@ const images = [
 
 
 const loginForm = document.querySelector('.login-form')
-console.log(loginForm )
+// console.log(loginForm )
 
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault()
