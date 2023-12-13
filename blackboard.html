@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./css/blackboards.css" />
     
   </head>
-  <body>
+  <body class="body">
     <div class="container"></div>
     <header class="container header blackboard">
       <nav class="nav">
@@ -64,14 +64,31 @@
         <div class="task">
           <h3 class="blackboard-header-task">Сервоприводы</h3>
         </div>
+        <!-- !  -->
       </section>
       <!-- * Рисіч -->
       <section class="section container blackboard">
-        <h1 class="section-header-name">Рисіч</h1>
+        <h1 class="blackboard-header-name">Рисіч</h1>
       </section>
       <!-- * Сімак -->
-      <section class="section container blackboard">
-        <h1 class="section-header-name">Сімак</h1>
+
+      <div class="simak-modal-overlay" id="simakModalOverlay">
+        
+      </div>
+      <section class="simak section container blackboard">
+        <h1 class="blackboard-header-name">Сімак</h1>
+        <!-- ! Модалка -->
+        <div class="task open-modal">
+          <h3 class="blackboard-header-task">Модалка</h3>
+          
+          <div class="simak-modal" id="simakModal">
+           <h4 class="blackboard-modal-task">Modal from O.Simak</h4>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam libero et nobis cum nemo.</p>
+           <button type="button" class="simak-modal-close-btn" id="simakModalCloseBtn">Close</button>
+          </div>
+          <button class="simak-modal-open-btn" id="simakModalOpenBtn">Modal from O.Simak</button>
+        </div>
+        <!-- !  -->
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>

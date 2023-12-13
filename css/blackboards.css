@@ -52,6 +52,9 @@ img {
   color: royalblue;
   margin-bottom: 15px;
 }
+.blackboard-header-task {
+  margin-bottom: 15px;
+}
 
 .blackboard-header-task {
   color: rgb(92, 172, 172);
@@ -61,5 +64,81 @@ img {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
+  /* position: relative; */
 }
 
+/** Репета --------*/
+
+/** Рисіч --------*/
+
+/** Сімак --------*/
+
+/* ! Модалка ----*/
+.simak.section {
+  position: relative;
+}
+
+body {
+  position: relative;
+}
+
+body.open-modal {
+  overflow: hidden;
+}
+
+body.open-modal  .simak-modal,
+body.open-modal  .simak-modal-overlay {
+  display: block;
+}
+
+.simak-modal {
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  background-color: blanchedalmond;
+  padding: 20px 30px;
+  border: 2px solid pink;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.simak-modal-close-btn {
+  background-color: transparent;
+  font-size: 20px;
+  color: red;
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+
+.simak-modal-close-btn:active {
+  background-color: rgb(255, 244, 227);
+  border: 2px solid rgb(252, 218, 224);
+  color: rgb(255, 53, 53);
+}
+
+.simak-modal-open-btn {
+  background-color: transparent;
+  font-size: 20px;
+  color: green;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.simak-modal-open-btn:active {
+  background-color: rgb(147, 251, 255);
+  border: 2px solid rgb(0, 183, 0);
+}
+
+.simak-modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.779);
+  display: none;
+}

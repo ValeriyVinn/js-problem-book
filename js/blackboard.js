@@ -1,3 +1,5 @@
+// * Репета  ----------
+
 // ! Color picker, Репета 6 - 11 1:32 - создание коллекций
 
 const colorPickerOptions = [
@@ -39,16 +41,46 @@ console.dir(elements);
 
 colorPickerContainerEl.append(...elements);
 
-// !
+// * Рисіч  ----------
 
-const getVerbsInColumn = function (string) {
-  const array = string.split(", ");
-  console.log(array)
-  const result = array.map((el) => {
-    console.log(el);
-  });
+// * Сімак  ----------
+
+
+
+// ! Модалка -----------
+
+// const overlay = document.getElementById("simakModalOverlay");
+// const modal = document.getElementById("simakModal");
+// const modalOpenBtn = document.getElementById("simakModalOpenBtn");
+// const modalCloseBtn = document.getElementById("simakModalCloseBtn");
+
+// console.log(overlay);
+// console.log(modal);
+// console.log(modalOpenBtn);
+// console.log(modalCloseBtn);
+
+const refs = {
+  overlay: document.getElementById("simakModalOverlay"),
+  modal: document.getElementById("simakModal"),
+  modalOpenBtn: document.getElementById("simakModalOpenBtn"),
+  modalCloseBtn: document.getElementById("simakModalCloseBtn"),
+};
+const classes = {
+  openModal: "open-modal",
 };
 
-// console.log(getVerbsInColumn("abandon, abate, abbreviate, abide, absorb, accelerate, accept, accompany, accomplish"))
+refs.modalOpenBtn.addEventListener("click", handleModal);
+refs.modalCloseBtn.addEventListener("click", handleModal);
+refs.overlay.addEventListener("click", handleModal);
+document.addEventListener("keydown", handleModalOnEscape);
 
+function handleModal() {
+  document.body.classList.toggle(classes.openModal);
+}
+function handleModalOnEscape({ code }) {
+  if (code === "Escape") {
+    document.body.classList.remove(classes.openModal);
+  }
+}
 
+// !  -----------
