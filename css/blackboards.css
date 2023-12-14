@@ -83,7 +83,7 @@ body {
 }
 
 body.open-modal {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body.open-modal  .simak-modal,

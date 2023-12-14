@@ -33,7 +33,6 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/blackboards.css" />
-    
   </head>
   <body class="body">
     <div class="container"></div>
@@ -52,6 +51,14 @@
     </header>
 
     <main>
+      <!-- * Конспект -->
+      <section class="section container blackboard">
+        <h1 class="blackboard-header-name">Конспект</h1>
+        <div class="task">
+          <h3 class="blackboard-header-task">Задача 1</h3>
+        </div>
+      </section>
+
       <!-- * Репета -->
       <section class="section container blackboard">
         <h1 class="blackboard-header-name">Репета</h1>
@@ -72,21 +79,30 @@
       </section>
       <!-- * Сімак -->
 
-      <div class="simak-modal-overlay" id="simakModalOverlay">
-        
-      </div>
+      <div class="simak-modal-overlay" id="simakModalOverlay"></div>
       <section class="simak section container blackboard">
         <h1 class="blackboard-header-name">Сімак</h1>
         <!-- ! Модалка -->
         <div class="task open-modal">
           <h3 class="blackboard-header-task">Модалка</h3>
-          
+
           <div class="simak-modal" id="simakModal">
-           <h4 class="blackboard-modal-task">Modal from O.Simak</h4>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam libero et nobis cum nemo.</p>
-           <button type="button" class="simak-modal-close-btn" id="simakModalCloseBtn">Close</button>
+            <h4 class="blackboard-modal-task">Modal from O.Simak</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              veniam libero et nobis cum nemo.
+            </p>
+            <button
+              type="button"
+              class="simak-modal-close-btn"
+              id="simakModalCloseBtn"
+            >
+              Close
+            </button>
           </div>
-          <button class="simak-modal-open-btn" id="simakModalOpenBtn">Modal from O.Simak</button>
+          <button class="simak-modal-open-btn" id="simakModalOpenBtn">
+            Modal from O.Simak
+          </button>
         </div>
         <!-- !  -->
       </section>
