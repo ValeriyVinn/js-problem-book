@@ -55,142 +55,74 @@
             onClick="JavaScript:selectTab(1);"
             class="tab initialColor"
           >
-            Репета
+            Autocheck 1
           </div>
           <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab">
-            Рисіч
+            Autocheck 2
           </div>
           <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">
-            HW 6
+            Autocheck 3
           </div>
           <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">
-            Level 4
+            Autocheck 4
           </div>
           <div id="tab5" onClick="JavaScript:selectTab(5);" class="tab">
-            Level 5
+            Autocheck 5
           </div>
           <div id="tab6" onClick="JavaScript:selectTab(6);" class="tab">
-            Level 6
+            Abstract 6-7
           </div>
           <div id="tab7" onClick="JavaScript:selectTab(7);" class="tab">
-            Level 7
+            Abstract 8-11
           </div>
           <div id="tab8" onClick="JavaScript:selectTab(8);" class="tab">
-            Level 8
+            Репета
           </div>
           <div id="tab9" onClick="JavaScript:selectTab(9);" class="tab">
-            Level 9
+            Рисіч
           </div>
           <div id="tab10" onClick="JavaScript:selectTab(10);" class="tab">
-            Level 10
+            Сімак
           </div>
         </div>
 
         <br />
         <div id="tab1Content">
           <h2></h2>
-
+          <!-- !  Autocheck 1 --- -->
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
-            <span class="task-number">01</span>
-            doMath
+            <span class="task-number">1-01</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-            const doMath = function (a, b, callback) {
-              console.log(callback(a, b));
-            };
-            
-            const add = function (x, y) {
-              return x + y;
-            };
-            
-            const sub = function (x, y) {
-              return x - y;
-            };
-            
-            doMath(2, 3, add);
-            doMath(10, 7, sub);
+            There will be a function for fish composition
           </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
-            <span class="task-number">02</span>
-            Filter
+            <span class="task-number">1-02</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-            const filter = function (array, test) {
-              const filteredArray = [];
-          
-              for (const el of array) {
-                  const passed = test(el);
-          
-                  if (passed) {
-                      filteredArray.push(el);
-                  }
-              }
-          
-              return filteredArray;
-          };
-          
-          const callback1 = function (value) {
-              return value >= 3;
-          };
-          
-          const r1 = filter([1, 2, 3, 4, 5], callback1);
-          console.log(r1);
-          
-          const callback2 = function (value) {
-              return value <= 4;
-          };
-          
-          const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
-          console.log(r2);
-          
-          const fruits = [
-              { name: 'apples', quantity: 200, isFresh: true },
-              { name: 'grapes', quantity: 150, isFresh: false },
-              { name: 'bananas', quantity: 100, isFresh: true },
-          ];
-          
-          const getFruitsWithQuantity = function (fruit) {
-              return fruit.quantity >= 120;
-          };
-          
-          const r3 = filter(fruits, getFruitsWithQuantity);
-          console.log(r3);
+              There will be a function for fish composition
         </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
 
           <button class="accordion">
-            <span class="task-number">03</span>
-            makeSheff
+            <span class="task-number">1-03</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-            const makeSheff = function (name) {
-              const makeDish = function (dish) {
-                  console.log(`${name} готовит ${dish}`);
-              };
-            
-              return makeDish;
-            };
-            
-            const mango = makeSheff('Mango');
-            
-            mango('котлеты');
-            mango('пирожок');
-            
-            const poly = makeSheff('Poly');
-            
-            poly('чай');
-            poly('омлет');
+              There will be a function for fish composition
         </code></pre>
           </div>
 
@@ -198,17 +130,15 @@
         </div>
 
         <div id="tab2Content">
-          <!-- <h2>Рисіч</h2> -->
+          <!-- !  Autocheck 2 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
-            <span class="task-number">02</span>
-            In this simple assignment you are given a number and have to make it
-            negative. But maybe the number is already negative?
+            <span class="task-number">2-01</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-        function makeNegative(num) {
-          return -Math.abs(num);
+              There will be a function for fish composition
         }
     </code></pre>
           </div>
@@ -217,62 +147,26 @@
         </div>
 
         <div id="tab3Content">
-          <h2>Homework 6</h2>
+          <h2></h2>
+          <!-- !  Autocheck 3 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
-            <span class="task-number">01</span>
-            Write a script that: It will count and output to the console the
-            number of categories in ul#categories, i.e. li.item elements. For
-            each li.item element in the ul#categories list, it will find and
-            output to the console the text of the element's title (the
-            &lt;h2&gt; tag) and the number of elements in the category (all
-            &lt;li&gt;'s nested in it). To perform this task, you need to use
-            the forEach() method and DOM navigation properties. В результаті, в
-            консолі будуть виведені наступні повідомлення. <br />
-            <br />
-            Number of categories: 3<br />
-            <br />
-            Category: Animals<br />
-            Elements: 4<br />
-            <br />
-            Category: Products<br />
-            Elements: 3<br />
-            <br />
-            Category: Technologies<br />
-            Elements: 5<br />
+            <span class="task-number">3-01</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-              const numberOfCategories = document.querySelectorAll(".item");
-
-              console.log(`Number of categories: ${numberOfCategories.length}`);
-              
-              numberOfCategories.forEach((elem) => {
-                console.log(`Category: ${elem.firstElementChild.textContent}`);
-                console.log(`Elements: ${elem.lastElementChild.children.length}`);
-              });
+              There will be a function for fish composition
     </code></pre>
           </div>
 
           <button class="accordion">
-            <span class="task-number">02</span>
-            HTML містить порожній список ul#ingredients.
-
-            &lt;ul id="ingredients"&gt;&lt;/ul&gt;
-
-            JavaScript містить масив рядків. const ingredients = [ "Potatoes",
-            "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments", ]; Напиши
-            скрипт, який для кожного елемента масиву ingredients: Створить
-            окремий елемент &lt;li&gt;. Обов'язково використовуй метод
-            document.createElement(). Додасть назву інгредієнта як його
-            текстовий вміст. Додасть елементу клас item. Після чого, вставить
-            усі &lt;li&gt; за одну операцію у список ul#ingredients.
+            <span class="task-number">3-02</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
+              There will be a function for fish composition
     </code></pre>
           </div>
 
@@ -376,8 +270,8 @@
         </div>
 
         <div id="tab4Content">
-          <h2>level 4</h2>
-
+          <h2></h2>
+          <!-- !  Autocheck 4 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">04</span>
@@ -396,7 +290,8 @@
         </div>
 
         <div id="tab5Content">
-          <h2>level 5</h2>
+          <h2></h2>
+          <!-- !  Autocheck 5 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">05</span>
@@ -414,7 +309,8 @@
         </div>
 
         <div id="tab6Content">
-          <h2>level 6</h2>
+          <h2></h2>
+          <!-- !  Abstract 6 - 7 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">06</span>
@@ -433,8 +329,8 @@
         </div>
 
         <div id="tab7Content">
-          <h2>level 7</h2>
-
+          <h2></h2>
+          <!-- !  Abstract 8 - 11 --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">07</span>
@@ -449,13 +345,171 @@
 
           <!-- ============= Unit ================= -->
         </div>
-
+        <!-- ! Репета ---  -->
         <div id="tab8Content">
-          <h2>level 8</h2>
+          <h2></h2>
           <!-- ============= Unit ================= -->
           <button class="accordion">
+            <span class="task-number">01</span>
+            doMath
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              const doMath = function (a, b, callback) {
+                console.log(callback(a, b));
+              };
+              
+              const add = function (x, y) {
+                return x + y;
+              };
+              
+              const sub = function (x, y) {
+                return x - y;
+              };
+              
+              doMath(2, 3, add);
+              doMath(10, 7, sub);
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">02</span>
+            Filter
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              const filter = function (array, test) {
+                const filteredArray = [];
+            
+                for (const el of array) {
+                    const passed = test(el);
+            
+                    if (passed) {
+                        filteredArray.push(el);
+                    }
+                }
+            
+                return filteredArray;
+            };
+            
+            const callback1 = function (value) {
+                return value >= 3;
+            };
+            
+            const r1 = filter([1, 2, 3, 4, 5], callback1);
+            console.log(r1);
+            
+            const callback2 = function (value) {
+                return value <= 4;
+            };
+            
+            const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
+            console.log(r2);
+            
+            const fruits = [
+                { name: 'apples', quantity: 200, isFresh: true },
+                { name: 'grapes', quantity: 150, isFresh: false },
+                { name: 'bananas', quantity: 100, isFresh: true },
+            ];
+            
+            const getFruitsWithQuantity = function (fruit) {
+                return fruit.quantity >= 120;
+            };
+            
+            const r3 = filter(fruits, getFruitsWithQuantity);
+            console.log(r3);
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">03</span>
+            makeSheff
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              const makeSheff = function (name) {
+                const makeDish = function (dish) {
+                    console.log(`${name} готовит ${dish}`);
+                };
+              
+                return makeDish;
+              };
+              
+              const mango = makeSheff('Mango');
+              
+              mango('котлеты');
+              mango('пирожок');
+              
+              const poly = makeSheff('Poly');
+              
+              poly('чай');
+              poly('омлет');
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">04</span>
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">05</span>
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">06</span>
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">07</span>
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
             <span class="task-number">08</span>
-            Дано число. Выведите в консоль первую цифру этого числа.
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">09</span>
+            Fisher
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+                There will be a function for fish composition
+            </code></pre>
+          </div>
+
+          <button class="accordion">
+            <span class="task-number">10</span>
+            Fisher
           </button>
           <div class="panel">
             <pre><code class="language-js">
@@ -467,7 +521,8 @@
         </div>
 
         <div id="tab9Content">
-          <h2>level 9</h2>
+          <h2></h2>
+          <!-- !  Рисіч --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">09</span>
@@ -483,7 +538,8 @@
         </div>
 
         <div id="tab10Content">
-          <h2>level 10</h2>
+          <h2></h2>
+          <!-- !  Сімак --- -->
           <!-- ============= Unit ================= -->
           <button class="accordion">
             <span class="task-number">10</span>
