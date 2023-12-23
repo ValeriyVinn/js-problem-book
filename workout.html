@@ -98,7 +98,7 @@
           </button>
           <div class="panel">
             <pre><code class="language-js">
-            There will be a function for fish composition
+              There will be a function for fish composition
           </code></pre>
           </div>
 
@@ -111,7 +111,7 @@
           <div class="panel">
             <pre><code class="language-js">
               There will be a function for fish composition
-        </code></pre>
+             </code></pre>
           </div>
 
           <!-- ============= Unit ================= -->
@@ -132,8 +132,42 @@
         <div id="tab2Content">
           <!-- !  Autocheck 2 --- -->
           <!-- ============= Unit ================= -->
+
           <button class="accordion">
             <span class="task-number">2-01</span>
+            У функції може бути більше одного оператора return.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              function checkAge(age) {
+                if (age >= 18) {
+                  return "You are an adult";
+                }
+                return "You are a minor";
+              }
+          </code></pre>
+          </div>
+
+          <!-- ============= Unit ================= -->
+
+          <button class="accordion">
+            <span class="task-number">2-02</span>
+            Рефакторинг коду функції checkPassword.
+          </button>
+          <div class="panel">
+            <pre><code class="language-js">
+              function checkPassword(password) {
+                const ADMIN_PASSWORD = "jqueryismyjam";
+               if (password === ADMIN_PASSWORD) {
+                  return "Welcome!";
+                } 
+                  return "Access denied, wrong password!";
+              }
+             </code></pre>
+          </div>
+          <!-- ============= Unit ================= -->
+          <button class="accordion">
+            <span class="task-number">2-03</span>
             Fisher
           </button>
           <div class="panel">

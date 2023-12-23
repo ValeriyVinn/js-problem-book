@@ -32,46 +32,56 @@ const images = [
   },
 ];
 
+// const gallery3 = document.querySelector('.gallery3')
+// console.log(gallery3)
+
+// const mU = images.map(({url, alt}) => 
+//  `<li><img src="${url}" alt="${alt}" width=300></li>`
+// ).join('')
+// gallery3.insertAdjacentHTML('afterbegin', mU)
+
+// const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
 
 
+// gallery3.insertAdjacentHTML('afterbegin', mU)
 
 // ! Task 4 ---------------
 
-const decrement = document.querySelector('[data-action="decrement"]')
-const increment = document.querySelector('[data-action="increment"]')
-const valueEl = document.getElementById('value')
- 
-let value = 0
+// const decrementEl = document.querySelector('[data-action="decrement"]')
+// const incrementEl = document.querySelector('[data-action="increment"]')
+// const valueEl = document.querySelector('.span')
 
-const d = decrement.addEventListener('click', decreace)
-const i = increment.addEventListener('click', increace)
+// let value = 0
 
-function decreace() {
-value -= 1
-valueEl.textContent = value 
-// console.log(value)
-// return value
-}
-function increace() {
-  value +=1
-  valueEl.textContent = value 
-  // console.log(value)
-  // return value
-}
+// decrementEl.addEventListener('click', toDecrease)
+// incrementEl.addEventListener('click', toIncrease)
 
-// console.log(i)
+// function toDecrease(event) {
+//   value -= 1
+  
+//   valueEl.textContent = value
+// }
+
+// function toIncrease() {
+//   value += 1
+//   valueEl.textContent = value
+// }
 
 
 // ! Task 5 ---------------
 
-// ! Task 6 ---------------
+const inputEl = document.getElementById('name-input')
+const spanEl = document.getElementById('name-output')
 
-// document.addEventListener('keydown', (event) => {
-//   console.log('KeyCode', event.keyCode)
-//   console.log('key', event.key)
-//   console.log('code', event.code)
-  
-// })
+console.log(inputEl)
+console.log(spanEl)
+
+inputEl.addEventListener('input', (e) => {
+  console.log(e.currentTarget.value)
+  spanEl.textContent = e.currentTarget.value.trim() || "Anonymous"
+})
+
+// ! Task 6 ---------------
 
 // ! Task 7 ---------------
 
