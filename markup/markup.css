@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: lightblue;
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.nav-link {
+  /* text-decoration: underline 2px royalblue dotted; */
+  font-size: 30px;
+  color: royalblue;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.nav {
+  display: flex;
+  padding: 15px 0px;
+  
+  
+}
+
+.subnav {
+    display: flex;
+}
+
+.section.subnav {
+    min-height: 50px;
+}
+
+.subnav-item{
+  margin-right: 26px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-number {
+  /* color: darkblue; */
+  font-size: 20px;
+  font-weight: 600;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+a:hover {
+  color: darkblue;
+  /* text-decoration: underline 2px darkblue; */
+}
+
+.section {
+  /* min-width: 700px; */
+  width: 1200px;
+  min-height: 700px;
+  margin: 20px auto;
+  padding: 15px;
+  
+}
+
+.header-home { 
+  color: darkblue;
+}
+
+.abzatz-notice {
+  padding: 15px 10px;
+  font-size: 18px;
+  color: darkblue;
+  outline: 1px solid darkblue;
+  border-radius: 3px;
+}
+
+.header-level {
+  margin-bottom: 20px;
+  color: royalblue;
+}
+
+.good-luck {
+  font-size: 38px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  
+}
+
