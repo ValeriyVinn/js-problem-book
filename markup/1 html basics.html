@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Основи HTML</title>
-</head>
-<body>
+
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <link rel="stylesheet" href="./1 html basics.css" />
+  </head>
+  <body>
     <header class="container header">
-        <nav class="nav">
-          <a href="./index.html" class="nav-link">Home</a>
-          <a href="./Problem book by levels.html" class="nav-link"
-            >Markup</a
-          >
-          <a href="./Problem book by levels.html" class="nav-link"
-            >Problem book by levels</a
-          >
-          <a href="./workout.html" class="nav-link">Workout</a>
-          <a href="./blackboard.html" class="nav-link">Blackboard</a>
-          <a href="./hw6&7.html" class="nav-link">HW 6&7</a>
-          <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
-        </nav>
-        <h1 class="good-luck">Welcome!</h1>
-      </header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
 
-      <main>
+          <li class="nav-list-item dropdown">
+            <button class="dropbtn">Markup</button>
+            <div class="dropdown-content">
+              <a href="./markup/1 html basics.html">Основи HTML</a>
+              <a href="./markup/2 css basics fonts.html">Основи CSS</a>
+              <a href="./markup/3 block model flexbox.html"
+                >Блокова модель. Flexbox</a
+              >
+              <a href="./markup/4 vector graphics.html">Векторна графіка</a>
+              <a href="./markup/5 positioning and animation.html"
+                >Поциціонування і анімація</a
+              >
+              <a href="./markup/6 forms.html">Форми</a>
+              <a href="./markup/7 bem sass.html">BEM SASS</a>
+              <a href="./markup/8 adaptive layout.html">Адаптивна верстка</a>
+            </div>
+          </li>
 
-      </main>
-    
-</body>
+          <li class="nav-list-item">
+            <a href="./Problem book by levels.html" class="nav-link"
+              >Problem book by levels</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="./workout.html" class="nav-link">Workout</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./blackboard.html" class="nav-link">Blackboard</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./hw6&7.html" class="nav-link">HW 6&7</a>
+          </li>
+        </ul>
+
+        <div class="dropdown"></div>
+
+        <!-- <a href="./markup/markup.html" class="nav-link">Markup</a> -->
+
+        <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
+      </nav>
+      <h1 class="good-luck">HTML basics</h1>
+    </header>
+
+    <main>
+      <section class="section container">
+        <h1 class="header-home">HTML</h1>
+        <p class="abzatz-notice">
+          HyperText Markup Language (мова розмітки гіпертексту) - мова розмітки
+          веб-документів. Набір правил для структурування (розмітки) текстової
+          інформації, додавання зображень, створення таблиць, форм, списків
+          тощо. 
+        </p>
+        <p class="abzatz-notice">
+          HTML-документ - текстовий файл з розширенням .html. Документ,
+          розмічений за допомогою HTML, інтерпретується браузером, в результаті
+          чого користувачі бачать не вихідний код з елементами розмітки, а
+          остаточний результат обробки - веб-сторінку.
+        </p>
+      </section>
+    </main>
+    <!-- ============= Scroll btn ================= -->
+
+    <!-- <button onclick="topFunction()" id="myBtn" >
+        Top
+      </button> -->
+    <!-- <button onclick="topFunction()" id="myBtn">Scroll to Top</button> -->
+
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!-- ============= Scroll btn ================= -->
+
+    <script src="../js/script.js" type="module"></script>
+    <!-- <script src="./js/script.js" type="module"></script> -->
+    <script src="./js/prism/prism-coy.js" type="module"></script>
+  </body>
 </html>
