@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0px;
 }
 
@@ -192,4 +193,20 @@ html {
   
   }
   
-  /* ============= Scroll btn =================  */
+  /* ============= Main =================  */
+
+  code {
+    outline: 1px solid grey;
+    border-radius: 3px;
+    padding: 3px 5px;
+    background-color: rgb(226, 226, 226);
+  }
+
+  .img-web {
+    max-width: 640px;
+  }
+
+  .interesting {
+    
+    background-color: aquamarine;
+  }
