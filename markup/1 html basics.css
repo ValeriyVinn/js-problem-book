@@ -8,6 +8,7 @@ p {
 
 a {
   text-decoration: none;
+  color: blue;
 }
 
 ul {
@@ -20,9 +21,9 @@ ul {
   background-color: lightblue;
   margin: 0 auto;
 
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 1400px;
 }
 
 .nav-link {
@@ -82,8 +83,14 @@ ul {
   padding: 20px 40px;
 }
 
+.header-main {
+  color: darkblue;
+  font-size: 40px;
+}
+
 .header-home { 
   color: darkblue;
+  font-size: 30px;
 }
 
 .abzatz-notice {
@@ -198,7 +205,7 @@ html {
   code {
     outline: 1px solid grey;
     border-radius: 3px;
-    padding: 3px 5px;
+    padding: 1px 5px;
     background-color: rgb(226, 226, 226);
   }
 
@@ -209,4 +216,34 @@ html {
   .interesting {
     
     background-color: aquamarine;
+  }
+
+  .interesting-item {
+    
+    background-color: inherit
+  }
+
+  .article {
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /* background-color: rgb(191, 254, 254); */
+    outline: 2px solid rgb(191, 254, 254);
+  }
+
+  .ukr-eng {
+    display: flex;
+  }
+
+  .lang {
+    padding: 5px;
+    
+  }
+
+  .ukr {
+    background-color: aqua;
+  }
+
+  .eng {
+    background-color: azure;
   }
