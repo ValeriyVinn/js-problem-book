@@ -224,6 +224,7 @@ html {
   }
 
   .article {
+    
     padding: 10px;
     border-radius: 3px;
     margin-bottom: 10px;
@@ -231,19 +232,42 @@ html {
     outline: 2px solid rgb(191, 254, 254);
   }
 
-  .ukr-eng {
+  .article-header {
     display: flex;
-  }
-
-  .lang {
-    padding: 5px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
     
   }
 
+
+  .ukr-eng {
+    display: flex;
+    
+  }
+
+  .lang-list {
+    /* padding: 5px; */
+    list-style-type:initial;
+  }
+
   .ukr {
-    background-color: aqua;
+    font-size: 20px;
+    padding: 10px;
+    background-color:rgb(249, 249, 174);
+    max-width: 50%;
+    margin-right: 5px;
+    
   }
 
   .eng {
-    background-color: azure;
+    font-size: 20px;
+    max-width: 50%;
+    padding: 10px;
+    background-color: rgb(69, 254, 254);
+  }
+
+  .ukr a:hover,
+  .eng a:hover {
+    text-decoration: underline;
   }
