@@ -1,8 +1,6 @@
 // ?------- 6 homework -- write here -------
 // ! Task 1 ---------------
 
-
-
 // ! Task 2 ---------
 const ingredients = [
   "Potatoes",
@@ -13,6 +11,18 @@ const ingredients = [
   "Condiments",
 ];
 
+// const ingredientsRef = document.getElementById('ingredients')
+// console.log(ingredientsRef)
+
+// const markUpIngredients = ingredients.map((e) => {
+  
+//   const hOne = document.createElement('h1')
+//   hOne.textContent = e
+//   console.log(hOne)
+//   return hOne
+// })
+
+// ingredientsRef.append(...markUpIngredients)
 
 
 
@@ -35,13 +45,12 @@ const images = [
 // const gallery3 = document.querySelector('.gallery3')
 // console.log(gallery3)
 
-// const mU = images.map(({url, alt}) => 
+// const mU = images.map(({url, alt}) =>
 //  `<li><img src="${url}" alt="${alt}" width=300></li>`
 // ).join('')
 // gallery3.insertAdjacentHTML('afterbegin', mU)
 
 // const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
-
 
 // gallery3.insertAdjacentHTML('afterbegin', mU)
 
@@ -58,7 +67,7 @@ const images = [
 
 // function toDecrease(event) {
 //   value -= 1
-  
+
 //   valueEl.textContent = value
 // }
 
@@ -67,25 +76,22 @@ const images = [
 //   valueEl.textContent = value
 // }
 
-
 // ! Task 5 ---------------
 
-const inputEl = document.getElementById('name-input')
-const spanEl = document.getElementById('name-output')
+const inputEl = document.getElementById("name-input");
+const spanEl = document.getElementById("name-output");
 
-console.log(inputEl)
-console.log(spanEl)
+console.log(inputEl);
+console.log(spanEl);
 
-inputEl.addEventListener('input', (e) => {
-  console.log(e.currentTarget.value)
-  spanEl.textContent = e.currentTarget.value.trim() || "Anonymous"
-})
+inputEl.addEventListener("input", (e) => {
+  console.log(e.currentTarget.value);
+  spanEl.textContent = e.currentTarget.value.trim() || "Anonymous";
+});
 
 // ! Task 6 ---------------
 
 // ! Task 7 ---------------
-
-
 
 // ! Task 8 ---------------
 
@@ -102,7 +108,6 @@ inputEl.addEventListener('input', (e) => {
 //     password,
 //   };
 
-
 //   if (mail === "") {
 //     alert("Email`s field should not be empty");
 //   } else if (password === "") {
@@ -114,19 +119,14 @@ inputEl.addEventListener('input', (e) => {
 //   loginForm.reset();
 // });
 
-
-const loginForm = document.querySelector('.login-form')
+const loginForm = document.querySelector(".login-form");
 // console.log(loginForm )
 
-loginForm.addEventListener('submit', (event) => {
-  event.preventDefault()
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault();
   const formElements = event.currentTarget.elements;
-  console.log(formElements)
-
-
-})
-
-
+  console.log(formElements);
+});
 
 // ! Task 9 ---------------
 function getRandomHexColor() {
@@ -138,14 +138,6 @@ function getRandomHexColor() {
 // ! Task 10 ---------------
 
 // ?------- 7 homework -- write here -------
-
-// ?------- 8 homework -- write here -------
-
-// ?------- 9 homework -- write here -------
-
-// ?------- 10 homework -- write here -------
-
-// ?------- 11 homework -- write here -------
 
 //  Контрольна 7  -----------------
 //  Завдання 1 --------------------
@@ -259,6 +251,7 @@ function selectImage(event) {
       },
     }
   );
+
   function closeModal(event) {
     if (event.code === "Escape") {
       instance.close();
