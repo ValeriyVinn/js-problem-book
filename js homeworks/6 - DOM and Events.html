@@ -1,12 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM and Events</title>
-</head>
-<body>
-    <h1>js homework 6</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW6&7</title>
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.css"
+      integrity="sha512-BjQ2UJBKmkJynH20LaFAU4E/kOtE7r7it8YvfwhlyGA9HqB6ZQj1Z9d8tN+y3v2RYunBtcQ8NlbNOkXFkLfobQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/blackboards.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      #validation-input {
+        border: 2px solid #bdbdbd;
+      }
+
+      #validation-input.valid {
+        /* border-color: ; */
+        border: 10px dotted rgb(0, 195, 0);
+        border-radius: 5px;
+      }
+
+      #validation-input.invalid {
+        border: 10px dotted red;
+        border-radius: 5px;
+      }
+
+      .login-form {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-form label {
+        margin-bottom: 16px;
+      }
+
+      .login-form input,
+      .login-form button {
+        width: 100%;
+        padding: 4px;
+        font: inherit;
+      }
+
+      .widget {
+        text-align: center;
+      }
+
+      .widget p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 48px;
+      }
+
+      .widget span {
+        font-family: monospace;
+      }
+
+      .widget button {
+        padding: 8px 12px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-list-item dropdown">
+            <button class="dropbtn">Markup</button>
+            <div class="dropdown-content">
+              <a href="../markup/1 html basics.html">Основи HTML</a>
+              <a href="./markup/2 css basics fonts.html">Основи CSS</a>
+              <a href="../markup/3 block model flexbox.html"
+                >Блокова модель. Flexbox</a
+              >
+              <a href="./markup/4 vector graphics.html">Векторна графіка</a>
+              <a href="../markup/5 positioning and animation.html"
+                >Позиціонування і анімація</a
+              >
+              <a href="../markup/6 forms.html">Форми</a>
+              <a href="../markup/7 bem sass.html">BEM SASS</a>
+              <a href="../markup/8 adaptive layout.html">Адаптивна верстка</a>
+            </div>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="./Problem book by levels.html" class="nav-link"
+              >Problem book by levels</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="./workout.html" class="nav-link">Workout</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./blackboard.html" class="nav-link">Blackboard</a>
+          </li>
+
+          <li class="nav-list-item dropdown">
+            <button class="dropbtn">JS HW 1-7</button>
+            <div class="dropdown-content">
+              <a
+                href="../js homeworks/1 - variables and types - branching - cycles.html"
+                >Variables and types. Branching. Cycles</a
+              >
+              <a href="../js homeworks/2 - arrays - functions.html"
+                >Arrays. Functions</a
+              >
+              <a
+                href="../js homeworks/3 - objects - rest and spread operations.html"
+                >Objects. Rest and spread operations</a
+              >
+              <a href="../js homeworks/4 - Iterative array methods.html"
+                >Iterative array methods</a
+              >
+              <a
+                href="../js homeworks/5 - keyword this - prototypes and classes.html"
+                >Keyword this. Prototypes and classes</a
+              >
+              <a href="../js homeworks/6 - DOM and Events.html">DOM та події</a>
+              <a
+                href="../js homeworks/7 - Patterns and optimization of events.html"
+                >Паттерни та оптимізація подій</a
+              >
+            </div>
+          </li>
+
+          <!-- <li class="nav-list-item">
+              <a href="./hw6&7.html" class="nav-link">JS HW 6-7</a>
+            </li> -->
+        </ul>
+
+        <div class="dropdown"></div>
+
+        <!-- <a href="./markup/markup.html" class="nav-link">Markup</a> -->
+
+        <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
+      </nav>
+      <h1 class="good-luck">Welcome!</h1>
+    </header>
+    <main>
+      <section class="section container">
+        <!--* Homework 6 -->
+        <div class="homework">
+          <h2 class="homework-title">Homework 6</h2>
+          <div class="task">
+            <!--! Task1 -->
+            <h3 class="homework-title-task">Task 1</h3>
+            <ul id="categories">
+              <li class="item">
+                <h2>Animals</h2>
+                <ul>
+                  <li>Cat</li>
+                  <li>Hamster</li>
+                  <li>Horse</li>
+                  <li>Parrot</li>
+                </ul>
+              </li>
+              <li class="item">
+                <h2>Products</h2>
+                <ul>
+                  <li>Bread</li>
+                  <li>Prasley</li>
+                  <li>Cheese</li>
+                </ul>
+              </li>
+              <li class="item">
+                <h2>Technologies</h2>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--! Task 2   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 2</h3>
+            <ul id="ingredients"></ul>
+          </div>
+          <!--! Task 3   -->
+          <div class="task task-three">
+            <h3 class="homework-title-task">Task 3</h3>
+            <ul class="gallery3"></ul>
+          </div>
+
+          <!--! Task 4   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 4</h3>
+            <div id="counter">
+              <button
+                type="button"
+                class="button-task-four"
+                data-action="decrement"
+              >
+                -1
+              </button>
+              <span class="span" id="value">0</span>
+              <button
+                type="button"
+                class="button-task-four"
+                data-action="increment"
+              >
+                +1
+              </button>
+            </div>
+          </div>
+          <!--! Task 5   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 5</h3>
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Please enter your name"
+            />
+            <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+          </div>
+          <!--! Task 6   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 6</h3>
+            <input
+              type="text"
+              id="validation-input"
+              data-length="6"
+              placeholder="Please enter 6 symbols"
+            />
+          </div>
+          <!--! Task 7   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 7</h3>
+            <input id="font-size-control" type="range" min="16" max="96" />
+            <br />
+            <span id="text">Abracadabra!</span>
+          </div>
+          <!--! Task 8   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 8</h3>
+            <form class="login-form">
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Password
+                <input type="password" name="password" />
+              </label>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <!--! Task 9   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 9</h3>
+            <div class="widget">
+              <p>Background color: <span class="color">-------</span></p>
+              <button type="button" class="change-color">Change color</button>
+            </div>
+          </div>
+          <!--! Task 10   -->
+          <div class="task">
+            <h3 class="homework-title-task">Task 10</h3>
+            <div id="controls">
+              <input class="inp" type="number" min="1" max="100" step="1" />
+              <button type="button" data-create>Create</button>
+              <button type="button" data-destroy>Destroy</button>
+            </div>
+
+            <div id="boxes"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"
+      integrity="sha512-QoopN2y0b53eP+J2BNc1ff4ImedQAt2xDdhLQkUzTCyfniKkUlHbhweoYxDhCY78Z5EnMtY5rLtjtTK0Yc9Jcw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/js homework.js" type="module"></script>
+  </body>
 </html>
