@@ -21,17 +21,17 @@ const ingredients = [
     "Condiments",
   ];
   
-  // const ingredientsEl = document.getElementById("ingredients")
+  const ingredientsEl = document.getElementById("ingredients")
   
-  // const markup = ingredients.map((ingredient => {
-  //   const li = document.createElement('li')
-  //   li.textContent = ingredient
+  const markup = ingredients.map((ingredient => {
+    const li = document.createElement('li')
+    li.textContent = ingredient
   
-  //   return li
-  // }))
+    return li
+  }))
   
   
-  // ingredientsEl.append(...markup)
+  ingredientsEl.append(...markup)
   
   
   
