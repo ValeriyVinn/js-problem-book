@@ -73,23 +73,40 @@ const galleryItems = [
   
   const galleryReference = document.querySelector(".gallery");
   
-  function createGallery(items) {
-    items.map((item) => {
+  // function createGallery(items) {
+  //   items.map((item) => {
+  //     const markup = `<div class="gallery__item">
+  //                         <a class="gallery__link" href="${item.original}">
+  //                           <img
+  //                             class="gallery__image"
+  //                             src="${item.preview}"
+  //                             data-source="${item.original}"
+  //                             alt="${item.description}"
+  //                           />
+  //                         </a>
+  //                       </div>`;
+  
+  //     galleryReference.insertAdjacentHTML("beforeend", markup);
+  //   });
+  // }
+  // createGallery(galleryItems);
+
+  // ?-----------+-------------------
+  galleryItems.map((item) => {
       const markup = `<div class="gallery__item">
-                          <a class="gallery__link" href="${item.original}">
+                          
                             <img
                               class="gallery__image"
                               src="${item.preview}"
                               data-source="${item.original}"
                               alt="${item.description}"
                             />
-                          </a>
                         </div>`;
   
       galleryReference.insertAdjacentHTML("beforeend", markup);
     });
-  }
-  createGallery(galleryItems);
+  
+  // ?-----------+-------------------
   
   galleryReference.addEventListener("click", selectImage);
   
@@ -126,20 +143,34 @@ const galleryItems = [
   
   const galleryReference2 = document.querySelector(".gallery-two");
   
-  function createGallery2(items) {
-    items.map((item) => {
-      const markup = `<a class="gallery__item" href="${item.original}">
-        <img class="gallery__image" src="${item.preview}" alt="${item.description}"/>
-      </a>`;
+  // function createGallery2(items) {
+  //   items.map((item) => {
+  //     const markup = `<a class="gallery__item" href="${item.original}">
+  //       <img class="gallery__image" src="${item.preview}" alt="${item.description}"/>
+  //     </a>`;
   
-      galleryReference2.insertAdjacentHTML("beforeend", markup);
-    });
-  }
+  //     galleryReference2.insertAdjacentHTML("beforeend", markup);
+  //   });
+  // }
   
-  createGallery2(galleryItems);
+  // createGallery2(galleryItems);
   
-  const lightbox = new SimpleLightbox(".gallery__item", {
-    captionDelay: 250,
-    captionsData: "alt",
-  });
+  // const lightbox = new SimpleLightbox(".gallery__item", {
+  //   captionDelay: 250,
+  //   captionsData: "alt",
+  // });
   
+
+
+  
+  const instance = basicLightbox.create(`
+  <img src="https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg" width="800" height="600">
+`)
+
+
+const btnEl = document.querySelector('.show-lightbox')
+console.log(btnEl)
+btnEl.addEventListener('click', (e) => {
+  instance.show()
+})
+

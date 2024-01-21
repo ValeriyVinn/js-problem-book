@@ -86,16 +86,16 @@ const ingredients = [
   
   // ! Task 5 ---------------
   
-  // const inputEl = document.getElementById("name-input");
-  // const spanEl = document.getElementById("name-output");
+  const inputEl = document.getElementById("name-input");
+  const spanEl = document.getElementById("name-output");
   
-  // console.log(inputEl);
-  // console.log(spanEl);
+  console.log(inputEl);
+  console.log(spanEl);
   
-  // inputEl.addEventListener("input", (e) => {
-  //   console.log(e.currentTarget.value);
-  //   spanEl.textContent = e.currentTarget.value.trim() || "Anonymous";
-  // });
+  inputEl.addEventListener("input", (e) => {
+    console.log(e.currentTarget.value);
+    spanEl.textContent = e.currentTarget.value.trim() || "Anonymous";
+  });
   
   // ! Task 6 ---------------
   
@@ -103,31 +103,31 @@ const ingredients = [
   
   // ! Task 8 ---------------
   
-  // const loginForm = document.querySelector(".login-form");
-  // loginForm.addEventListener("submit", (event) => {
-  //   event.preventDefault()
-  
-  //   const formElements = event.currentTarget.elements;
-  //   const mail = formElements.email.value;
-  //   const password = formElements.password.value;
-  
-  //   const formData = {
-  //     mail,
-  //     password,
-  //   };
-  
-  //   if (mail === "") {
-  //     alert("Email`s field should not be empty");
-  //   } else if (password === "") {
-  //     alert("Password`s field should not be empty");
-  //   } else {
-  //     alert("This form has been successfully submited");
-  //     console.log(formData);
-  //   }
-  //   loginForm.reset();
-  // });
-  
   const loginForm = document.querySelector(".login-form");
+  loginForm.addEventListener("submit", (event) => {
+    event.preventDefault()
+  
+    const formElements = event.currentTarget.elements;
+    const mail = formElements.email.value;
+    const password = formElements.password.value;
+  
+    const formData = {
+      mail,
+      password,
+    };
+  
+    if (mail === "") {
+      alert("Email`s field should not be empty");
+    } else if (password === "") {
+      alert("Password`s field should not be empty");
+    } else {
+      alert("This form has been successfully submited");
+      console.log(formData);
+    }
+    loginForm.reset();
+  });
+  
+  // const loginForm = document.querySelector(".login-form");
   // console.log(loginForm )
   
   // loginForm.addEventListener("submit", (event) => {
