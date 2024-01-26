@@ -52,15 +52,18 @@ const ingredients = [
   ];
   
   const galleryRef = document.querySelector('.gallery3')
+
+
+// const imagesMarkup = images.map(({url, alt}) => ( `<li><img src="${url}" alt="${alt}" width=300 height=200></li>`)
   
-  // const imagesMarkup = images.map(({url, alt}) => 
-  //   `<li><img src="${url}" alt="${alt}" width=300 height=200></li>`
-  // ).join('')
-  // galleryRef.insertAdjacentHTML("afterbegin", imagesMarkup)
+// ).join('')
+
+// galleryRef.insertAdjacentHTML("afterbegin", imagesMarkup)
   
+
   
-  // const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
-  // galleryRef.insertAdjacentHTML('afterbegin', mU)
+  const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
+  galleryRef.insertAdjacentHTML('afterbegin', mU)
   
   // ! Task 4 ---------------
   
@@ -89,8 +92,8 @@ const ingredients = [
   const inputEl = document.getElementById("name-input");
   const spanEl = document.getElementById("name-output");
   
-  console.log(inputEl);
-  console.log(spanEl);
+  // console.log(inputEl);
+  // console.log(spanEl);
   
   inputEl.addEventListener("input", (e) => {
     console.log(e.currentTarget.value);
@@ -98,7 +101,7 @@ const ingredients = [
   });
   
   // ! Task 6 ---------------
-  
+ 
   // ! Task 7 ---------------
   
   // ! Task 8 ---------------

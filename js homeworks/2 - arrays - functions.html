@@ -20,6 +20,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/js homeworks.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/prism/prism-coy.css" />
     <!-- <link rel="stylesheet" href="./css/blackboards.css" /> -->
   </head>
   <body>
@@ -104,8 +106,74 @@
     </header>
     <main>
       <section class="section container">
-        <h1 class="homework-title">Homework 2</h1>
+        <div class="homework">
+          <h1 class="homework-title">Homework 2</h1>
+
+          <div class="task">
+            <h3>Теорія</h3>
+            <p>
+              Об'єкти дозволяють описати і згрупувати характеристики об'єктів
+              реального світу - користувача, книги, продукту магазину, чого
+              завгодно. Об'єкти ще називають словниками, тобто вони містять
+              терміни (властивості) та їх визначення (значення).
+            </p>
+            <pre><code>
+  const book = { title: "The Last Kingdom", 
+              author: "Bernard Cornwell", 
+              genres: ["historical prose", "adventure"], 
+              public: true, 
+              rating: 8.38, };</code
+            ></pre>
+
+            <p>
+              Для оголошення використовуються фігурні дужки {} - літерал
+              об'єкта. При створенні об'єкта можна додати властивості, кожна з
+              яких описується парами ключ:значення. Ключ ще називають ім'ям
+              властивості і це завжди рядок. Значенням властивості можуть бути
+              будь-які типи: примітиви, масиви, об'єкти, булі, функції тощо.
+              Властивості розділяються комою.
+            </p>
+
+            <button class="accordion">
+              <span class="task-number">01</span>
+              <h3>Завдання</h3>
+              <p>
+                Присвой змінній apartment об'єкт, який описує квартиру з
+                наступними характеристиками:
+              </p>
+              <ul>
+                <li>
+                  imgUrl - фотографія, значення
+                  "https://via.placeholder.com/640x480";
+                </li>
+                <li>
+                  descr - опис, значення "Spacious apartment in the city
+                  center";
+                </li>
+                <li>rating - рейтинг, значення 4;</li>
+                <li>price - ціна, значення 2153;</li>
+                <li>
+                  tags - метаінформація, масив ["premium", "promoted", "top"].
+                </li>
+              </ul>
+            </button>
+            <div class="panel">
+              <pre><code class="language-js">
+                const apartment = {
+                  imgUrl: "https://via.placeholder.com/640x480",
+                  descr: "Spacious apartment in the city center",
+                  rating: 4,
+                  price: 2153,
+                  tags: ["premium", "promoted", "top"],
+                };
+              </code></pre>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="./js/js homework.js" type="module"></script>
+    <script src="../js/script.js" type="module"></script>
+    <script src="../js/prism/prism-coy.js" type="module"></script>
   </body>
 </html>
