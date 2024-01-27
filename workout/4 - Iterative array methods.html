@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout</title>
-    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
-
+    <title>Workout 4</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -20,17 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <!-- 
-    <link rel="stylesheet" href="./prism-default.css" />
-    <link rel="stylesheet" href="./prism-solarized-light.css" />
-    <link rel="stylesheet" href="./css/prism.css" />
-    <link rel="stylesheet" href="./prism-tomorrow-night.css" /> -->
-    <link rel="stylesheet" href="./css/prism/prism-coy.css" />
-    <link rel="stylesheet" href="./css/tabs.css" />
+    <link rel="stylesheet" href="./css/js homeworks.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/prism/prism-coy.css" />
+    <!-- <link rel="stylesheet" href="./css/blackboards.css" /> -->
   </head>
-
   <body>
     <header class="container header">
       <nav class="nav">
@@ -42,12 +35,12 @@
           <li class="nav-list-item dropdown">
             <button class="dropbtn">Abstract</button>
             <div class="dropdown-content">
-              <a href="../abstract/1 html basics.html">Основи HTML</a>
-              <a href="./markup/2 css basics fonts.html">Основи CSS</a>
+              <a href="../markup/1 html basics.html">Основи HTML</a>
+              <a href="../markup/2 css basics fonts.html">Основи CSS</a>
               <a href="../markup/3 block model flexbox.html"
                 >Блокова модель. Flexbox</a
               >
-              <a href="./markup/4 vector graphics.html">Векторна графіка</a>
+              <a href="../markup/4 vector graphics.html">Векторна графіка</a>
               <a href="../markup/5 positioning and animation.html"
                 >Позиціонування і анімація</a
               >
@@ -86,31 +79,28 @@
             </div>
           </li>
 
-          
           <li class="nav-list-item dropdown">
             <button class="dropbtn">Workout</button>
             <div class="dropdown-content">
               <a
-                href="../js homeworks/1 - variables and types - branching - cycles.html"
+                href="../workout/1 - variables and types - branching - cycles.html"
                 >Variables and types. Branching. Cycles</a
               >
-              <a href="../js homeworks/2 - arrays - functions.html"
+              <a href="../workout/2 - arrays - functions.html"
                 >Arrays. Functions</a
               >
-              <a
-                href="../js homeworks/3 - objects - rest and spread operations.html"
+              <a href="../workout/3 - objects - rest and spread operations.html"
                 >Objects. Rest and spread operations</a
               >
-              <a href="../js homeworks/4 - Iterative array methods.html"
+              <a href="../workout/4 - Iterative array methods.html"
                 >Iterative array methods</a
               >
               <a
-                href="../js homeworks/5 - keyword this - prototypes and classes.html"
+                href="../workout/5 - keyword this - prototypes and classes.html"
                 >Keyword this. Prototypes and classes</a
               >
-              <a href="../js homeworks/6 - DOM and Events.html">DOM та події</a>
-              <a
-                href="../js homeworks/7 - patterns and optimization of events.html"
+              <a href="../workout/6 - DOM and Events.html">DOM та події</a>
+              <a href="../workout/7 - patterns and optimization of events.html"
                 >Паттерни та оптимізація подій</a
               >
             </div>
@@ -121,6 +111,7 @@
               >Problem book by levels</a
             >
           </li>
+
           <li class="nav-list-item">
             <a href="./blackboard.html" class="nav-link">Blackboard</a>
           </li>
@@ -138,35 +129,76 @@
       </nav>
       <h1 class="good-luck">Welcome!</h1>
     </header>
-
     <main>
       <section class="section container">
-        
+        <div class="homework">
+          <h1 class="homework-title">Workout 4</h1>
 
+          <div class="task">
+            <h3>Теорія</h3>
+            <p>
+              Об'єкти дозволяють описати і згрупувати характеристики об'єктів
+              реального світу - користувача, книги, продукту магазину, чого
+              завгодно. Об'єкти ще називають словниками, тобто вони містять
+              терміни (властивості) та їх визначення (значення).
+            </p>
+            <pre><code>
+  const book = { title: "The Last Kingdom", 
+              author: "Bernard Cornwell", 
+              genres: ["historical prose", "adventure"], 
+              public: true, 
+              rating: 8.38, };</code
+            ></pre>
 
+            <p>
+              Для оголошення використовуються фігурні дужки {} - літерал
+              об'єкта. При створенні об'єкта можна додати властивості, кожна з
+              яких описується парами ключ:значення. Ключ ще називають ім'ям
+              властивості і це завжди рядок. Значенням властивості можуть бути
+              будь-які типи: примітиви, масиви, об'єкти, булі, функції тощо.
+              Властивості розділяються комою.
+            </p>
 
-
-
-        
-        
-        
+            <button class="accordion">
+              <span class="task-number">01</span>
+              <h3>Завдання</h3>
+              <p>
+                Присвой змінній apartment об'єкт, який описує квартиру з
+                наступними характеристиками:
+              </p>
+              <ul>
+                <li>
+                  imgUrl - фотографія, значення
+                  "https://via.placeholder.com/640x480";
+                </li>
+                <li>
+                  descr - опис, значення "Spacious apartment in the city
+                  center";
+                </li>
+                <li>rating - рейтинг, значення 4;</li>
+                <li>price - ціна, значення 2153;</li>
+                <li>
+                  tags - метаінформація, масив ["premium", "promoted", "top"].
+                </li>
+              </ul>
+            </button>
+            <div class="panel">
+              <pre><code class="language-js">
+                const apartment = {
+                  imgUrl: "https://via.placeholder.com/640x480",
+                  descr: "Spacious apartment in the city center",
+                  rating: 4,
+                  price: 2153,
+                  tags: ["premium", "promoted", "top"],
+                };
+              </code></pre>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- ============= Scroll btn ================= -->
-
-    <!-- <button onclick="topFunction()" id="myBtn" >
-          Top
-        </button> -->
-    <!-- <button onclick="topFunction()" id="myBtn">Scroll to Top</button> -->
-
-    <div id="progress">
-      <span id="progress-value">&#x1F815;</span>
-    </div>
-
-    <!-- ============= Scroll btn ================= -->
-
-    <script src="./js/script.js" type="module"></script>
-    <!-- <script src="./js/script.js" type="module"></script> -->
-    <script src="./js/prism/prism-coy.js" type="module"></script>
+    <script src="./js/js homework.js" type="module"></script>
+    <script src="../js/script.js" type="module"></script>
+    <script src="../js/prism/prism-coy.js" type="module"></script>
   </body>
 </html>
