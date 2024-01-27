@@ -34,13 +34,79 @@
   <body>
     <header class="container header">
       <nav class="nav">
-        <a href="./index.html" class="nav-link">Home</a>
-        <a href="./Problem book by levels.html" class="nav-link"
-          >Problem book by levels</a
-        >
-        <a href="./workout.html" class="nav-link">Workout</a>
-        <a href="./blackboard.html" class="nav-link">Blackboard</a>
-        <a href="./hw6&7.html" class="nav-link">HW 6&7</a>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-list-item dropdown">
+            <button class="dropbtn">Abstract</button>
+            <div class="dropdown-content">
+              <a href="../abstract/1 html basics.html">Основи HTML</a>
+              <a href="./markup/2 css basics fonts.html">Основи CSS</a>
+              <a href="../markup/3 block model flexbox.html"
+                >Блокова модель. Flexbox</a
+              >
+              <a href="./markup/4 vector graphics.html">Векторна графіка</a>
+              <a href="../markup/5 positioning and animation.html"
+                >Позиціонування і анімація</a
+              >
+              <a href="../markup/6 forms.html">Форми</a>
+              <a href="../markup/7 bem sass.html">BEM SASS</a>
+              <a href="../markup/8 adaptive layout.html">Адаптивна верстка</a>
+            </div>
+          </li>
+
+          <li class="nav-list-item dropdown">
+            <button class="dropbtn">JS HW 1-7</button>
+            <div class="dropdown-content">
+              <a
+                href="../js homeworks/1 - variables and types - branching - cycles.html"
+                >Variables and types. Branching. Cycles</a
+              >
+              <a href="../js homeworks/2 - arrays - functions.html"
+                >Arrays. Functions</a
+              >
+              <a
+                href="../js homeworks/3 - objects - rest and spread operations.html"
+                >Objects. Rest and spread operations</a
+              >
+              <a href="../js homeworks/4 - Iterative array methods.html"
+                >Iterative array methods</a
+              >
+              <a
+                href="../js homeworks/5 - keyword this - prototypes and classes.html"
+                >Keyword this. Prototypes and classes</a
+              >
+              <a href="../js homeworks/6 - DOM and Events.html">DOM та події</a>
+              <a
+                href="../js homeworks/7 - patterns and optimization of events.html"
+                >Паттерни та оптимізація подій</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="./Problem book by levels.html" class="nav-link"
+              >Problem book by levels</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a href="./workout.html" class="nav-link">Workout</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./blackboard.html" class="nav-link">Blackboard</a>
+          </li>
+
+          <!-- <li class="nav-list-item">
+              <a href="./hw6&7.html" class="nav-link">JS HW 6-7</a>
+            </li> -->
+        </ul>
+
+        <div class="dropdown"></div>
+
+        <!-- <a href="./markup/markup.html" class="nav-link">Markup</a> -->
+
         <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
       </nav>
       <h1 class="good-luck">Welcome!</h1>
@@ -48,571 +114,15 @@
 
     <main>
       <section class="section container">
-        <!-- HTML Of the Tab -->
-        <div class="tabs">
-          <div
-            id="tab1"
-            onClick="JavaScript:selectTab(1);"
-            class="tab initialColor"
-          >
-            Autocheck 1
-          </div>
-          <div id="tab2" onClick="JavaScript:selectTab(2);" class="tab">
-            Autocheck 2
-          </div>
-          <div id="tab3" onClick="JavaScript:selectTab(3);" class="tab">
-            Autocheck 3
-          </div>
-          <div id="tab4" onClick="JavaScript:selectTab(4);" class="tab">
-            Autocheck 4
-          </div>
-          <div id="tab5" onClick="JavaScript:selectTab(5);" class="tab">
-            Autocheck 5
-          </div>
-          <div id="tab6" onClick="JavaScript:selectTab(6);" class="tab">
-            Abstract 6-7
-          </div>
-          <div id="tab7" onClick="JavaScript:selectTab(7);" class="tab">
-            Abstract 8-11
-          </div>
-          <div id="tab8" onClick="JavaScript:selectTab(8);" class="tab">
-            Репета
-          </div>
-          <div id="tab9" onClick="JavaScript:selectTab(9);" class="tab">
-            Рисіч
-          </div>
-          <div id="tab10" onClick="JavaScript:selectTab(10);" class="tab">
-            Сімак
-          </div>
-        </div>
+        
 
-        <br />
-        <div id="tab1Content">
-          <h2></h2>
-          <!-- !  Autocheck 1 --- -->
-          <!-- ============= Unit ================= -->
 
-          <button class="accordion">
-            <span class="task-number">1-01</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-          </code></pre>
-          </div>
 
-          <!-- ============= Unit ================= -->
 
-          <button class="accordion">
-            <span class="task-number">1-02</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-             </code></pre>
-          </div>
 
-          <!-- ============= Unit ================= -->
-
-          <button class="accordion">
-            <span class="task-number">1-03</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-        </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab2Content">
-          <!-- !  Autocheck 2 --- -->
-          <!-- ============= Unit ================= -->
-
-          <button class="accordion">
-            <span class="task-number">2-01</span>
-            У функції може бути більше одного оператора return.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              function checkAge(age) {
-                if (age >= 18) {
-                  return "You are an adult";
-                }
-                return "You are a minor";
-              }
-          </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-
-          <button class="accordion">
-            <span class="task-number">2-02</span>
-            Рефакторинг коду функції checkPassword.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              function checkPassword(password) {
-                const ADMIN_PASSWORD = "jqueryismyjam";
-               if (password === ADMIN_PASSWORD) {
-                  return "Welcome!";
-                } 
-                  return "Access denied, wrong password!";
-              }
-             </code></pre>
-          </div>
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">2-03</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-        }
-    </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab3Content">
-          <h2></h2>
-          <!-- !  Autocheck 3 --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">3-01</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">3-02</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              There will be a function for fish composition
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">03</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">04</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">05</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">06</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">07</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">08</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">09</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">10</span>
-            11Given a string. Print the length of this string to the console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-        const lenghtOfString = (str) => {
-          console.log(str.length)
-        }
-    </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab4Content">
-          <h2></h2>
-          <!-- !  Autocheck 4 --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">04</span>
-            Given a string. Print the last character of the string to the
-            console.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                const lastCharacterOfString = (str) => {
-                  console.log(str[str.length-1])
-                }
-            </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab5Content">
-          <h2></h2>
-          <!-- !  Autocheck 5 --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">05</span>
-            Given a number. Check if it is even or not.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-            const checkOrEven = (number) => {
-              console.log(number % 2 === 0 ? 'number is even' : 'number is odd');
-            }
-        </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab6Content">
-          <h2></h2>
-          <!-- !  Abstract 6 - 7 --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">06</span>
-            Two words are given. Check that the first letters of these words
-            match.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-            const checkIfFirstLetterEqual = function(firstWord, secondWord) {
-              console.log (firstWord[0] === secondWord[0])
-            }
-        </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab7Content">
-          <h2></h2>
-          <!-- !  Abstract 8 - 11 --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">07</span>
-            Дано слово. Получите его последнюю букву. Если слово заканчивается
-            на мягкий знак, то получите предпоследнюю букву.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                    There will be a function for fish composition
-                </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-        <!-- ! Репета ---  -->
-        <div id="tab8Content">
-          <h2></h2>
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">01</span>
-            doMath
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              const doMath = function (a, b, callback) {
-                console.log(callback(a, b));
-              };
-              
-              const add = function (x, y) {
-                return x + y;
-              };
-              
-              const sub = function (x, y) {
-                return x - y;
-              };
-              
-              doMath(2, 3, add);
-              doMath(10, 7, sub);
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">02</span>
-            Filter
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              const filter = function (array, test) {
-                const filteredArray = [];
-            
-                for (const el of array) {
-                    const passed = test(el);
-            
-                    if (passed) {
-                        filteredArray.push(el);
-                    }
-                }
-            
-                return filteredArray;
-            };
-            
-            const callback1 = function (value) {
-                return value >= 3;
-            };
-            
-            const r1 = filter([1, 2, 3, 4, 5], callback1);
-            console.log(r1);
-            
-            const callback2 = function (value) {
-                return value <= 4;
-            };
-            
-            const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
-            console.log(r2);
-            
-            const fruits = [
-                { name: 'apples', quantity: 200, isFresh: true },
-                { name: 'grapes', quantity: 150, isFresh: false },
-                { name: 'bananas', quantity: 100, isFresh: true },
-            ];
-            
-            const getFruitsWithQuantity = function (fruit) {
-                return fruit.quantity >= 120;
-            };
-            
-            const r3 = filter(fruits, getFruitsWithQuantity);
-            console.log(r3);
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">03</span>
-            makeSheff
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-              const makeSheff = function (name) {
-                const makeDish = function (dish) {
-                    console.log(`${name} готовит ${dish}`);
-                };
-              
-                return makeDish;
-              };
-              
-              const mango = makeSheff('Mango');
-              
-              mango('котлеты');
-              mango('пирожок');
-              
-              const poly = makeSheff('Poly');
-              
-              poly('чай');
-              poly('омлет');
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">04</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">05</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">06</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">07</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">08</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">09</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <button class="accordion">
-            <span class="task-number">10</span>
-            Fisher
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab9Content">
-          <h2></h2>
-          <!-- !  Рисіч --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">09</span>
-            Дано число. Выведите в консоль последнюю цифру этого числа.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                There will be a function for fish composition
-            </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <div id="tab10Content">
-          <h2></h2>
-          <!-- !  Сімак --- -->
-          <!-- ============= Unit ================= -->
-          <button class="accordion">
-            <span class="task-number">10</span>
-            Дано число. Выведите в консоль сумму первой и последней цифры этого
-            числа.
-          </button>
-          <div class="panel">
-            <pre><code class="language-js">
-                    There will be a function for fish composition
-                </code></pre>
-          </div>
-
-          <!-- ============= Unit ================= -->
-        </div>
-
-        <!-- Javascript Code of the tab -->
-        <script>
-          function selectTab(tabIndex) {
-            //Hide All Tabs
-            document.getElementById("tab1Content").style.display = "none";
-            document.getElementById("tab2Content").style.display = "none";
-            document.getElementById("tab3Content").style.display = "none";
-            document.getElementById("tab4Content").style.display = "none";
-            document.getElementById("tab5Content").style.display = "none";
-            document.getElementById("tab6Content").style.display = "none";
-            document.getElementById("tab7Content").style.display = "none";
-            document.getElementById("tab8Content").style.display = "none";
-            document.getElementById("tab9Content").style.display = "none";
-            document.getElementById("tab10Content").style.display = "none";
-            //Show the Selected Tab
-            document.getElementById(
-              "tab" + tabIndex + "Content"
-            ).style.display = "block";
-          }
-        </script>
-
-        <script src="./js/tabs.js" type="module"></script>
-        <script src="./js/script.js" type="module"></script>
-        <script src="./js/prism/prism-coy.js" type="module"></script>
+        
+        
+        
       </section>
     </main>
     <!-- ============= Scroll btn ================= -->

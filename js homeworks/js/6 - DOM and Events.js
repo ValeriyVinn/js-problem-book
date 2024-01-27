@@ -62,8 +62,8 @@ const ingredients = [
   
 
   
-  const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
-  galleryRef.insertAdjacentHTML('afterbegin', mU)
+  // const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
+  // galleryRef.insertAdjacentHTML('afterbegin', mU)
   
   // ! Task 4 ---------------
   
