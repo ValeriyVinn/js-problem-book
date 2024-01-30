@@ -1,0 +1,29 @@
+/* !Task3----------- */
+.task-three-site-nav__link {
+    color: currentColor;
+    text-decoration: none;
+}
+.task-three-site-nav__link:hover {
+    text-decoration: underline;
+}
+
+.task-three-site-nav__link--current {
+    color: tomato;
+}
+
+
+
+/* !Task7 Колор-пікер */
+
+.color-picker__option {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    margin: 4px;
+    border: 2px solid yellow;
+    /* outline: 2px solid yellow; */
+    cursor: pointer;
+    color: yellow;
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
