@@ -1,29 +1,46 @@
+.task-paragraph {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(0, 241, 241);
+}
+
 /* !Task3----------- */
 .task-three-site-nav__link {
-    color: currentColor;
-    text-decoration: none;
+  color: currentColor;
+  text-decoration: none;
 }
 .task-three-site-nav__link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .task-three-site-nav__link--current {
-    color: tomato;
+  color: tomato;
 }
-
-
 
 /* !Task7 Колор-пікер */
 
 .color-picker__option {
-    display: inline-block;
-    width: 90px;
-    height: 60px;
-    margin: 4px;
-    border: 2px solid yellow;
-    /* outline: 2px solid yellow; */
-    cursor: pointer;
-    color: yellow;
-    text-transform: uppercase;
-    border-radius: 10px;
-  }
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+  margin: 4px;
+  border: 2px solid yellow;
+  /* outline: 2px solid yellow; */
+  cursor: pointer;
+  color: yellow;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+/* !Task11 Таблиця транзакцій */
+
+.transaction-table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 5px;
+  border: 1px solid #2a2a2a;
+}
