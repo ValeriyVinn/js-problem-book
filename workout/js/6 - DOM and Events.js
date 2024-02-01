@@ -342,3 +342,204 @@ const transactionTableRowsMarkup = transactionHistory
 tableEl.insertAdjacentHTML('beforeend', transactionTableRowsMarkup);
 
 // console.log(transactionTableRowsMarkup);
+
+// !Task 12
+const targetBtn = document.querySelector('.js-target-btn')
+const addListenerBtn = document.querySelector('.js-add-listener')
+const removeListenerBtn = document.querySelector('.js-remove-listener')
+
+addListenerBtn.addEventListener('click', () => {
+  console.log('Вішаю слухача')
+  targetBtn.addEventListener('click', onTargetBtnClick)
+})
+
+
+removeListenerBtn.addEventListener('click', () => {
+  console.log('Знімаю слухача')
+  targetBtn.removeEventListener('click', onTargetBtnClick)
+})
+
+
+function onTargetBtnClick() {
+  console.log('I`m listening')
+}
+
+
+
+// !Task 13
+
+const form = document.querySelector('.js-register-form')
+console.log(form)
+
+form.addEventListener ('submit', onFormSubmit)
+
+
+function onFormSubmit (event) {
+event.preventDefault()
+
+const formData = new FormData(event.currentTarget)
+console.log(formData)
+
+formData.forEach((value, name) => {
+  console.log('onFormSubmit -> name', name)
+  console.log('onFormSubmit -> value', value)
+})
+}
+
+
+
+
+// !Task 14
+const tFourteenRefs = {
+  input: document.querySelector('.js-input'),
+  nameLabel: document.querySelector('.js-button > span'),
+  licenseCheckbox: document.querySelector('.js-license'),
+  btn: document.querySelector('.js-button'),
+};
+
+tFourteenRefs.input.addEventListener('focus', onInputFocus);
+tFourteenRefs.input.addEventListener('blur', onInputBlur);
+
+tFourteenRefs.input.addEventListener('input', onInputChange);
+tFourteenRefs.licenseCheckbox.addEventListener('change', onLicenseChange);
+
+function onInputFocus() {
+  console.log('Инпут получил фокус - событие focus');
+}
+
+function onInputBlur() {
+  console.log('Инпут потерял фокус - событие blur');
+}
+
+function onInputChange(event) {
+  tFourteenRefs.nameLabel.textContent = event.currentTarget.value;
+  // console.log(event.currentTarget.value)
+}
+
+function onLicenseChange(event) {
+  tFourteenRefs.btn.disabled = !event.currentTarget.checked;
+  // console.log(event.currentTarget.checked)
+}
+
+// console.log(refs.btn.disabled)
+
+
+
+
+
+// !Task 15
+/*
+ * Типы событий: keypress, keydown, keyup
+ * - Ограничения keypress
+ * - Свойства KeyboardEvent.key и KeyboardEvent.code
+ */
+
+const tFifteenRefs = {
+  output: document.querySelector('.js-output'),
+  clearBtn: document.querySelector('.js-clear'),
+};
+
+window.addEventListener('keypress', onKeypress);
+tFifteenRefs.clearBtn.addEventListener('click', onClearOutput);
+
+function onKeypress(event) {
+  // console.log('event: ', event);
+  console.log('event.key: ', event.key);
+  console.log('event.code: ', event.code);
+
+  tFifteenRefs.output.textContent += event.key;
+}
+
+function onClearOutput() {
+  tFifteenRefs.output.textContent = '';
+}
+
+// !Task 16
+/*
+ * События мыши
+ * - mouseenter и mouseleave (это ховер)
+ * - mouseover и mouseout
+ * - mousemove (chatty event - болтливое событие)
+ * - Допмат по координатам: https://nerdparadise.com/programming/javascriptmouseposition
+ * - Хорошая задачка - https://learn.javascript.ru/task/move-ball-field
+ */
+
+const boxRef = document.querySelector('.js-box');
+
+// boxRef.addEventListener('mouseenter', onMouseEnter);
+// boxRef.addEventListener('mouseleave', onMouseLeave);
+// boxRef.addEventListener('mouseover', onMouseEnter);
+// boxRef.addEventListener('mouseout', onMouseLeave);
+// boxRef.addEventListener('mousemove', onMouseMove);
+
+function onMouseEnter(event) {
+  const box = event.currentTarget;
+  box.classList.add('box--active');
+}
+
+function onMouseLeave(event) {
+  const box = event.currentTarget;
+  box.classList.remove('box--active');
+}
+
+function onMouseMove(event) {
+  console.log(event);
+}
+
+// !Task 17
+
+/*
+ * 1. Открыть и закрыть по кнопке
+ * 2. Закрыть по клику в бекдроп: onBackDropClick
+ * 3. Закрыть по ESC: onEscapeKeypress
+ *
+ * В CSS есть класс show-modal, который необходимо добавить на body при открытии модалки
+ */
+
+const refs = {
+  openModalBtn: document.querySelector('[data-action="open-modal"]'),
+  closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+  backdrop: document.querySelector('.js-backdrop'),
+};
+
+refs.openModalBtn.addEventListener('click', onOpenModal);
+refs.closeModalBtn.addEventListener('click', onCloseModal);
+refs.backdrop.addEventListener('click', onBackdropClick);
+
+function onOpenModal() {
+  window.addEventListener('keydown', onEscKeyPress);
+  document.body.classList.add('show-modal');
+}
+
+function onCloseModal() {
+  window.removeEventListener('keydown', onEscKeyPress);
+  document.body.classList.remove('show-modal');
+}
+
+function onBackdropClick(event) {
+  if (event.currentTarget === event.target) {
+    // console.log('Кликнули именно в бекдроп!!!!');
+    onCloseModal();
+  }
+}
+
+function onEscKeyPress(event) {
+  // console.log(event.code)
+  const ESC_KEY_CODE = 'Escape';
+  const isEscKey = event.code === ESC_KEY_CODE;
+
+  if (isEscKey) {
+    onCloseModal();
+  }
+}
+
+
+
+// !Task 18
+// !Task 19
+// !Task 20
+// !Task 21
+// !Task 22
+// !Task 23
+// !Task 24
+// !Task 25
