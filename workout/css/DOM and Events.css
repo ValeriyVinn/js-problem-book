@@ -254,3 +254,9 @@ button {
   margin-bottom: 0;
   letter-spacing: 0.1em;
 }
+
+
+.tTwelwe-target-btn {
+  min-width: 400px;
+  color: red
+}

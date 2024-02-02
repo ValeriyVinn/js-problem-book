@@ -357,11 +357,15 @@ addListenerBtn.addEventListener('click', () => {
 removeListenerBtn.addEventListener('click', () => {
   console.log('Знімаю слухача')
   targetBtn.removeEventListener('click', onTargetBtnClick)
+  targetBtn.textContent = 'Цільова кнопочка'
+  targetBtn.style.color = "red"
 })
 
 
 function onTargetBtnClick() {
   console.log('I`m listening')
+  targetBtn.textContent = 'Слухаю Вас'
+  targetBtn.style.color = "green"
 }
 
 
@@ -369,7 +373,7 @@ function onTargetBtnClick() {
 // !Task 13
 
 const form = document.querySelector('.js-register-form')
-console.log(form)
+// console.log(form)
 
 form.addEventListener ('submit', onFormSubmit)
 
