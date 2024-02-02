@@ -173,6 +173,14 @@ ul {
   margin-bottom: 25px;
 }
 
+
+.task-paragraph {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(0, 241, 241);
+}
+
 /* ============ Hoverable Dropdown =============== */
 
 .dropbtn {
