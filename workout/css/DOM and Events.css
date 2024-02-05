@@ -170,6 +170,23 @@ button {
   margin: 4px;
 }
 
+
+/* Я та мої друзі */
+
+.pane {
+  display: none;
+  margin-top: 8px;
+}
+
+.pane.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
 /* !Task3----------- */
 
 .tags {

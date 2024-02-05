@@ -133,26 +133,110 @@
     <main>
       <section class="section container">
         <!--* Workout 6 -->
+
         <div class="homework">
           <h1 class="homework-title">DOM and Events</h1>
+
           <!--! Task1 -->
           <div class="task">
             <h2 class="homework-title-task">Task 1</h2>
             <h3>Репета</h3>
             <h4>Посилання. Дата-атрибути. Модуль 7. Занятие 13. 30:50</h4>
             <p class="task-paragraph">
-              Отримати посилання на елемент
+              Отримати посилання на елемент (і змінити текст посилань в списку)
             </p>
-            <div class="js-action">
-              <button type="button" data-action="add">Створити</button>
-              <button type="button" data-action="remove">Видалити</button>
-              <button type="button" data-action="edit">Редагувати</button>
-            </div>
-            
+
+            <button type="button" class="t-one-magic-btn js-magic-btn">
+              Магія Ап!
+              <span class="icon">🧙‍♂️</span>
+            </button>
+
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link one">О нас</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link two">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link three">Контакты</a>
+              </li>
+            </ul>
           </div>
           <!--! Task2 -->
           <div class="task">
             <h2 class="homework-title-task">Task 2</h2>
+            <h3>Репета</h3>
+            <h4>Value. Модуль 7. Занятие 13. 39:20</h4>
+            <p class="task-paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <!-- <input type="text" class="js-task-two" /> -->
+            <button class="tTwoAactions">Magic</button>
+            <h1 class="hero__title">Все про мене</h1>
+            <img
+              class="hero__image"
+              src="https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480"
+              ;
+              alt="It's me"
+              width="320"
+            />
+
+            <!-- <div class="js-action">
+              <button type="button" data-action="add">Створити</button>
+              <button type="button" data-action="remove">Видалити</button>
+              <button type="button" data-action="edit">Редагувати</button>
+            </div> -->
+
+            <h1 class="hero__title">Я та мої друзі</h1>
+            <div class="tabs">
+              <div class="controls">
+                <button data-id="pane-1">Я</button>
+                <button data-id="pane-2">Куций</button>
+                <button data-id="pane-3">Моня</button>
+              </div>
+
+
+              <div class="pane is-active">
+                <img
+                  src="https://images.creativefabrica.com/products/previews/2023/10/27/Xsqb1yHi4/2XMAeTEPZaDNXPK7XHIavZeq6zb-desktop.jpg"
+                  width="320"
+                  height="210"
+                  alt="Старі добрі часи"
+                />
+                <p><b>Як добре було колись!</b</p>
+              </div>
+
+              <div id="pane-1" class="pane">
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg"
+                  width="320"
+                  alt="Я - гарний кіт"
+                />
+                <p><b>Я і моя лапа!</b</p>
+              </div>
+              <div id="pane-2" class="pane">
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg"
+                  width="320"
+                  alt="Мій друг Куций"
+                />
+                <p><b>Куций припух!</b></p>
+              </div>
+              <div id="pane-3" class="pane">
+                <img
+                  src="https://cdn.pixabay.com/photo/2020/10/01/11/41/cat-5618328_1280.jpg"
+                  width="320"
+                  alt="Мій друг Моня підкрадається"
+                />
+                <p><b>Моня підкрадається.</b></p>
+              </div>
+            </div>
+          </div>
+
+          <!--! Task2-1 -->
+          <div class="task">
+            <h2 class="homework-title-task">Task 2-1</h2>
             <h3>Репета</h3>
             <h4>Value. Модуль 7. Занятие 13. 39:20</h4>
             <p class="task-paragraph">
@@ -329,7 +413,10 @@
             <h3>Репета</h3>
             <h4>Підписка-відписка. Модуль 7. Занятие 14. 4:30</h4>
             <p class="task-paragraph">
-              По кліку по кнопці "Додавати слухача" додати слухача події на "Цільова кнопка", а по кліку по кнопці "Видаляти слухача" видалити слухача події з цільової кнопки. При кліку по цільовій кнопці вона повинна змінити назву на "Слухаю Вас"
+              По кліку по кнопці "Додавати слухача" додати слухача події на
+              "Цільова кнопка", а по кліку по кнопці "Видаляти слухача" видалити
+              слухача події з цільової кнопки. При кліку по цільовій кнопці вона
+              повинна змінити назву на "Слухаю Вас"
             </p>
             <div class="">
               <button type="button" class="tTwelwe-target-btn js-target-btn">
@@ -470,8 +557,6 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </section>
     </main>
