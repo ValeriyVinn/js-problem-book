@@ -75,7 +75,7 @@ const tTwoAactions = document.querySelectorAll(".js-action button");
 
 // Я та мої друзі
 
-// Цей код є фрагментом JavaScript і використовує API Document Object Model (DOM) для взаємодії з HTML-розміткою. Давайте розглянемо його по кроках:
+// Цей код використовує API Document Object Model (DOM) для взаємодії з HTML-розміткою. Давайте розглянемо його по кроках:
 // 1. `const controls = document.querySelector(".controls");`: Знаходить елемент HTML з класом "controls" і зберігає його в змінну `controls`.
 // 2. `controls.addEventListener("click", (e) => {`: Додає обробник подій до елемента з класом "controls". Обробник викликається при кліку на елемент.
 // 3. `if (e.target === e.currentTarget) { return; }`: Перевіряє, чи клікнуто саме на елемент "controls", а не на його дочірній елемент. Якщо так, то обробник просто завершує виконання, інакше він продовжує.
