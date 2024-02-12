@@ -16,82 +16,77 @@ ul {
 }
 
 .container {
-  /* background-color: lightblue; */
   margin: 0 auto;
 
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  width: 1200px;
+  width: 95%;
 }
 
 .nav-link {
-  /* text-decoration: underline 2px royalblue dotted; */
   font-size: 20px;
   color: royalblue;
 }
-
-/* .nav-link:not(:last-child) {
-  margin-right: 15px;
-} */
-
-/* .nav {
-  display: flex;
-  padding: 15px 0px;
-} */
-
-
-/* .nav {
-  margin-top: 20px;
-} */
 
 .nav-list {
   display: flex;
 }
 
-.nav-list-item {
+.nav-list__item {
   background-color: rgb(180, 220, 255);
   padding: 5px 10px;
   outline: 1px solid rgb(160, 160, 255);
   border-radius: 2px;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 10px;
 }
-
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .task-number {
-  /* color: darkblue; */
   font-size: 20px;
   font-weight: 600;
   color: gold;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-.nav-list-item:hover {
+.nav-list__item:hover {
   outline: 1px solid rgb(85, 85, 255);
   color: royalblue;
 }
 
 .section {
   min-width: 700px;
-  min-height: 700px;
-  /* margin: 20px auto;
-  padding: 20px 40px; */
+  /* min-height: 700px; */
 }
 
-.header-home { 
+.header-home {
   color: darkblue;
 }
 
-.abzatz-notice {
+
+
+.header-level {
+  margin-bottom: 20px;
+  color: royalblue;
+}
+
+.banner {
+  font-size: 38px;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin-bottom: 25px;
+}
+
+/* Main */
+.main section {
+  min-height: 900px;
+}
+.section-notice__paragraph {
   padding: 15px 10px;
   font-size: 18px;
   color: darkblue;
@@ -99,25 +94,19 @@ ul {
   border-radius: 3px;
 }
 
-.header-level {
-  margin-bottom: 20px;
-  color: royalblue;
-}
+/* Footer */
 
-.good-luck {
-  font-size: 38px;
-  color: gold;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  margin-bottom: 25px;
+.footer {
+  min-height: 20px;
+  background-color: rgb(200, 255, 255);
 }
-
 
 /* ============ Hoverable Dropdown =============== */
 
 .dropbtn {
-    background-color: rgb(180, 220, 255);
-    font-size: 20px;
-    color: royalblue;
+  background-color: rgb(180, 220, 255);
+  font-size: 20px;
+  color: royalblue;
   border: none;
   padding: 0;
 }
@@ -131,7 +120,6 @@ ul {
   margin-top: 6px;
   margin-left: -10px;
   border-radius: 2px;
-  
   outline: 1px solid rgb(85, 85, 255);
   display: none;
   position: absolute;
@@ -141,15 +129,12 @@ ul {
   z-index: 1;
 }
 
-
-
 .dropdown-content .dropbtn-markup-abstract {
-
   color: royalblue;
   font-size: 20px;
   background-color: rgb(180, 220, 240);
   padding: 4px 10px;
-  /* text-decoration: none; */
+
   display: block;
 }
 .dropdown-content .dropbtn-js-abstract {
@@ -159,84 +144,24 @@ ul {
   padding: 4px 10px;
   text-decoration: none;
   display: block;
-  
 }
 .dropbtn-markup-abstract:last-child {
   border-bottom: 1px solid rgb(85, 85, 255);
 }
 
-
 .dropdown-content li:hover {
-  /* color: rgb(60, 60, 255); */
-  /* text-decoration: underline; */
-  /* font-weight: 400; */
   background-color: rgb(235, 241, 246);
 }
-
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 
-/* ========================================= */
 
-.accordion {
-  display: block;
-  background-color:rgb(209, 219, 228);
-  color: royalblue;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: text;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  user-select: text;
-}
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color:aliceblue;
-}
 
-/* Style the accordion panel. Note: hidden by default */
-
-/* !----------------without animation----------- */
-/* .panel {
-  padding: 0 18px;
-  background-color:rgb(179, 201, 224);
-  display: none;
-  overflow: hidden;
-} */
-/* !----------------without animation----------- */
-
-.accordion:after {
-  content: '\02794'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-  
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-/* *----------------with animation----------- */
-.panel {
-  padding: 0 18px;
-  background-color:aliceblue;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  margin-bottom: 10px;
-}
-
-/* ============= Scroll btn =================  */
+/* ====== Scroll btn ===============  */
 html {
   scroll-behavior: smooth;
 }
