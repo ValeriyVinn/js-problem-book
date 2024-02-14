@@ -1,11 +1,6 @@
-.contaener {
-    color:aqua
-}
+@import "./base/reset";
 
-.alebaster {
-    color:aqua
-}
-
-.begonia {
-    color: green
-}
+@import "./components/banner";
+@import "./components/main";
+@import "./components/scroll-btn";
+@import "./components/footer";
