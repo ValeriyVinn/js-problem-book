@@ -1,0 +1,52 @@
+
+.nav__link {
+  font-size: 20px;
+  color: royalblue;
+}
+
+.nav__list {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item {
+  background-color: rgb(180, 220, 255);
+  padding: 5px 10px;
+  outline: 1px solid rgb(160, 160, 255);
+  border-radius: 2px;
+  &:hover {
+    outline: 1px solid rgb(85, 85, 255);
+    color: royalblue;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: gold;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+
+.header-home {
+  color: darkblue;
+}
+
+.header-level {
+  margin-bottom: 20px;
+  color: royalblue;
+}
