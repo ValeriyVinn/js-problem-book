@@ -101,13 +101,11 @@ img {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-.dropdown__content .dropdown__item {
-  color: royalblue;
-  font-size: 20px;
-  background-color: rgb(180, 220, 240);
-  padding: 4px 10px;
+.dropdown:hover .dropdown__content {
   display: block;
+}
+.dropdown__content li:hover {
+  background-color: rgb(235, 241, 246);
 }
 
 .dropdown__content .dropdown__item {
@@ -118,17 +116,8 @@ img {
   text-decoration: none;
   display: block;
 }
-
 .dropdown__item:last-child {
   border-bottom: 1px solid rgb(85, 85, 255);
-}
-
-.dropdown__content li:hover {
-  background-color: rgb(235, 241, 246);
-}
-
-.dropdown:hover .dropdown__content {
-  display: block;
 }
 
 .banner {
@@ -145,17 +134,11 @@ img {
   border-radius: 3px;
 }
 
-body.show-modal .backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
-
 body.show-modal .modal {
   transform: scale(1);
 }
 
-.backdrop {
+.modal__backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,8 +154,13 @@ body.show-modal .modal {
   visibility: hidden;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
+body.show-modal .modal__backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
 
-.modal {
+.modal__window {
   padding: 24px;
   border-radius: 4px;
   max-width: 640px;
@@ -186,11 +174,11 @@ body.show-modal .modal {
   transition: transform 200ms ease-in-out;
 }
 
-.modal-header {
+.modal__header {
   color: darkgreen;
 }
 
-.tseventeen-button {
+.modal__button {
   color: darkgreen;
   background-color: mintcream;
   min-width: 75px;
@@ -200,18 +188,16 @@ body.show-modal .modal {
   font-weight: 500;
   outline: 2px solid green;
 }
-
-.tseventeen-button:hover {
+.modal__button:hover {
   color: rgb(0, 209, 14);
   background-color: rgb(205, 255, 255);
   outline: 2px solid rgb(0, 209, 14);
 }
-
-.tseventeen-button:active {
+.modal__button:active {
   outline: 2px solid rgb(207, 235, 1);
 }
 
-.seventeen-modal-text {
+.modal__text {
   font-weight: 700;
   color: crimson;
   font-size: 38px;
