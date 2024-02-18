@@ -1,3 +1,4 @@
+@import "./utils/variables";
 @import "./utils/mixins";
 
 @import "./base/reset";
@@ -8,5 +9,6 @@
 @import "./components/banner";
 @import "./components/main";
 @import "./components/modal";
+@import "./components/cups";
 @import "./components/scroll-btn";
 @import "./components/footer";
