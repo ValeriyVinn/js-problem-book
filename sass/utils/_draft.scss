@@ -1,0 +1,86 @@
+//! директива @extend
+
+// .draft__notification {
+//     background-color: antiquewhite;
+//     font-size: 20px;
+//     padding: 20px;
+// }
+
+// .draft__notification--error {
+//     @extend .draft__notification;
+//     background-color: red;
+// }
+
+// .draft__notification--success {
+//     @extend .draft__notification;
+//     background-color: green;
+// }
+
+// ! плейсхолдер
+
+// %draft__btn {
+//     display: inline-flex;
+//     border-radius: 3px;
+//     font-size: 16px;
+//     padding: 10px 20px;
+//     color: white;
+//     background-color:cornflowerblue;
+// }
+
+// .draft__btn--success {
+//     @extend %draft__btn;
+//     background-color: green;
+// }
+
+// .draft__btn--error {
+//     @extend %draft__btn;
+//     background-color: red;
+// }
+
+//! -міксіни
+
+@mixin bordered($colorOne: black, $colorTwo: black, $type: solid) {
+    border-top: 1px $type $colorOne;
+    border-bottom: 1px $type $colorTwo;
+}
+
+// .draft__paragraph {
+//     @include bordered(teal, blue, dashed)
+// }
+
+// .draft__item {
+//     @include bordered(red, yellow)
+// }
+
+// .draft__text {
+//     @include bordered($type: dotted);
+// }
+
+@mixin centeredFlex($type: flex) {
+display: $type;
+align-items: center;
+justify-content: center;
+}
+
+// .draft__paragraph {
+//     @include centeredFlex()
+// }
+
+// .draft__button {
+//     @include centeredFlex(inline-flex)
+// }
+
+//! each
+
+$icons: 'facebook', 'instagram', 'linkedin', 'twitter';
+
+
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .item-#{$iconName} {
+        background-image: url("/images/#{$iconName}.png");
+    }
+}  
+}
+
+// @include generateIcons($icons)

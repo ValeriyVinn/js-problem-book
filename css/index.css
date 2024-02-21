@@ -19,13 +19,30 @@ img {
   display: block;
 }
 
-.container {
-  margin: 0 auto;
-  width: 95%;
-}
-
 .section {
   min-width: 700px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+  }
 }
 
 .nav__link {
@@ -210,7 +227,6 @@ body.show-modal .modal__backdrop {
 
 .cup__item {
   border: 1px solid blue;
-  margin: 10px;
   padding: 10px;
   width: 400px;
   height: 400px;
@@ -220,6 +236,23 @@ body.show-modal .modal__backdrop {
      object-fit: scale-down;
   height: 100%;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cup__item {
+    width: calc((100% - 20px) / 2);
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cup__item {
+    width: calc((100% - 60px) / 3);
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cup__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 html {
