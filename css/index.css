@@ -45,6 +45,23 @@ img {
   }
 }
 
+.nav-mobile__list .bd {
+  color: blue;
+}
+
+.nav-mobile__link {
+  color: red;
+  font-style: italic;
+}
+
+.nav-mobile__item {
+  color: green;
+}
+
+.nav-mobile__list .hm {
+  font-style: normal;
+}
+
 .nav__link {
   font-size: 20px;
   color: royalblue;
