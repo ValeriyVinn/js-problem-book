@@ -62,6 +62,38 @@ img {
   font-style: normal;
 }
 
+.sprite-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.sprite-button {
+  width: 60px;
+  height: 60px;
+  padding: 0px;
+  color: blue;
+  background-color: #b4dcff;
+  border: none;
+  border-radius: 50%;
+}
+
+.sprite-icon {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+}
+
+.sprite-button:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.sprite-button:active {
+  border: 1px solid blue;
+}
+
 .nav__link {
   font-size: 20px;
   color: royalblue;
