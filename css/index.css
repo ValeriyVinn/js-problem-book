@@ -238,6 +238,53 @@ img {
   border-radius: 3px;
 }
 
+.button-hands {
+  display: inline-flex;
+  background-color: aqua;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-hands::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(../../images/victory-hand.svg);
+  background-size: contain;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hands::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(../../images/heart-hands.svg);
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  transform: translateY(calc(-40% + 35px));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover::before {
+  transform: translateY(-170%);
+}
+
+button:hover::after {
+  transform: translateY(-50%);
+}
+
 body.show-modal .modal {
   transform: scale(1);
 }
@@ -291,6 +338,7 @@ body.show-modal .modal__backdrop {
   border-radius: 3px;
   font-weight: 500;
   outline: 2px solid green;
+  cursor: pointer;
 }
 .modal__button:hover {
   color: rgb(0, 209, 14);
@@ -305,6 +353,39 @@ body.show-modal .modal__backdrop {
   font-weight: 700;
   color: crimson;
   font-size: 38px;
+}
+
+.underline-menu {
+  display: flex;
+}
+
+.underline-menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.underline-menu__link {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: red;
+}
+
+.underline-menu__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.underline-menu__link:hover::after {
+  transform: scaleX(1);
 }
 
 .cup__list {

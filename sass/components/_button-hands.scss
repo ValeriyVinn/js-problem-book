@@ -1,0 +1,54 @@
+.button-hands {
+  display: inline-flex;
+  background-color:aqua;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+border: none;
+  font-size: 24px;
+  cursor: pointer;
+
+  position: relative;
+
+overflow: hidden;
+  
+}
+
+.button-hands::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  // background-color: aqua;
+  margin-right: 10px;
+  background-image: url(../../images/victory-hand.svg);
+  background-size: contain;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-hands::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  // background-color: yellow;
+  margin-right: 10px;
+  background-image: url(../../images/heart-hands.svg);
+  background-size: contain;
+
+  position: absolute;
+  top: 50%;
+  left: 9px;
+
+  transform: translateY(calc(-40% + 35px));
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover::before {
+    transform: translateY(-170%);
+}
+
+button:hover::after {
+  transform: translateY(-50%);
+}
