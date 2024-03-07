@@ -243,7 +243,7 @@ html {
 
   .ukr-eng {
     display: flex;
-    
+    margin-bottom: 20px;
   }
 
   .lang-list {
@@ -253,7 +253,7 @@ html {
 
   .ukr {
     font-size: 20px;
-    padding: 10px;
+    padding:10px 10px 10px 30px ;
     background-color:rgb(249, 249, 174);
     max-width: 50%;
     margin-right: 5px;
@@ -263,7 +263,7 @@ html {
   .eng {
     font-size: 20px;
     max-width: 50%;
-    padding: 10px;
+    padding:10px 10px 10px 30px ;
     background-color: rgb(69, 254, 254);
   }
 
@@ -271,3 +271,39 @@ html {
   .eng a:hover {
     text-decoration: underline;
   }
+
+/*  opacity-translate styles*/
+
+  .opacity-translate {
+    position: relative;
+    padding:10px 10px 10px 30px ;
+    font-size: 20px;
+  }
+
+  .english {
+    background-color: lightblue;
+    
+  }
+
+.ukrainian {
+  min-width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+
+  padding:10px 10px 10px 30px ;
+opacity: 0;
+transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.opacity-div {
+  background-color: lightblue;
+
+}
+
+.opacity-div:hover  .ukrainian  {
+  opacity: 1;
+
+ cursor:text;
+}
