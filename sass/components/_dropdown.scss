@@ -1,15 +1,17 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
-.dropdown__btn {
-  background-color: rgb(180, 220, 255);
-  font-size: 20px;
-  color: royalblue;
-  border: none;
-  padding: 0;
-}
+// .dropdown__btn {
+//   background-color: rgb(180, 220, 255);
+//   font-size: 20px;
+//   color: royalblue;
+//   border: none;
+//   padding: 0;
+
+// }
 
 .dropdown__content {
   margin-top: 6px;
