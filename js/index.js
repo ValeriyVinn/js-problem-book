@@ -5,7 +5,7 @@
     const closeModalBtn = document.querySelector("[data-close-modal]")
     const backdrop =  document.querySelector("[data-backdrop]")
    
-   console.log(openModalBtn)
+  //  console.log(openModalBtn)
   
    openModalBtn.addEventListener("click", toggleModal)
    closeModalBtn.addEventListener("click", toggleModal)
@@ -18,7 +18,7 @@
    }
    
    function logBackdropClick() {
-     console.log("This is Click on backdrop")
+    //  console.log("This is Click on backdrop")
    }
    
    

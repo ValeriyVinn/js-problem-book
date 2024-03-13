@@ -243,12 +243,13 @@ html {
 
   .ukr-eng {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
 
   .lang-list {
     /* padding: 5px; */
     list-style-type:initial;
+margin-left: 20px;
   }
 
   .ukr {

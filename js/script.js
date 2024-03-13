@@ -80,7 +80,7 @@ function mergePairsOfElements(array) {
   }
 }
 
-console.log(mergePairsOfElements([1, 2, 3, 4, 5, 6]));
+// console.log(mergePairsOfElements([1, 2, 3, 4, 5, 6]));
 
 function printElementsInReverseOrder(array) {
   const reverseArray = array.reverse();
@@ -115,7 +115,7 @@ const separateTripletsWithSpacesFromEnd = function(string) {
   return result;
 };
 
-console.log(separateTripletsWithSpacesFromEnd('fgsfgfsgsfg'));
+// console.log(separateTripletsWithSpacesFromEnd('12345366'));
 
 
 
@@ -163,6 +163,5 @@ function onEscKeyPress(event) {
     onCloseModal();
   }
 }
-
 
 

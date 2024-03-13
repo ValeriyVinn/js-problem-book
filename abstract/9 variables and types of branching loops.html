@@ -1,12 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Змінні та типи. Розгалуження. Цикли</title>
-</head>
-<body>
-    <h1>Змінні та типи. Розгалуження. Цикли</h1>
-</body>
+
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/markup.css" />
+    <link rel="stylesheet" href="../css/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header">
+        <div class="modal-menu__backdrop is-hidden" data-backdrop>
+          <div class="modal-menu__window">
+            <div class="nav-mobile__wrap">
+              <nav class="nav-mobile">
+                <ul class="nav-mobile__list">
+                  <li class="nav-mobile__item">
+                    <a href="" class="nav-mobile__link hm">HOME</a>
+                  </li>
+                  <li class="nav-mobile__item">
+                    <ul class="nav-mobile__list">
+                      ABSTRACT
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd">-HTML Basics</a>
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd">-CSS Basics</a>
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Block model. Flexbox</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Vector graphics</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Positioning and animation</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd">-Forms</a>
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd">-BEM SASS</a>
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Adaptive layout</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Variables and types. Branching. Cycles</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Arrays Functions</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Objects. Rest and spread operations</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Iterative array methods</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-The "this" keyword. Prototypes and classes</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-DOM and Events</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Patterns and optimization of events</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Infrastructure projects. Web storage.</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Asynchrony and Date. Promises</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Interaction with the backend</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-CRUD Asynchronous functions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-mobile__item">
+                    <ul class="nav-mobile__list">
+                      JS HW 1-7
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Variables and types. Branching. Cycles</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Arrays. Functions</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Objects. Rest and spread operations</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Iterative array methods</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Keyword "this". Prototypes and classes</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-DOM and events</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Patterns and optimization of events</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-mobile__item">
+                    <ul class="nav-mobile__list">
+                      WORKOUT
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Variables and types. Branching. Cycles</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Arrays. Functions</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Objects. Rest and spread operations</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Iterative array methods</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Keyword "this". Prototypes and classes</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-DOM and events</a
+                        >
+                      </li>
+                      <li class="nav-mobile__item">
+                        <a href="" class="nav-mobile__link bd"
+                          >-Patterns and optimization of events</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-mobile__item">
+                    <a href="" class="nav-mobile__link hm"
+                      >PROBLEM BOOKS BY LEVELS</a
+                    >
+                  </li>
+                  <li class="nav-mobile__item">
+                    <a href="" class="nav-mobile__link hm">BLACKBOARD</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <button class="sprite-button__close" data-close-modal>
+                <svg class="sprite-icon">
+                  <use href="../images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item dropdown">
+              <a href="../abstract/1 html basics.html" class="nav__link"
+                >Abstract</a
+              >
+              <ul class="dropdown__content">
+                <li class="dropdown__item">
+                  <a href="../abstract/1 html basics.html">Основи HTML</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/2 css basics fonts.html">Основи CSS</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/3 block model flexbox.html"
+                    >Блокова модель. Flexbox</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/4 vector graphics.html"
+                    >Векторна графіка</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/5 positioning and animation.html"
+                    >Позиціонування і анімація</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/6 forms.html">Форми</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/7 bem sass.html">BEM SASS</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/8 adaptive layout.html"
+                    >Адаптивна верстка</a
+                  >
+                </li>
+
+                <li class="dropdown__item">
+                  <a
+                    href="../abstract/9 variables and types of branching loops.html"
+                    >Змінні та типи. Розгалуження. Цикли</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/10 arrays functions.html"
+                    >Масиви. Функції</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../abstract/11 objects  rest and spread operations.html"
+                    >Об'єкти. Операції rest та spread</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/12 array iterative methods.html"
+                    >Перебираючі методи масиву</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/13 this prototypes and classes.html"
+                    >Ключове слово this. Прототипи та класи</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/14 DOM and events.html">DOM та Події</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/15 patterns and event optimization.html"
+                    >Паттерни та оптимізація подій</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../abstract/16 infrastructure projects web storage.html"
+                    >Інфраструктура проектів. Веб-сховище.</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/17 asynchrony and date promises.html"
+                    >Асинхронність та Date. Проміси</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/18 interaction with the backend.html"
+                    >Взаємодія з бекендом</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../abstract/19 CRUD асинхронні функції.html"
+                    >CRUD Асинхронні функції</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item dropdown">
+              <!-- <button class="dropdown__btn">JS HW 1-7</button> -->
+              <!-- <div class="dropdown__content"> -->
+              <a
+                href="../js homeworks/1 - variables and types - branching - cycles.html"
+                class="nav__link"
+                >JS HW 1-7</a
+              >
+              <ul class="dropdown__content">
+                <li class="dropdown__item">
+                  <a
+                    href="../js homeworks/1 - variables and types - branching - cycles.html"
+                    >Variables and types. Branching. Cycles</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../js homeworks/2 - arrays - functions.html"
+                    >Arrays. Functions</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../js homeworks/3 - objects - rest and spread operations.html"
+                    >Objects. Rest and spread operations</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../js homeworks/4 - Iterative array methods.html"
+                    >Iterative array methods</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../js homeworks/5 - keyword this - prototypes and classes.html"
+                    >Keyword this. Prototypes and classes</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../js homeworks/6 - DOM and Events.html"
+                    >DOM та події</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../js homeworks/7 - patterns and optimization of events.html"
+                    >Паттерни та оптимізація подій</a
+                  >
+                </li>
+              </ul>
+              <!-- </div> -->
+            </li>
+
+            <li class="nav__item dropdown">
+              <!-- <button class="dropdown__btn">Workout</button> -->
+              <!-- <div class="dropdown__content"> -->
+
+              <a
+                href="../workout/1 - variables and types - branching - cycles.html"
+                class="nav__link"
+                >Workout</a
+              >
+              <ul class="dropdown__content">
+                <li class="dropdown__item">
+                  <a
+                    href="../workout/1 - variables and types - branching - cycles.html"
+                    >Variables and types. Branching. Cycles</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../workout/2 - arrays - functions.html"
+                    >Arrays. Functions</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../workout/3 - objects - rest and spread operations.html"
+                    >Objects. Rest and spread operations</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../workout/4 - Iterative array methods.html"
+                    >Iterative array methods</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../workout/5 - keyword this - prototypes and classes.html"
+                    >Keyword this. Prototypes and classes</a
+                  >
+                </li>
+                <li class="dropdown__item">
+                  <a href="../workout/6 - DOM and Events.html">DOM та події</a>
+                </li>
+                <li class="dropdown__item">
+                  <a
+                    href="../workout/7 - patterns and optimization of events.html"
+                    >Паттерни та оптимізація подій</a
+                  >
+                </li>
+              </ul>
+              <!-- </div> -->
+            </li>
+
+            <li class="nav__item">
+              <a href="../Problem book by levels.html" class="nav__link"
+                >Problem book by levels</a
+              >
+            </li>
+
+            <li class="nav__item">
+              <a href="../blackboard.html" class="nav__link">Blackboard</a>
+            </li>
+          </ul>
+
+          <!-- <a href="./tabs.html" class="nav-link">Tabs</a> -->
+        </nav>
+        <h1 class="banner">Welcome!</h1>
+        <button class="sprite-button__menu" data-open-modal>
+          <svg class="sprite-icon">
+            <use href="../images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container">
+        <article class="article">
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h3 class="opasity__header">Introduction to JavaScript</h3>
+                <p class="">
+                  When we talk about programming, the first thing that comes to
+                  mind is a set of instructions in a file. Source code (source
+                  code) is the text of a computer program in any programming
+                  language, a set of easy-to-read syntactic structures that
+                  describe a set of instructions for a computer.
+                </p>
+                <br />
+                <p>
+                  Actually, the source code itself is incomprehensible to the
+                  machine. There is a step that takes place after the program is
+                  written that converts the source code in the file into a set
+                  of instructions that the computer can understand. This is done
+                  by a special program: a compiler or an interpreter. From this
+                  we can draw a conclusion - the code is not written for
+                  machines, but for the developer. The source code must not only
+                  correctly solve the problem, but also be understandable.
+                </p>
+              </div>
+              <div class="ukrainian">
+                <h3 class="opasity__header">Знайомство з JavaScript</h3>
+                <p class="">
+                  Коли ми говоримо про програмування, перше, що спадає на думку
+                  - це набір інструкцій у файлі. Вихідний код (source code) - це
+                  текст комп'ютерної програми будь-якою мовою програмування,
+                  набір легких для читання синтаксичних конструкцій, що описують
+                  набір інструкцій для комп'ютера.
+                </p>
+                <br />
+                <p>
+                  Власне сам вихідний код незрозумілий для машини. Існує крок,
+                  що виконується після написання програми, який конвертує
+                  вихідний код у файлі в набір інструкцій, зрозумілих
+                  комп'ютеру. Цим займається спеціальна програма: компілятор або
+                  інтерпретатор. З цього можна зробити висновок - код пишеться
+                  не для машин, а для розробника. Вихідний код повинен не лише
+                  правильно вирішувати задачу, але й бути зрозумілим.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h3 class="opasity__header">Logical thinking</h3>
+                <p class="opacity__text">
+                  There are many programming languages in the world. They are
+                  not as complex as human ones, because they consist of a fairly
+                  small set of syntactic structures, and their working
+                  principles and basic concepts are similar between different
+                  languages.
+                </p>
+                <br />
+                <p class="opacity__text">
+                  Experienced developers look at problems from the point of view
+                  of algorithms - a set of steps that must be performed to
+                  achieve a certain goal. We use algorithms all the time in our
+                  daily lives. For example, the process of making tea is a set
+                  of necessary steps (algorithm) to achieve a result. When you
+                  get used to building a solution to a problem in the form of an
+                  algorithm, the programming language will be just a tool.
+                </p>
+              </div>
+
+              <div class="ukrainian">
+                <h3 class="opasity__header">Логічне мислення​</h3>
+                <p class="opacity__text">
+                  В світі існує багато мов програмування. Вони не такі складні,
+                  як людські, тому що складаються з досить маленького набору
+                  синтаксичних конструкцій, а їх принципи роботи та базові
+                  концепції схожі між різними мовами.
+                </p>
+                <br />
+                <p class="opacity__text">
+                  Досвідчені розробники розглядають проблеми з точки зору
+                  алгоритмів - набору кроків, які потрібно виконати для
+                  досягнення певної мети. Ми постійно використовуємо алгоритми у
+                  повсякденному житті. Наприклад, процес приготування чаю - це
+                  набір необхідних кроків (алгоритм) для досягнення результату.
+                  Коли ви звикнете вибудовувати рішення задачі у вигляді
+                  алгоритму, мова програмування буде всього лиш інструментом.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2>JavaScript</h2>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <p class="opacity__text">
+                  <strong>JavaScript</strong> is an implementation of the
+                  EcmaScript specification, a high-level programming language
+                  supported by all modern web browsers. First of all, it is
+                  intended for interaction with elements of web pages and adding
+                  interactivity.
+                </p>
+              </div>
+
+              <div class="ukrainian">
+                <p class="opacity__text">
+                  <strong>JavaScript</strong> - реалізація специфікації
+                  EcmaScript, високорівнева мова програмування, яка
+                  підтримується усіма сучасними веб-браузерами. В першу чергу
+                  призначена для взаємодії з елементами веб-сторінок і додавання
+                  інтерактивності.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h5 class="opasity__header">! INTERESTING</h5>
+                <div class="opacity__text">
+                  JavaScript is in no way related to the Java language. These
+                  are two independent programming languages.
+                </div>
+              </div>
+
+              <div class="ukrainian">
+                <h5 class="opasity__header">! ЦІКАВО</h5>
+
+                <div class="opacity__text">
+                  JavaScript жодним чином не стосується мови Java. Це дві
+                  абсолютно незалежні мови програмування.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h3 class="opasity__header">
+                  In front-end development, JavaScript is used together with
+                  HTML and CSS to provide the functionality of a web page,
+                  namely:
+                </h3>
+
+                <ul class="lang-list">
+                  <li>simple calculations</li>
+                  <li>
+                    verification and manipulation of data entered by the user
+                  </li>
+                  <li>storing information in the user's browser</li>
+                  <li>dynamic change of the HTML document</li>
+                  <li>reaction to user actions</li>
+                  <li>
+                    creation of interactive elements: galleries, graphs, etc.
+                  </li>
+                  <li>interaction with the backend</li>
+                </ul>
+              </div>
+              <div class="ukrainian">
+                <h3 class="opasity__header">
+                  У Front-end розробці, JavaScript використовується разом із
+                  HTML і CSS для забезпечення функціональності веб-сторінки, а
+                  саме:
+                </h3>
+
+                <ul class="lang-list">
+                  <li>нескладні обчислення</li>
+                  <li>
+                    перевірка і маніпуляція даними, введеними користувачем
+                  </li>
+                  <li>зберігання інформації в браузері користувача</li>
+                  <li>динамічна зміна HTML-документа</li>
+                  <li>реакція на дії користувача</li>
+                  <li>
+                    створення інтерактивних елементів: галерей, графіків і т. п.
+                  </li>
+                  <li>взаємодія з бекендом</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h5 class="opasity__header">! INTERESTING</h5>
+                <p class="opacity__text">
+                  If the JavaScript code is written to be executed in the
+                  browser (Front-end), the developer does not have tools and
+                  access to the file or operating system for security reasons.
+                </p>
+              </div>
+
+              <div class="ukrainian">
+                <h5 class="opasity__header">! ЦІКАВО</h5>
+
+                <p class="opacity__text">
+                  Якщо JavaScript-код пишеться для виконання в браузері
+                  (Front-end), у розробника відсутні інструменти і доступ до
+                  файлової або операційної системи з міркувань безпеки.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <h3 class="opasity__header">
+                  Today, using JavaScript, you can create:
+                </h3>
+
+                <ul class="lang-list">
+                  <li>
+                    web applications on React, Vue, Angular and other frameworks
+                  </li>
+                  <li>backend applications on Node.js</li>
+                  <li>
+                    <strong>mobile applications on</strong> React Native or
+                    Ionic
+                  </li>
+                  <li>
+                    <strong>desktop applications using</strong>
+                    Electron
+                  </li>
+                  <li>
+                    <strong>microcontrollers with</strong> Johnny-Five and
+                    Espruino
+                  </li>
+                </ul>
+              </div>
+              <div class="ukrainian">
+                <h3 class="opasity__header">
+                  На сьогодні, використовуючи JavaScript, можна створювати:
+                </h3>
+
+                <ul class="lang-list">
+                  <li>
+                    веб-застосунки на фреймворках React, Vue, Angular та інших
+                  </li>
+                  <li>бекенд-застосунки на Node.js</li>
+                  <li>
+                    <strong>мобільні застосунки на</strong> React Native або
+                    Ionic
+                  </li>
+                  <li>
+                    <strong>десктоп-застосунки за допомогою</strong>
+                    Electron
+                  </li>
+                  <li>
+                    <strong>мікроконтролери з</strong>
+                    Johnny-Five і Espruino
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="opacity-div">
+            <div class="opacity-translate">
+              <div class="english">
+                <p class="opacity__text">
+                  To realize all these possibilities, it is necessary to know
+                  well the syntax of the language, its features and mechanisms,
+                  train to think algorithmically and solve as many practical
+                  problems as possible.
+                </p>
+              </div>
+
+              <div class="ukrainian">
+                <p class="opacity__text">
+                  Для реалізації всіх цих можливостей, необхідно добре знати
+                  синтаксис мови, її особливості та механізми, тренуватися
+                  мислити алгоритмічно і вирішувати якомога більше практичних
+                  задач.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+        </article>
+        <article class="article">
+          <h1 class="header-main">Підключення скрипту</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Інструменти розробника</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Основи синтаксису</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Змінні і типи</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Взаємодія з користувачем</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Основні оператори</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Числа</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Рядки</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Логічні оператори</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Розгалуження</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Тернарний оператор</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Інструкція Switch</h1>
+        </article>
+        <article class="article">
+          <h1 class="header-main">Цикли</h1>
+        </article>
+      </section>
+    </main>
+    <!-- ============= Scroll btn ================= -->
+
+    <!-- <button onclick="topFunction()" id="myBtn" >
+          Top
+        </button> -->
+    <!-- <button onclick="topFunction()" id="myBtn">Scroll to Top</button> -->
+
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!-- ============= Scroll btn ================= -->
+
+    <script src="../js/script.js" type="module"></script>
+    <script src="../js/index.js" type="module"></script>
+    <script src="./js/prism/prism-coy.js" type="module"></script>
+  </body>
 </html>
