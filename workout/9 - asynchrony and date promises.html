@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout 1</title>
+    <title>Workout 9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,13 +20,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/workout.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- <link rel="stylesheet" href="../css/styles.css" /> -->
     <link rel="stylesheet" href="../css/prism/prism-coy.css" />
     <!-- <link rel="stylesheet" href="./css/blackboards.css" /> -->
   </head>
   <body>
     <header class="container header">
-       <nav class="nav">
+      <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list-item">
             <a href="../index.html" class="nav-link">Home</a>
@@ -101,19 +101,8 @@
               >
               <a href="../workout/6 - DOM and Events.html">DOM та події</a>
               <a href="../workout/7 - patterns and optimization of events.html"
-                >Patterns and optimization of events</a
+                >Паттерни та оптимізація подій</a
               >
-              <a href="../workout/8 - infrastructure projects web storage.html"
-              >Infrastructure projects web storage</a
-            >
-            <a
-              href="../workout/9 - asynchrony and date promises.html"
-              >Asynchrony and date promises</a
-            >
-            <a href="../workout/10 - interaction with the backend.html">Interaction with the backend</a>
-            <a href="../workout/11 - CRUD asynchronous functions.html"
-              >CRUD asynchronous functions</a
-            >
             </div>
           </li>
 
@@ -143,73 +132,35 @@
     <main>
       <section class="section container">
         <div class="homework">
-          <h1 class="homework-title">Workout 1</h1>
+          <h1 class="homework-title">Workout 9</h1>
 
           <div class="task">
-            <h3>Теорія</h3>
-            <p>
-              Об'єкти дозволяють описати і згрупувати характеристики об'єктів
-              реального світу - користувача, книги, продукту магазину, чого
-              завгодно. Об'єкти ще називають словниками, тобто вони містять
-              терміни (властивості) та їх визначення (значення).
-            </p>
-            <pre><code>
-  const book = { title: "The Last Kingdom", 
-              author: "Bernard Cornwell", 
-              genres: ["historical prose", "adventure"], 
-              public: true, 
-              rating: 8.38, };</code
-            ></pre>
+            <h2>Horse race</h2>
 
-            <p>
-              Для оголошення використовуються фігурні дужки {} - літерал
-              об'єкта. При створенні об'єкта можна додати властивості, кожна з
-              яких описується парами ключ:значення. Ключ ще називають ім'ям
-              властивості і це завжди рядок. Значенням властивості можуть бути
-              будь-які типи: примітиви, масиви, об'єкти, булі, функції тощо.
-              Властивості розділяються комою.
-            </p>
+<button type="button" class="js-start-race">Перегони почались!</button>
 
-            <button class="accordion">
-              <span class="task-number">01</span>
-              <h3>Завдання</h3>
-              <p>
-                Присвой змінній apartment об'єкт, який описує квартиру з
-                наступними характеристиками:
-              </p>
-              <ul>
-                <li>
-                  imgUrl - фотографія, значення
-                  "https://via.placeholder.com/640x480";
-                </li>
-                <li>
-                  descr - опис, значення "Spacious apartment in the city
-                  center";
-                </li>
-                <li>rating - рейтинг, значення 4;</li>
-                <li>price - ціна, значення 2153;</li>
-                <li>
-                  tags - метаінформація, масив ["premium", "promoted", "top"].
-                </li>
-              </ul>
-            </button>
-            <div class="panel">
-              <pre><code class="language-js">
-                const apartment = {
-                  imgUrl: "https://via.placeholder.com/640x480",
-                  descr: "Spacious apartment in the city center",
-                  rating: 4,
-                  price: 2153,
-                  tags: ["premium", "promoted", "top"],
-                };
-              </code></pre>
-            </div>
+<hr />
+<p class="js-winner"></p>
+<p class="js-progress"></p>
+<hr />
+
+<table class="js-results-table">
+  <thead>
+    <tr>
+      <th>Заїзд</th>
+      <th>Переможець</th>
+      <th>Час</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
           </div>
         </div>
       </section>
     </main>
-    <script src="./js/js homework.js" type="module"></script>
-    <script src="../js/script.js" type="module"></script>
+    <script src="../workout/js/9 - asynchrony and date promises.js"></script>
+    <!-- <script src="../js/script.js" type="module"></script> -->
     <script src="../js/prism/prism-coy.js" type="module"></script>
   </body>
 </html>
