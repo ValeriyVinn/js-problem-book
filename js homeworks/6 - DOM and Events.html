@@ -166,6 +166,78 @@
           <div class="task">
             <!--! Task1 -->
             <h3 class="homework-title-task">Task 1</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>HTML містить список категорій ul#categories.</p>
+              <pre>
+  &ltul id="categories"&gt
+    &ltli class="item"&gt
+      &lth2&gtAnimals&lt/h2&gt
+      &ltul&gt
+        &ltli&gtCat&lt/li&gt
+        &ltli&gtHamster&lt/li&gt
+        &ltli&gtHorse&lt/li&gt
+        &ltli&gtParrot&lt/li&gt
+      &lt/ul&gt 
+    &lt/li&gt
+    &ltli class="item"&gt
+      &lth2&gtProducts&lt/h2&gt
+      &ltul&gt
+        &ltli&gtBread&lt/li&gt
+        &ltli&gtPrasley&lt/li&gt
+        &ltli&gtCheese&lt/li&gt
+      &lt/ul&gt
+    &lt/li&gt
+    &ltli class="item"&gt
+      &lth2&gtTechnologies&lt/h2&gt
+      &ltul&gt
+        &ltli&gtHTML&lt/li&gt
+        &ltli&gtCSS&lt/li&gt
+        &ltli&gtJavaScript&lt/li&gt
+        &ltli&gtReact&lt/li&gt
+        &ltli&gtNode.js&lt/li&gt
+      &lt/ul&gt
+    &lt/li&gt
+  &lt/ul&gt</pre
+              >
+
+              <p>Напиши скрипт, який:</p>
+
+              <ol>
+                <li>
+                  1. Порахує і виведе в консоль кількість категорій в
+                  ulcategories, тобто елементів li.item.
+                </li>
+                <li>
+                  2. Для кожного элемента li.item у списку ul#categories, знайде
+                  і виведе в консоль текст заголовку елемента (тегу &lth2&gt) і
+                  кількість елементів в категорії (усіх &ltli&gt, вкладених в
+                  нього).
+                </li>
+              </ol>
+              <p>
+                Для виконання цього завдання потрібно використати метод
+                forEach() і властивості навігації по DOM.
+                <br />
+                В результаті, в консолі будуть виведені наступні повідомлення.
+              </p>
+
+              <h4>Логіка рішення</h4>
+              <ul>
+                <li>Отримати посилання.all на елемент .item</li>
+                <li>Вивести в консоль кількість  li.item (елемент.lenght)</li>
+                <li>Перебрати в forEach() масив</li>
+                <li>В циклі законсолити firstElementChild.textContent</li>
+                <li>В циклі законсолити lastElementChild.children.length</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
             <ul id="categories">
               <li class="item">
                 <h2>Animals</h2>
