@@ -17,16 +17,14 @@ let raceCounter = 0;
 refs.startBtn.addEventListener("click", onStart);
 
 function onStart() {
-    raceCounter += 1;
-    const promises = horses.map(run);
+  raceCounter += 1;
+  const promises = horses.map(run);
 
-    updateWinnerField("");
-    updateProgressField("Заїзд почався");
-    determineWinner(promises);
-    waitForAll(promises)
+  updateWinnerField("");
+  updateProgressField("Заїзд почався");
+  determineWinner(promises);
+  waitForAll(promises);
 }
-
-
 
 function determineWinner(horsePromises) {
   Promise.race(horsePromises).then(({ horse, time }) => {
@@ -47,7 +45,7 @@ function updateProgressField(message) {
   refs.progressField.textContent = message;
 }
 function updateResultsTable({ horse, time, raceCounter }) {
-  const tr = `<tr><td>${raceCounter}</td><td>${horse}</td><td>${time}</td></tr>`;
+  const tr = `<tr><td class="th">${raceCounter}</td><td class="th">${horse}</td><td class="th">${time}</td></tr>`;
   refs.tableBody.insertAdjacentHTML("beforeend", tr);
 }
 
@@ -65,24 +63,8 @@ function run(horse) {
   });
 }
 
-// run("Mango")
-//   .then((x) => console.log(x))
-//   .catch((e) => console.log(e));
 
 function getRandomTime(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 // !---------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-

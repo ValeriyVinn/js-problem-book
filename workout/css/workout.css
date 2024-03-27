@@ -285,3 +285,16 @@ ul {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* ! Hippodrome */
+
+  
+.th {
+  padding: 15px;
+  border: solid 1px darkgreen;
+  border-collapse: collapse;
+  color: darkgreen;
+  text-align: center;
+}
+
+
