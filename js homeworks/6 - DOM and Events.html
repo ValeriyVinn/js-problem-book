@@ -226,7 +226,7 @@
               <h4>Логіка рішення</h4>
               <ul>
                 <li>Отримати посилання.all на елемент .item</li>
-                <li>Вивести в консоль кількість  li.item (елемент.lenght)</li>
+                <li>Вивести в консоль кількість li.item (елемент.lenght)</li>
                 <li>Перебрати в forEach() масив</li>
                 <li>В циклі законсолити firstElementChild.textContent</li>
                 <li>В циклі законсолити lastElementChild.children.length</li>
@@ -271,6 +271,57 @@
           <!--! Task 2   -->
           <div class="task">
             <h3 class="homework-title-task">Task 2</h3>
+            <div class="homework">
+              <h4>Завдання</h4>
+
+              <p>
+                HTML містить порожній список ul#ingredients.
+                <br />
+                &ltul id="ingredients"&gt&lt/ul&gt
+              </p>
+
+              <!-- <br /> -->
+              <p>JavaScript містить масив рядків.</p>
+              <!-- <br> -->
+              <pre>
+const ingredients = [ 
+  "Potatoes", 
+  "Mushrooms", 
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments", 
+];
+              </pre>
+              <p>
+                Напиши скрипт, який для кожного елемента масиву ingredients:
+              </p>
+              <ol>
+                <li>
+                  1. Створить окремий елемент &ltli&gt. Обов'язково використовуй
+                  метод document.createElement().
+                </li>
+                <li>2. Додасть назву інгредієнта як його текстовий вміст.</li>
+                <li>3. Додасть елементу клас item.</li>
+                <li>
+                  4. Після чого, вставить усі &ltli&gt за одну операцію у список
+                  ul#ingredients.
+                </li>
+              </ol>
+
+              <h4>Логіка рішення</h4>
+              
+<ul>
+  <li>Взяти посилання на порожній список ul#ingredients.</li>
+  <li>Мепаємо масив ingredients. В мепі створюємо за допомогою методу document.createElement() лішки</li>
+  <li>Додаємо до них textContent і клас і повертаємо лі</li>
+  <li>Результати мепу розпилюємо в посилання .append() </li>
+  <li></li>
+</ul>
+
+
+            </div>
+
             <ul id="ingredients"></ul>
           </div>
           <!--! Task 3   -->
