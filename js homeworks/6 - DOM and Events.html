@@ -310,16 +310,17 @@ const ingredients = [
               </ol>
 
               <h4>Логіка рішення</h4>
-              
-<ul>
-  <li>Взяти посилання на порожній список ul#ingredients.</li>
-  <li>Мепаємо масив ingredients. В мепі створюємо за допомогою методу document.createElement() лішки</li>
-  <li>Додаємо до них textContent і клас і повертаємо лі</li>
-  <li>Результати мепу розпилюємо в посилання .append() </li>
-  <li></li>
-</ul>
 
-
+              <ul>
+                <li>Взяти посилання на порожній список ul#ingredients.</li>
+                <li>
+                  Мепаємо масив ingredients. В мепі створюємо за допомогою
+                  методу document.createElement() лішки
+                </li>
+                <li>Додаємо до них textContent і клас і повертаємо лі</li>
+                <li>Результати мепу розпилюємо в посилання .append()</li>
+                <li></li>
+              </ul>
             </div>
 
             <ul id="ingredients"></ul>
@@ -327,12 +328,96 @@ const ingredients = [
           <!--! Task 3   -->
           <div class="task task-three">
             <h3 class="homework-title-task">Task 3</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>
+                Напиши скрипт для створення галереї зображень на підставі масиву
+                даних. HTML містить список ul.gallery.
+              </p>
+              <p>&ltul class="gallery"&gt&lt/ul&gt</p>
+              <p>
+                Використовуй масив об'єктів images для створення елементів
+                &ltimg&gt, вкладених в &ltli&gt. Для створення розмітки
+                використовуй шаблонні рядки і метод insertAdjacentHTML().
+              </p>
+              <ol>
+                <li>
+                  1. Усі елементи галереї повинні додаватися в DOM за одну
+                  операцію додавання.
+                </li>
+                <li>
+                  2. Додай мінімальне оформлення галереї флексбоксами або
+                  грідами через CSS класи.
+                </li>
+              </ol>
+              <pre>
+  const images = [
+  {
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
+  },
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
+  },
+];
+
+</pre
+              >
+              <h4>Логіка рішення</h4>
+
+              <ul>
+                <li>
+                  Створити змінну gallery і присвоїти в неї посилання на ul -
+                  document.querySelector(".")
+                </li>
+                <li>
+                  Створити змінну markup і присвоїти в неї масив
+                  об'єктів.map().join('')
+                </li>
+                <li>Деструктуризувати параметри в колбеку мепу</li>
+                <li>Створити і повернути шаблонний рядок</li>
+                <li>Зарендирити розмітку в gallery</li>
+              </ul>
+            </div>
+
             <ul class="gallery3"></ul>
           </div>
 
           <!--! Task 4   -->
           <div class="task">
             <h3 class="homework-title-task">Task 4</h3>
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>Лічильник складається зі спану і кнопок, які по кліку повинні збільшувати і зменшувати його значення на одиницю.</p>
+              <pre>
+&ltdiv id="counter"&gt
+  &ltbutton type="button" data-action="decrement"&gt-1&lt/button&gt
+  &ltspan id="value">0&lt/span&gt
+  &ltbutton type="button" data-action="increment"&gt+1&lt/button&gt
+&lt/div&gt</pre>
+              <ul>
+                <li>1 - Створи змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.</li>
+                <li>2 - Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.</li>
+                <li>3 - Оновлюй інтерфейс новим значенням змінної counterValue.</li>
+              </ul>
+              <h4>Логіка рішення</h4>
+<ul>
+  <li>Створити змінні і присвоїти їм посилання на кнопки і значення лічільника.</li>
+  <li>Створити змінну лічільника і ініціалізувати її значенням 0</li>
+  <li>Додати слухачів подій на кнопки</li>
+  <li>Написати дві функції (на збільшення і на зменшення лічільника) в яких буде інкрементитись або декрементитись змінна лічільника і потім її значення буде присвоюватись у змінну значення лічільника</li>
+  <li></li>
+</ul>
+
+
+
+            </div>
             <div id="counter">
               <button
                 type="button"
@@ -354,6 +439,7 @@ const ingredients = [
           <!--! Task 5   -->
           <div class="task">
             <h3 class="homework-title-task">Task 5</h3>
+            
             <input
               type="text"
               id="name-input"

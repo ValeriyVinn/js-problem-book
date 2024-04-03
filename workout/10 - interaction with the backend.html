@@ -135,12 +135,20 @@
           <h1 class="homework-title">Workout 10</h1>
 
           <div class="task">
-            <h3>Теорія</h3>
+            <h3>Pokemons</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <h4>Логіка рішення</h4>
+            </div>
+            <form class="form-inline search-form js-search-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="query">
+              </div>
+              <button type="submit" class="btn btn-primary">Шукати</button>
+            </form>
             <p>
-              Об'єкти дозволяють описати і згрупувати характеристики об'єктів
-              реального світу - користувача, книги, продукту магазину, чого
-              завгодно. Об'єкти ще називають словниками, тобто вони містять
-              терміни (властивості) та їх визначення (значення).
+              <div class="js-card-container"></div>
             </p>
             <pre><code>
   const book = { title: "The Last Kingdom", 
@@ -198,7 +206,8 @@
       </section>
     </main>
     <script src="./js/js homework.js" type="module"></script>
-    <script src="../js/script.js" type="module"></script>
+    <!-- <script src="../js/script.js" type="module"></script> -->
+    <script src="./js/10 - interaction with the backend.js" type="module"></script>
     <script src="../js/prism/prism-coy.js" type="module"></script>
   </body>
 </html>

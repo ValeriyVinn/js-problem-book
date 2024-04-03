@@ -61,24 +61,24 @@ galleryRef.insertAdjacentHTML("afterbegin", imagesMarkup)
 
 // ! Task 4 ---------------
 
-// const decrementEl = document.querySelector('[data-action="decrement"]')
-// const incrementEl = document.querySelector('[data-action="increment"]')
-// const valueEl = document.getElementById('value')
+const decrementEl = document.querySelector('[data-action="decrement"]')
+const incrementEl = document.querySelector('[data-action="increment"]')
+const valueEl = document.getElementById('value')
 
-// let value = 0
+let value = 0
 
-// decrementEl.addEventListener('click', decrease)
-// incrementEl.addEventListener('click', increase)
+decrementEl.addEventListener('click', decrease)
+incrementEl.addEventListener('click', increase)
 
-// function decrease (event) {
-// value -= 1
-// valueEl.textContent = value
-// }
+function decrease (event) {
+value -= 1
+valueEl.textContent = value
+}
 
-// function increase (event) {
-// value += 1
-// valueEl.textContent = value
-// }
+function increase (event) {
+value += 1
+valueEl.textContent = value
+}
 
 // ! Task 5 ---------------
 
