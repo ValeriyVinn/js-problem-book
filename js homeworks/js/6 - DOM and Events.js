@@ -85,15 +85,20 @@ valueEl.textContent = value
 const inputEl = document.getElementById("name-input");
 const spanEl = document.getElementById("name-output");
 
-// console.log(inputEl);
-// console.log(spanEl);
+// inputEl.addEventListener("input", (e) => {
+//   spanEl.textContent = e.currentTarget.value.trim() || "Anonymous";
+// });
 
 inputEl.addEventListener("input", (e) => {
-  console.log(e.currentTarget.value);
-  spanEl.textContent = e.currentTarget.value.trim() || "Anonymous";
+
+spanEl.textContent  = e.currentTarget.value.trim()
+  if (spanEl.textContent === "") {
+    spanEl.textContent = "Anonymous"
+  } 
 });
 
 // ! Task 6 ---------------
+
 
 // ! Task 7 ---------------
 

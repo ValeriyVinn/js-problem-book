@@ -173,6 +173,23 @@ ul {
   margin-bottom: 25px;
 }
 
+.span {
+  padding: 0px 3px;
+  border: 1px grey solid;
+  border-radius: 5px;
+
+  background-color: lightgray;
+}
+
+.code {
+  /* display: inline-block; */
+  width: fit-content;
+  padding: 5px;
+  border: 1px yellowgreen solid;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
 /* ============ Hoverable Dropdown =============== */
 
 .dropbtn {
