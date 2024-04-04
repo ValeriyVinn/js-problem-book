@@ -50,34 +50,37 @@ const images = [
 
 const galleryRef = document.querySelector(".gallery3");
 
-const imagesMarkup = images.map(({url, alt}) => ( `<li><img src="${url}" alt="${alt}" width=300 height=200></li>`)
+const imagesMarkup = images
+  .map(
+    ({ url, alt }) =>
+      `<li><img src="${url}" alt="${alt}" width=300 height=200></li>`
+  )
+  .join("");
 
-).join('')
-
-galleryRef.insertAdjacentHTML("afterbegin", imagesMarkup)
+galleryRef.insertAdjacentHTML("afterbegin", imagesMarkup);
 
 // const mU = images.reduce((acc, images) => acc.concat(`<li><img src="${images.url}" alt="${images.alt}" width=300 height=200></li>`),[]).join('')
 // galleryRef.insertAdjacentHTML('afterbegin', mU)
 
 // ! Task 4 ---------------
 
-const decrementEl = document.querySelector('[data-action="decrement"]')
-const incrementEl = document.querySelector('[data-action="increment"]')
-const valueEl = document.getElementById('value')
+const decrementEl = document.querySelector('[data-action="decrement"]');
+const incrementEl = document.querySelector('[data-action="increment"]');
+const valueEl = document.getElementById("value");
 
-let value = 0
+let value = 0;
 
-decrementEl.addEventListener('click', decrease)
-incrementEl.addEventListener('click', increase)
+decrementEl.addEventListener("click", decrease);
+incrementEl.addEventListener("click", increase);
 
-function decrease (event) {
-value -= 1
-valueEl.textContent = value
+function decrease(event) {
+  value -= 1;
+  valueEl.textContent = value;
 }
 
-function increase (event) {
-value += 1
-valueEl.textContent = value
+function increase(event) {
+  value += 1;
+  valueEl.textContent = value;
 }
 
 // ! Task 5 ---------------
@@ -90,15 +93,36 @@ const spanEl = document.getElementById("name-output");
 // });
 
 inputEl.addEventListener("input", (e) => {
-
-spanEl.textContent  = e.currentTarget.value.trim()
+  spanEl.textContent = e.currentTarget.value.trim();
   if (spanEl.textContent === "") {
-    spanEl.textContent = "Anonymous"
-  } 
+    spanEl.textContent = "Anonymous";
+  }
 });
 
 // ! Task 6 ---------------
+const inputElem = document.getElementById("validation-input");
 
+inputElem.addEventListener("blur", onInputBlur);
+
+function onInputBlur(event) {
+  const total = event.currentTarget.value.length;
+
+  if (Number(inputElem.dataset.length) !== total) {
+    inputElem.classList.add("invalid");
+    inputElem.classList.remove("valid");
+
+    return;
+  }
+  inputElem.classList.add("valid");
+  inputElem.classList.remove("invalid");
+}
+
+// 2 рішення
+
+// inputElem.addEventListener("blur", (evt) => {
+//   inputElem.classList.toggle("valid", evt.target.value.length === Number(inputElem.dataset.length));
+//   inputElem.classList.toggle("invalid", evt.target.value.length !== Number(inputElem.dataset.length));
+// });
 
 // ! Task 7 ---------------
 
