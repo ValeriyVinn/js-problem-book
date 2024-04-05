@@ -126,6 +126,18 @@ function onInputBlur(event) {
 
 // ! Task 7 ---------------
 
+const inputRangeEl = document.getElementById('font-size-control')
+const spanAbracadabra = document.getElementById('text')
+
+spanAbracadabra.style.fontSize = inputRangeEl.value + "px"
+
+inputRangeEl.addEventListener('input', toChangeSpan)
+
+function toChangeSpan() {
+  spanAbracadabra.style.fontSize = `${inputRangeEl.value}px`
+}
+
+
 // ! Task 8 ---------------
 
 const loginForm = document.querySelector(".login-form");
@@ -166,6 +178,18 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
+}
+
+const buttonChangeColor = document.querySelector('.change-color')
+const spanChangeColor = document.querySelector('.color')
+console.log(spanChangeColor)
+
+buttonChangeColor.addEventListener('click', changeBGC)
+
+function changeBGC () {
+  const randomizator = getRandomHexColor()
+  spanChangeColor.textContent = randomizator
+  buttonChangeColor.style.backgroundColor = randomizator
 }
 
 // ! Task 10 ---------------

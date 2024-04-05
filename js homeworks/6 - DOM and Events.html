@@ -170,7 +170,7 @@
             <div class="homework">
               <h4>Завдання</h4>
               <p>HTML містить список категорій ul#categories.</p>
-              <pre>
+              <pre class="code">
   &ltul id="categories"&gt
     &ltli class="item"&gt
       &lth2&gtAnimals&lt/h2&gt
@@ -283,7 +283,7 @@
               <!-- <br /> -->
               <p>JavaScript містить масив рядків.</p>
               <!-- <br> -->
-              <pre>
+              <pre class="code">
 const ingredients = [ 
   "Potatoes", 
   "Mushrooms", 
@@ -351,7 +351,7 @@ const ingredients = [
                   грідами через CSS класи.
                 </li>
               </ol>
-              <pre>
+              <pre class="code">
   const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -398,7 +398,7 @@ const ingredients = [
                 Лічильник складається зі спану і кнопок, які по кліку повинні
                 збільшувати і зменшувати його значення на одиницю.
               </p>
-              <pre>
+              <pre class="code">
 &ltdiv id="counter"&gt
   &ltbutton type="button" data-action="decrement"&gt-1&lt/button&gt
   &ltspan id="value">0&lt/span&gt
@@ -470,15 +470,21 @@ const ingredients = [
                 <span class="span">"Anonymous"</span>.
               </p>
               <p class="code">
-                &ltinput type="text" id="name-input" placeholder="Please enter your name"/&gt  <br>
-                &lth1&gtHello, &ltspan id="name-output"&gtAnonymous&lt/span&gt!&lt/h1&gt
+                &ltinput type="text" id="name-input" placeholder="Please enter
+                your name"/&gt <br />
+                &lth1&gtHello, &ltspan
+                id="name-output"&gtAnonymous&lt/span&gt!&lt/h1&gt
               </p>
 
               <h4>Логіка рішення</h4>
               <ul>
                 <li>1 - Отримати посилання на Input і span "Anonymous"</li>
                 <li>2 -Повісити слухача подій на Input</li>
-                <li>3- Написати колбек до слухача подій в якому textContent спана, використовуючі trim(), присвоюється значення value інпута, або повертається "Anonymous"</li>
+                <li>
+                  3- Написати колбек до слухача подій в якому textContent спана,
+                  використовуючі trim(), присвоюється значення value інпута, або
+                  повертається "Anonymous"
+                </li>
               </ul>
             </div>
             <input
@@ -495,7 +501,9 @@ const ingredients = [
             <div class="homework">
               <h4>Завдання</h4>
               <p>
-                Напиши скрипт, який під час втрати фокусу на інпуті (подія <span class="span">blur</span>), перевіряє його вміст щодо правильної кількості введених символів.
+                Напиши скрипт, який під час втрати фокусу на інпуті (подія
+                <span class="span">blur</span>), перевіряє його вміст щодо
+                правильної кількості введених символів.
               </p>
               <pre class="code">
 &ltinput
@@ -503,28 +511,35 @@ const ingredients = [
   id="validation-input"
   data-length="6"
   placeholder="Please enter 6 symbols"
-/&gt</pre>
+/&gt</pre
+              >
 
-<ul>
-  <li>1- Яка кількість символів повинна бути в інпуті, зазначається в його атрибуті <span class="span">data-length</span> .</li>
-  <li>2 -Якщо введена правильна кількість символів, то <span class="span">border</span>  інпуту стає зеленим, якщо неправильна кількість - червоним.</li>
-</ul>
-
-
-
+              <ul>
+                <li>
+                  1- Яка кількість символів повинна бути в інпуті, зазначається
+                  в його атрибуті <span class="span">data-length</span> .
+                </li>
+                <li>
+                  2 -Якщо введена правильна кількість символів, то
+                  <span class="span">border</span> інпуту стає зеленим, якщо
+                  неправильна кількість - червоним.
+                </li>
+              </ul>
 
               <h4>Логіка рішення</h4>
-<ul>
-  <li>1 - Отримати посилання на Input</li>
-  <li>2 - Додати слухача подій на Input, подія blur</li>
-  <li>3 - Написати колбек до слухача подій в якому:</li>
-  <li>a) - записати в змінну total довжину введеного в input рядка</li>
-  <li>б) - Якщо значення атрибута data-length не дорівнює довжині рядка додаємо клас invalid і знімаємо клас valid, якщо дорівнює - додаємо клас valid і знімаємо клас invalid.</li>
-</ul>
-
-
-
-
+              <ul>
+                <li>1 - Отримати посилання на Input</li>
+                <li>2 - Додати слухача подій на Input, подія blur</li>
+                <li>3 - Написати колбек до слухача подій в якому:</li>
+                <li>
+                  a) - записати в змінну total довжину введеного в input рядка
+                </li>
+                <li>
+                  б) - Якщо значення атрибута data-length не дорівнює довжині
+                  рядка додаємо клас invalid і знімаємо клас valid, якщо
+                  дорівнює - додаємо клас valid і знімаємо клас invalid.
+                </li>
+              </ul>
             </div>
             <input
               type="text"
@@ -536,6 +551,41 @@ const ingredients = [
           <!--! Task 7   -->
           <div class="task">
             <h3 class="homework-title-task">Task 7</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>
+                Напиши скрипт, який реагує на зміну значення
+                <span class="span">input#font-size-control</span> (подія
+                <span class="span">input</span>) і змінює інлайн-стиль
+                <span class="span">span#text</span>, оновлюючи властивість
+                <span class="span">font-size</span>. В результаті, перетягуючи
+                повзунок, буде змінюватися розмір тексту.
+              </p>
+
+              <pre class="code">
+&ltinput id="font-size-control" type="range" min="16" max="96" /&gt
+&ltbr /&gt
+&ltspan id="text"&gtAbracadabra!&lt/span&gt
+</pre
+              >
+              <h4>Логіка рішення</h4>
+
+              <ul>
+                <li>1 - Отримуємо посилання на input і на span</li>
+                <li>
+                  2 - Зв'язуємо розмір тексту спану і розмір тексту інпуту
+                </li>
+                <li>3 - Додаємо слухача подій на input</li>
+                <li>
+                  4 - Пишемо колбек, в якому розміру тексту спану присвоюємо
+                  змінне значення розміру тексту інпуту
+                </li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
             <input id="font-size-control" type="range" min="16" max="96" />
             <br />
             <span id="text">Abracadabra!</span>
@@ -543,6 +593,70 @@ const ingredients = [
           <!--! Task 8   -->
           <div class="task">
             <h3 class="homework-title-task">Task 8</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>Напиши скрипт управління формою логіна.</p>
+              <pre class="code">
+&ltform class="login-form"&gt
+  &ltlabel&gt
+    Email
+    &ltinput type="email" name="email" /&gt
+  &lt/label&gt
+  &ltlabel&gt
+    Password
+    &ltinput type="password" name="password" /&gt
+  &lt/label&gt
+  &ltbutton type="submit">Login&lt/button&gt
+&lt/form&gt 
+</pre
+              >
+              <ul>
+                <li>
+                  1 - Обробка відправлення форми
+                  <span class="span">form.login-form</span> повинна відбуватися
+                  відповідно до події <span class="span">submit</span>.
+                </li>
+                <li>
+                  2 - Під час відправлення форми сторінка не повинна
+                  перезавантажуватися.
+                </li>
+                <li>
+                  3 - Якщо у формі є незаповнені поля, виводь
+                  <span class="span">alert</span> з попередженням про те, що всі
+                  поля повинні бути заповнені.
+                </li>
+                <li>
+                  4 - Якщо користувач заповнив усі поля і відправив форму, збери
+                  значення полів в об'єкт, де ім'я поля буде ім'ям властивості,
+                  а значення поля - значенням властивості. Для доступу до
+                  елементів форми використовуй властивість
+                  <span class="span">elements</span>.
+                </li>
+                <li>
+                  5 - Виведи об'єкт із введеними даними в консоль і очисти
+                  значення полів форми методом <span class="span">reset</span>.
+                </li>
+              </ul>
+              <h4>Логіка рішення</h4>
+
+              <ul>
+                <li>Отримуємо посилання на форму</li>
+                <li>Вішаємо слухача подій на посилання</li>
+                <li>Пишемо колбек, в якому:</li>
+                <li>а) запобігаємо перезавантаженню форми</li>
+                <li>
+                  б) беремо посилання на mail і password і присвоюємо в змінну
+                  об'єкт зі значеннями
+                </li>
+                <li>
+                  с) якщо поле mail/password пусте - виводимо попередження, якщо
+                  не пусте - консолимо форму
+                </li>
+                <li>д) очищуємо форму</li>
+              </ul>
+            </div>
+
             <form class="login-form">
               <label>
                 Email
@@ -558,6 +672,48 @@ const ingredients = [
           <!--! Task 9   -->
           <div class="task">
             <h3 class="homework-title-task">Task 9</h3>
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>
+                Напиши скрипт, який змінює кольори фону елемента
+                <span class="span">&ltbutton&gt</span> через інлайн-стиль по
+                кліку на <span class="span">button.change-color</span> і
+                виводить значення кольору в
+                <span class="span">span.color</span>.
+              </p>
+              <pre class="code">
+&ltdiv class="widget"&gt
+  &ltp&gtBackground color: &ltspan class="color"&gt-&lt/span&gt&lt/p&gt
+  &ltbutton type="button" class="change-color"&gtChange color&lt/button&gt
+&lt/div&gt</pre
+              >
+              <p>
+                Для генерування випадкового кольору використовуй функцію
+                <span class="span">getRandomHexColor</span>.
+              </p>
+              <pre class="code">
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}</pre
+              >
+              <h4>Логіка рішення</h4>
+              <ul>
+                <li>Отримуємо посилання на кнопку і на спан</li>
+                <li>Вішаємо слухача подій на кнопку</li>
+                <li>Пишемо колбек в якому:</li>
+                <li>а) присвоюємо в змінну згенероване значення кольору</li>
+                <li>
+                  б) присвоюємо в значення спану згенероване значення кольору
+                </li>
+                <li>
+                  в) присвоюємо в Background Color кнопки згенероване значення
+                  кольору
+                </li>
+              </ul>
+            </div>
+
             <div class="widget">
               <p>Background color: <span class="color">-------</span></p>
               <button type="button" class="change-color">Change color</button>
