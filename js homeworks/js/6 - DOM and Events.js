@@ -126,17 +126,16 @@ function onInputBlur(event) {
 
 // ! Task 7 ---------------
 
-const inputRangeEl = document.getElementById('font-size-control')
-const spanAbracadabra = document.getElementById('text')
+const inputRangeEl = document.getElementById("font-size-control");
+const spanAbracadabra = document.getElementById("text");
 
-spanAbracadabra.style.fontSize = inputRangeEl.value + "px"
+spanAbracadabra.style.fontSize = inputRangeEl.value + "px";
 
-inputRangeEl.addEventListener('input', toChangeSpan)
+inputRangeEl.addEventListener("input", toChangeSpan);
 
 function toChangeSpan() {
-  spanAbracadabra.style.fontSize = `${inputRangeEl.value}px`
+  spanAbracadabra.style.fontSize = `${inputRangeEl.value}px`;
 }
-
 
 // ! Task 8 ---------------
 
@@ -180,16 +179,55 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const buttonChangeColor = document.querySelector('.change-color')
-const spanChangeColor = document.querySelector('.color')
-console.log(spanChangeColor)
+const buttonChangeColor = document.querySelector(".change-color");
+const spanChangeColor = document.querySelector(".color");
 
-buttonChangeColor.addEventListener('click', changeBGC)
+buttonChangeColor.addEventListener("click", changeBGC);
 
-function changeBGC () {
-  const randomizator = getRandomHexColor()
-  spanChangeColor.textContent = randomizator
-  buttonChangeColor.style.backgroundColor = randomizator
+function changeBGC() {
+  const randomizator = getRandomHexColor();
+  spanChangeColor.textContent = randomizator;
+  buttonChangeColor.style.backgroundColor = randomizator;
 }
 
 // ! Task 10 ---------------
+
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215)
+//     .toString(16)
+//     .padStart(6, 0)}`;
+// }
+
+const inputNumber = document.querySelector('[type="number"]');
+const buttonCreate = document.querySelector("[data-create]");
+const buttonDestroy = document.querySelector("[data-destroy]");
+const divBoxes = document.querySelector("#boxes");
+
+buttonCreate.addEventListener("click", () => {
+  let numberBoxs = Number(inputNumber.value);
+  if (numberBoxs > inputNumber.getAttribute("max")) {
+    numberBoxs = inputNumber.getAttribute("max");
+    inputNumber.value = inputNumber.getAttribute("max");
+  }
+  createBoxes(numberBoxs);
+});
+
+buttonDestroy.addEventListener("click", destroyBoxes);
+
+function createBoxes(amount) {
+  let sizeDivBox = 30;
+  const divBoxElem = [];
+  for (let i = 0; i < amount; i += 1) {
+    let divColor = getRandomHexColor();
+    divBoxElem.push(
+      `<div style ="background-color:${divColor}; width:${sizeDivBox}px; height:${sizeDivBox}px;"></div>`
+    );
+    sizeDivBox += 10;
+  }
+  divBoxes.insertAdjacentHTML("beforeend", divBoxElem.join(""));
+}
+
+function destroyBoxes() {
+  divBoxes.innerHTML = "";
+  inputNumber.value = "";
+}

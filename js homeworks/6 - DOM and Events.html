@@ -722,6 +722,102 @@ function getRandomHexColor() {
           <!--! Task 10   -->
           <div class="task">
             <h3 class="homework-title-task">Task 10</h3>
+
+            <div class="homework">
+              <h4>Завдання</h4>
+              <p>
+                Напиши скрипт створення і очищення колекції елементів.
+                Користувач вводить кількість елементів в
+                <span class="span">input</span> і натискає кнопку
+                <span class="span">Створити</span>, після чого рендериться
+                колекція. Натисненням на кнопку
+                <span class="span">Очистити</span>, колекція елементів
+                очищається.
+              </p>
+              <pre class="code">
+&ltdiv id="controls"&gt
+  &ltinput type="number" min="1" max="100" step="1"/&gt
+  &ltbutton type="button" data-create&gtCreate&lt/button&gt
+  &ltbutton type="button" data-destroy&gtDestroy&lt/button&gt
+&lt/div&gt
+  
+&ltdiv id="boxes"&gt&lt/div&gt
+</pre
+              >
+              <p>
+                Створи функцію <span class="span">createBoxes(amount)</span>,
+                яка приймає один параметр - число. Функція створює стільки
+                <span class="span">&ltdiv&gt</span>, скільки вказано в
+                <span class="span">amount</span> і додає їх у
+                <span class="span">div#boxes</span>.
+              </p>
+              <ul>
+                <li>
+                  Розміри найпершого <span class="span">&ltdiv&gt</span> - 30px
+                  на 30px.
+                </li>
+                <li>
+                  Кожен елемент після першого повинен бути ширшим і вищим від
+                  попереднього на 10px.
+                </li>
+                <li>
+                  Всі елементи повинні мати випадковий колір фону у форматі HEX.
+                  Використовуй готову функцію
+                  <span class="span">getRandomHexColor</span> для отримання
+                  кольору.
+                </li>
+              </ul>
+
+              <pre class="code">
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+</pre
+              >
+              <p>
+                Створи функцію <span class="span">destroyBoxes()</span>, яка
+                очищає вміст <span class="span">div#boxes</span>, у такий спосіб
+                видаляючи всі створені елементи.
+              </p>
+
+              <h4>Логіка рішення</h4>
+              <ul>
+                <li>
+                  Створюємо змінні з посиланнями на input, кнопки і div для
+                  рендеру
+                </li>
+                <li>Додаємо слухачів подій до кнопок Create і Destroy</li>
+                <li>Створюємо колбек до функції-слухача на кнопку Create</li>
+                <li>
+                  а) робимо перевірку числа в інпуті - якщо більше дозволеного -
+                  присвоюємо максимальне значення
+                </li>
+                <li>б) викликаємо функцію створення боксів</li>
+                <li>Створюємо функцію створення боксів</li>
+                <li>а) створюємо змінну для розміру боксів</li>
+                <li>б) створюємо змінну з пустим масивом для пушу елементів</li>
+                <li>
+                  в) створюємо цикл, в якому ініціалізуємо змінну для
+                  випадкового кольору
+                </li>
+                <li>
+                  г) пушимо з циклу едемент в масив додаючи на кожній ітерації
+                  +10 до розміру
+                </li>
+                <li>
+                  д) вставляємо масив.joint("") за допомогою insertAdjacentHTML
+                  в html
+                </li>
+                <li>
+                  Створюємо колбек до слухача кнопки Destroy в якому очищаємо
+                  розмітку і поле вводу
+                </li>
+                <li></li>
+              </ul>
+            </div>
+
             <div id="controls">
               <input class="inp" type="number" min="1" max="100" step="1" />
               <button type="button" data-create>Create</button>
