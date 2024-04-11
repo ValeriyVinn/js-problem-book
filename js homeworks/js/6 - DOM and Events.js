@@ -231,3 +231,7 @@ function destroyBoxes() {
   divBoxes.innerHTML = "";
   inputNumber.value = "";
 }
+
+
+
+
